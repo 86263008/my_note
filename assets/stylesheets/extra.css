@@ -1,0 +1,11 @@
+:root > * {
+
+}
+
+.md-typeset hr  {
+  margin-bottom: 50em;
+}
+
+.md-grid {
+  max-width: 1920px; /* (1)! */
+}

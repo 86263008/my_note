@@ -1,0 +1,1171 @@
+define([
+	'jquery',
+	'underscore',
+	'backbone',
+	'dialogExtend',
+	'js/app/global/AppEvent-50f8a8fa06.js',
+	'js/app/views/video/question-025cceedcc.js',
+	'text!tmpl/video/rest-0a2194cd3e.text',
+	'text!tmpl/video/stop-e47b59c660.text',
+	'text!tmpl/video/tips-d4ca2ec41e.text',
+	'pdfobject',
+	"js/common/SensorsDataUtils-c3bf11d9db.js"
+], function ($, _, Backbone, dialog, AppEvent, QuestionView, restHtml, stopHtml, TipsHtml, PDFObject, SensorsDataUtils) {
+	var view = Backbone.View.extend({
+		el: ".video-wrapper",
+		//初始化方法，在创建对象时只执行一次
+		initialize: function () {
+			var _this = this;
+			// 更新右侧进度
+			this.listenTo(AppEvent, 'updateProgress', function (data) {
+				this.updateProgressRender(data, data.vid);
+			});
+
+			this.listenTo(AppEvent, 'clickContinueStudy', function (data) {
+				//点击继续学习操作
+				dialog.close(this.clockdialog);
+				this.isClockDialog = 0;//标记位恢复
+				//人脸认证之后看是否需要录制视频
+				this.cloickContinuePlay(data.finish);
+			});
+
+			this.isFree = 0;
+
+			this.questionPop = ""; // 练习题弹窗;
+
+			// 苹果手机在播放视频时，当视频有练习题时，当用户打完练习题后，还会再提弹出该练习题
+			// 此处记录下弹出时间的位置，已弹过的时间点，在关闭弹出2秒后不在弹出
+			this.curAlertTime = 0;
+
+			this.tjzjBizCode = "";
+			this.tjzjType = 0; //tjzjType == 0不是天津职教 1=天津职教
+
+			this.timeLimitClose = 0;  //限时学习   0 之前没有出来过  1 之前弹出过了，不需要再次弹出了
+			var $firstVideo = this.$("#video").children('div');
+			if (window.p.lessonId && window.p.lessonId != "") {
+				$(".video-title").each(function (e) {
+					var id = $(this).attr("data-lessonId");
+					if (window.p.lessonId == id) {
+						$(".video-title").removeClass("on");
+						$(this).addClass("on");
+						$firstVideo = $(this);
+					}
+				})
+			}
+
+			this.playingVideo = {};
+			var videoId = $firstVideo.attr("data-id");
+			var lessonId = $firstVideo.attr("data-lessonId");
+			var coursewareType = $firstVideo.data("type");
+			this.isFree = $firstVideo.data("isfree");
+			this.isClockDialog = 0;//标记位，0-还未弹出打卡弹窗1-已经弹出
+			this.doPointTimeArr = [];
+			this.isClicking = 0;//标记位，0-没有正在切换1-正在切换
+
+
+			this.commonEventType = "pageload" //埋点事件类型，默认为 pageload-页面加载
+
+			// //初始化查找所有课件/文档
+			this._findAllVideos();
+			if (coursewareType == 1) {
+				var fileId = $firstVideo.attr("data-fileid");
+				var state = $firstVideo.data("trans") ? $firstVideo.data("trans") : $firstVideo.data("state");
+				// var state = $firstVideo.data("state");
+				$firstVideo.parent().css("align-items", "flex-end");
+				this.loadDocument(fileId, state);
+				return;
+			}
+			if (videoId) {
+				var idx = 0;//当前播放视频的索引
+				this.getCoursePractise(videoId, function (practice) {
+					_this.initPlayer(lessonId, idx, 0, practice);
+				})
+
+			}
+		},
+
+		events: {
+			"click .video-title": "clickVideoHandler",
+		},
+
+		/**
+		 * 查找所有视频课件
+		 * @return {[type]} [description]
+		*/
+		_findAllVideos: function () {
+			var videos = this.$(".video-title");
+			this.videos = videos;
+		},
+
+		//组装清晰度数据
+		packVideoQuality: function (videoObj) {
+			var quiltys = [];
+			var urlsArr = videoObj['urls'];
+			if (urlsArr && urlsArr.length > 0) {
+				if (videoObj.videoType == 1) {
+					quiltys.push({ name: "流畅", url: urlsArr[0].url + "?token=" + videoObj.token });
+				} else {
+					_.each(urlsArr, function (item) {
+						switch (item.quality) {
+							case "FLUENT":
+								quiltys.push({ name: "流畅", url: item.url + "?token=" + videoObj.token });
+								break;
+							case "SD":
+								quiltys.push({ name: "标清", url: item.url + "?token=" + videoObj.token });
+								break;
+							case "HD":
+								quiltys.push({ name: "高清", url: item.url + "?token=" + videoObj.token });
+								break;
+							case "FULL_HD":
+								quiltys.push({ name: "超清", url: item.url + "?token=" + videoObj.token });
+								break;
+						}
+					})
+				}
+				return quiltys;
+			}
+		},
+
+		// 获取课程练习题
+		getCoursePractise: function (videoId, cb) {
+			var _this = this;
+			var url = "/services/course/public/course/coursePraList?courseId=" + window.courseId + "&itemId=" + window.p.itemId + "&videoId=" + videoId;
+			$.ajax({
+				url: url,
+				type: "get",
+				dataType: "json",
+				success: function (res) {
+					if (res && res.success) {
+						var data = res.data;
+						if (!data || !data.length) {
+							return cb && cb("")
+						}
+						cb && cb(data)
+					}
+
+				},
+				error: function (xhr) {
+					cb && cb("")
+				}
+			})
+		},
+
+		// 组装练习题弹出时间点
+		packPractiseTimes: function (practice) {
+			var _this = this;
+			var practiseTimeArr = [];
+			var videoPractise = practice || [];
+			for (var i = 0, len = videoPractise.length; i < len; i++) {
+				// selectedAnswerTxt  已做题的答案，字母
+				// isCheck  当前试题选项是否选中
+				// sortTxt   当前试题选项的字母序号
+				// correctLetterTxt  当前试题的正确选项  字母
+				// correctIdArr   当前试题的正确选线  ID
+				// answerListObj  试题选项的对象形式
+				// selectedAnswerIsCorrect  试题是否正确
+
+				var item = this.packPractiseHandler(videoPractise[i])
+
+				item.isAnswerQuestion = item.isAnswerQuestion || 0
+
+				practiseTimeArr.push({
+					time: item.alertTime,
+					cb: function (cbObj) {
+						_this.doPointTime.call(_this, cbObj);
+					}
+				});
+			}
+			this.playingPractices = videoPractise;
+			if (!videoPractise || videoPractise.length == 0) return practiseTimeArr;
+
+			return practiseTimeArr;
+		},
+
+		packPractiseHandler: function (itemQues) {
+			if (itemQues.type == 0 || itemQues.type == 1 || itemQues.type == 2) {
+				itemQues.correctLetterTxt = [];
+				itemQues.correctIdArr = [];
+				itemQues.selectedAnswerIsCorrect = false;
+				itemQues.answerListObj = {};
+				var selectedAnswerTxt = []
+				var selectedAnswerArr = itemQues.selectedAnswer ? itemQues.selectedAnswer.split(',') : [];
+				var selectedAnswerObj = {}
+				for (var k = 0, kLen = selectedAnswerArr.length; k < kLen; k++) {
+					selectedAnswerObj[selectedAnswerArr[k]] = selectedAnswerArr[k];
+				}
+				for (var j = 0, jLen = itemQues.answerList.length; j < jLen; j++) {
+					var item = itemQues.answerList[j];
+					itemQues.answerListObj[item.id] = item;
+					item.isCheck = false;
+					item.sortTxt = String.fromCharCode(item.sort + 64);
+					if (item.isAnswer === '0') {
+						itemQues.correctLetterTxt.push(item.sortTxt);
+						itemQues.correctIdArr.push(item.id)
+					}
+					if (selectedAnswerObj[item.id]) {
+						item.isCheck = true;
+						selectedAnswerTxt.push(String.fromCharCode(item.sort + 64))
+					}
+				}
+				itemQues.correctLetterTxt = itemQues.correctLetterTxt.join(',');
+				itemQues.selectedAnswerTxt = selectedAnswerTxt.join(',');
+				if (itemQues.selectedAnswerTxt === itemQues.correctLetterTxt) {
+					itemQues.selectedAnswerIsCorrect = true;
+				}
+			} else if (itemQues.type == 4) {
+				itemQues.correctLetterTxt = [];
+				// selectedAnswerTxt  已做题的答案  字符串
+				// selectedAnswerArr  已做题的答案  数组
+				// answerTxt  试题项的已做答答案
+				// isCorrect  试题项是否正确
+				// selectedAnswerIsCorrect  试题是否正确
+				// 填空题
+				itemQues.inputCorrectIdArr = [];
+				itemQues.inputCorrectArr = [];
+				itemQues.selectedAnswerTxt = "";
+				itemQues.selectedAnswerArr = [];
+				itemQues.selectedAnswerIsCorrect = false;
+				var selectedAnswerTxt = []
+				var selectedAnswerObj = {}
+
+				// 已做答的答案
+				var selectedAnswer = [];
+				if (itemQues.selectedAnswer) {
+					selectedAnswer = JSON.parse(_.unescape(itemQues.selectedAnswer))
+				}
+				for (var k = 0, kLen = selectedAnswer.length; k < kLen; k++) {
+					selectedAnswerObj[selectedAnswer[k].id] = selectedAnswer[k];
+					selectedAnswerTxt.push(selectedAnswer[k].text);
+
+				}
+
+				if (selectedAnswerTxt && selectedAnswerTxt.length) {
+					itemQues.selectedAnswerArr = selectedAnswerTxt;
+					itemQues.selectedAnswerTxt = selectedAnswerTxt.join(',')
+				}
+
+
+				// inputCorrectArr  填空题答案数组
+				for (var m = 0, mLen = itemQues.answerList.length; m < mLen; m++) {
+					var item = itemQues.answerList[m];
+					var name = _.unescape(item.name).replace(/<[^>]+>/g, '').replace(/&nbsp;/ig, '').replace(/\s/g, '')
+					item.answerTxt = "";
+					item.isCorrect = false;
+					if (selectedAnswerObj[item.id]) {
+						item.answerTxt = selectedAnswerObj[item.id].text;
+						if (selectedAnswerObj[item.id].text == name) {
+							item.isCorrect = true;
+						}
+					}
+					itemQues.inputCorrectArr.push(name);
+					itemQues.inputCorrectIdArr.push(item.id);
+				}
+
+				// disorder 答案有无顺序要求  1 无序  0 有序
+				// 如果填空题已做答，判断这道题是否答对了
+				if (selectedAnswer && selectedAnswer.length) {
+					var selectedAnswerArr = itemQues.selectedAnswerTxt.split(',');
+					var selectedAnswerIsCorrectArr = [];
+					var isSort = itemQues.disorder;
+					for (var j = 0, jLen = itemQues.inputCorrectArr.length; j < jLen; j++) {
+						var item = itemQues.inputCorrectArr[j];
+						if (isSort === 1) {
+							// 无序
+							var result = selectedAnswerArr.includes(item);
+							if (result) {
+								selectedAnswerArr.splice(selectedAnswerArr.indexOf(item), 1)
+							}
+							selectedAnswerIsCorrectArr.push(result);
+						} else {
+							// 有序
+							var result = item == selectedAnswer[j].text;
+							selectedAnswerIsCorrectArr.push(result);
+						}
+					}
+					var valid = selectedAnswerIsCorrectArr.filter(function (item) {
+						return !item
+					})
+					if (!valid || !valid.length) {
+						itemQues.selectedAnswerIsCorrect = true;
+					}
+				}
+
+			}
+			return itemQues
+		},
+
+		// 生成视频进度条上的打点提示
+		progressDotHandler: function () {
+			if (!this.playingPractices || !this.playingPractices.length) {
+				return []
+			}
+			var progressDot = [];
+			var progressDotObj = {};
+			for (var i = 0, len = this.playingPractices.length; i < len; i++) {
+				if (progressDotObj[this.playingPractices[i].alertTime]) {
+					continue
+				}
+				var tips = "<p class='progress-dot-info'>" + formatUtil.hhmmss(this.playingPractices[i].alertTime) + " 练习</p>";
+				var item = {
+					time: this.playingPractices[i].alertTime,
+					text: tips
+				}
+				progressDot.push(item);
+				progressDotObj[this.playingPractices[i].alertTime] = this.playingPractices[i];
+			}
+			return progressDot
+		},
+
+		//打点视频，节点回调方法
+		doPointTime: function (cbObj) {
+			if (this.curAlertTime) return;
+			if (Number(this.playingVideo.studyProgress) + 2 * 60 > Number(cbObj.time) / 2) {
+				this._doOpenPractices(cbObj);
+			}
+
+		},
+
+		// 判断是否全屏播放
+		isFullscreen: function () {
+			return document.fullscreenElement ||
+				document.msFullscreenElement ||
+				document.mozFullScreenElement ||
+				document.webkitFullscreenElement || false;
+		},
+
+		// 弹出练习题
+		_doOpenPractices: function (cbObj) {
+			var _this = this;
+			if (this.playingPractices.length == 0) {
+				return;
+			}
+
+			var theTimePracticies = _.filter(this.playingPractices, function (item) {
+				var alertTime = item.alertTime;
+				if (!alertTime || !item.videoId) return false;
+				if (parseInt(alertTime) == cbObj.time && item.videoId == this.playingVideo.videoId) {
+					return true;
+				}
+				return false;
+			}, this);
+			if (theTimePracticies.length == 0) return false;
+			// 试题数量
+			var number = {
+				total: 0, // 总数量
+				current: 0, // 当前
+			}
+			if (theTimePracticies.length > 1) {
+				number.total = theTimePracticies.length;
+			}
+
+			//如果全屏播放，强制退出全屏
+			var isFullscreen = this.isFullscreen();
+			if (isFullscreen) {
+				this.xgplayer.exitFullscreen()
+			}
+			if (this.xgplayer) {
+				this.xgplayer.pause();
+			}
+
+			// 弹出试题弹窗，并作答
+			var sortOpenDialog = function () {
+				var _this = this;
+				var practice = theTimePracticies.shift();
+				this.curAlertTime = practice.alertTime;
+				if (number.total) {
+					number.current = number.total - theTimePracticies.length
+				}
+				var questionView = new QuestionView({
+					model: practice,  // 试题
+					number: number,  // 试题数量
+					answersNumber: window.timilistParam.answersNumber || 0,  // 是否重复作答   0 不重复  1 可重复
+					parentView: _this, // 父视图
+					xgplayer: _this.xgplayer,  // 播放器
+				});
+
+				$("#modal").html(questionView.render().el);
+				layer.closeAll()
+
+				var area = ['700px', '500px'];
+				if (window.screen.width < 700) {
+					area = ['90%', '80%']
+				}
+
+				_this.questionPop = dialog.open({
+					content: $("#modal"),
+					title: "",
+					closeBtn: 0,
+					area: area,
+				});
+				this.listenToOnce(questionView, 'ans-yes', function (userAnswer) {
+					_this.updateUserAnswer(practice, userAnswer)
+					dialog.close(_this.questionPop);
+					_this.questionPop = "";
+					if (theTimePracticies.length == 0) {
+						if (this.xgplayer) {
+							this.xgplayer.play();
+							setTimeout(function () {
+								_this.curAlertTime = 0;
+							}, 2000)
+						}
+						return;
+					}
+					sortOpenDialog.call(this);
+				});
+			}
+
+			sortOpenDialog.call(this);
+			return true;
+		},
+
+		updateUserAnswer: function (practice, userAnswer) {
+			if (practice.isAnswerQuestion != 1 && userAnswer) {
+				practice.isAnswerQuestion = 1;
+				practice.selectedAnswer = userAnswer;
+				this.packPractiseHandler(practice)
+			}
+		},
+
+		//切换视频
+		clickVideoHandler: function (e) {
+			var _this = this;
+
+			this.commonEventType = "videoclick"; //埋点-事件类型 videoclick-课件点击
+			var target = $(e.currentTarget);
+			if (this.isClicking == 1) {
+				return;
+			}
+			var coursewareType = target.data("type");
+			var lessonId = target.attr("data-lessonId");
+			// 禁止观看指定课件
+			if (lessonId == "877393689513025549" || lessonId == "877311133348364301" || lessonId == "877393596456153116" || lessonId == "877310409684963356" || lessonId == "811076432474628109" || lessonId == "811072911994822669" || lessonId == "608559250802491398" || lessonId == "726696930082488333" || lessonId == "726674720251535382") {
+				dialog.msg("课件更新中，暂时无法播放，更新时间敬请关注。更新期间不影响已学学时。");
+				return false;
+			}
+			var id = target.attr("data-id");
+
+			//课件点击切换时发送埋点事件(视频走播放时埋点，pdf文件点击埋点)
+			if (coursewareType == 1) {
+				let sensorsParams = this.getSensorsParams("videoclick", "start", id);
+				SensorsDataUtils.trackSensors(sensorsParams);
+			}
+
+			// 处理需要跳转外联的需求
+			var jumpUrl = ''
+			var courseLinkData = window.app_servers.courseLinkServer;// 获取需要外联跳转的课件数据
+
+			for (var i = 0; i < courseLinkData.length; i++) {
+				if (lessonId == courseLinkData[i].id) {
+					jumpUrl = courseLinkData[i].linkTxt;
+				}
+			}
+
+			if (jumpUrl) {
+				var linkDialog = dialog.open({
+					title: "提示",
+					content: "<div class='loginOut-tip'>您即将离开本网站</div>",
+					area: ["480px", "260px"],
+					btn: ['确定'],
+					yes: function () {
+						dialog.close(linkDialog);
+						window.open(jumpUrl);
+					}
+				});
+			} else {
+				this.doPointTimeArr = [];
+				//音频文件增加参数 ：videoType = 0 视频 1= 音频
+				if (target.hasClass('on')) {
+					return;
+				}
+				this.isClicking = 1;
+				// if(vid){
+				this.$(".video-title.on").removeClass('on');
+				target.addClass('on');
+				if (coursewareType == 1) {
+					var fileId = target.attr("data-fileId");
+					var state = target.data("state");
+					//如果全屏播放，强制退出全屏
+					var isFullscreen = this.isFullscreen();
+					if (isFullscreen) {
+						this.xgplayer.exitFullscreen()
+					}
+
+					// this.$("#video").css('align-items','flex-end');
+					this.loadDocument(fileId, state);
+					return;
+				} else {
+					this.$("#video").css('align-items', 'center');
+				}
+				var idx = 0;
+				this.videos.each(function (index, el) {
+					var theId = $(this).attr("data-id");
+					if (id == theId) {
+						idx = index;
+					}
+				});
+				this.getCoursePractise(id, function (practice) {
+					_this.initPlayer(lessonId, idx, 1, practice);
+				})
+			}
+
+		},
+
+		// 埋点-获取参数
+		getSensorsParams: function (eventType, eventAction, lessonId) {
+			let sensorsParams = {
+				event_type: eventType,            //事件类型
+				event_action: eventAction,        //事件动作，
+				project_id: window.p.projectId,   //项目id,
+				seg_id: window.p.segId,           //阶段ID
+				item_id: window.p.itemId,         //考核项ID
+				course_id: window.courseId,       //课程id,
+				course_type: "video",             //课程类型：video-点播课 open_video-开放课
+				video_id: lessonId ? lessonId : this.playingVideo.videoId,   //视频id,
+				// video_id:this.playingVideo.videoId,   //视频id,
+				// video_play_time:parseInt(this.xgplayer.currentTime),//当前视频播放到的时间 
+				create_time: new Date().getTime(),// 触发时间 
+			};
+			//答题或者打卡时添加 action_item_id
+			if (eventType == 'answer' || eventType == 'signin') {
+				sensorsParams.action_item_id = this.actionItemId;  //触发事件失误id(例如：打卡、答题)
+			}
+			return sensorsParams;
+		},
+
+		//init 视频播放器  //音频文件增加参数 ：videoType = 0 视频 1= 音频videoPlaySource-0-初始化播放1-切换播放
+		initPlayer: function (lessonId, idx, videoPlaySource, practice) {
+			var _this = this;
+			var videoObj = _.findWhere(window.initlessons, { id: lessonId });
+			if (videoObj) {
+				if (videoObj.transState != '2') {
+					//如果全屏播放，强制退出全屏
+					var isFullscreen = this.isFullscreen();
+					if (isFullscreen) {
+						this.xgplayer.exitFullscreen();
+					}
+					//转码中，强制销毁视频
+					if (this.xgplayer) {
+						this.xgplayer.forceDestroy();
+					}
+					setTimeout(function () {
+						_this.xgplayer = null;
+						_this.$("#video-Player").html("<div style='width:100%;margin-top:40%;text-align:center;font-size:15px;color:#f99933'>视频正在转码中...</div>");
+						_this.isClicking = 0;
+						return false;
+					}, 200);
+				}
+				var qualitys = this.packVideoQuality(videoObj);
+				this.playingVideo = videoObj;
+				//练习题
+				var practiseTimeArr = this.packPractiseTimes(practice);
+				// 视频进度条打点
+				var progressDotArr = this.progressDotHandler();
+				//视频打卡
+				var doClckInTimeArr = this._doClockIn();
+				//将联系题打点数组添加到打点数组
+				this.doPointTimeArr = this.doPointTimeArr.concat(practiseTimeArr).concat(doClckInTimeArr);
+				this.playingVideo['idx'] = idx;
+				var studyProgress = formatUtil.hhmmssOfVideo(this.playingVideo.studyProgress);
+				var volume = this.xgplayer ? this.xgplayer.volume : 0.5;
+				var defineVideoUrl = videoObj['urls'] ? videoObj['urls'][0].url + "?token=" + videoObj.token : "";
+				var videos_count = this.videos.length;
+				//最后一个视频切换
+				if (idx + 1 == videos_count) {
+					var ignorArr = ["keyboard"];
+				} else {
+					var ignorArr = ["keyboard", "replay"];
+				}
+				//视频开始播放时间
+				var lastPlayTime = this.playingVideo.progress < 1 ? this.playingVideo.studyProgress : 0;
+				var options = {
+					id: "video-Player",
+					url: defineVideoUrl,
+					// width: "100%",
+					// height: "100%",
+					fluid: true,
+					volume: volume,
+					autoplay: true,
+					// 设置播放器视频起播时间
+					lastPlayTime: lastPlayTime, //视频起播时间（单位：秒）
+					lastPlayTimeHideDelay: 15, // 提示文字展示时长（单位：秒）
+					definitionActive: 'click',
+					closeVideoClick: false,
+					playbackRate: [0.75, 1, 1.25, 1.5, 2],
+					defaultPlaybackRate: 1,
+					//allowSeekPlayed: window.timilistParam.isFastForward == 1 && this.playingVideo.progress <  1?true:false,
+					videoBackground: {
+						isCustom: this.playingVideo.videoType == 1 ? true : false,
+						// background: 'url("<%=ctx%>/images/img-110-2bf69218a3.jpg"); center center/20% no-repeat, #000'
+					},
+					poster: videoObj['urls'] ? videoObj['urls'][0].imageUrl : "",
+					lastPlayTimeTips: "已学习到<span class='xgplayer-lasttime'>" + studyProgress + "</span>",
+					ignores: ignorArr,
+					//计时功能
+					countTime: {
+						interval: 60,
+						cb: function (cbObj) {
+							_this.countTimeBack(cbObj) // 形参state，播放结束值为 end
+						}
+					},
+					//视频打点功能
+					dotList: this.doPointTimeArr,
+					onTimeUpdate: function () {
+					},
+					progressDot: progressDotArr   // 进度条特殊点标记
+				};
+
+				// isFastForward  0 可以快进  1 首次学习不允许快进
+				// progress  1 已学完
+				if (window.timilistParam.isFastForward == 1 && this.playingVideo.progress != 1) {
+					var dragMaxTime = 0;
+					if (this.playingVideo.studyProgress && (this.playingVideo.studyProgress < this.playingVideo.duration)) {
+						dragMaxTime = this.playingVideo.studyProgress;
+					} else {
+						dragMaxTime = 1;
+					}
+					options.dragMaxTime = dragMaxTime;
+				}
+
+				// 有练习题，且在考核里配置了“未完成课中练习，已学时长不计入学时”，则播放视频时弹窗提示
+				if (window.timilistParam.questionConfig === 0 && this.playingPractices && this.playingPractices.length) {
+					options.autoplay = false;
+				}
+
+				// 如果这个视频有未答的试题，且视频播放进度大于弹题的时间点，则视频从此试题弹出点前4秒开发播放
+				if (this.playingPractices && this.playingPractices.length) {
+					for (var k = 0, kLen = this.playingPractices.length; k < kLen; k++) {
+						if (this.playingPractices[k].isAnswerQuestion != 1 && this.playingVideo.studyProgress > Number(this.playingPractices[k].alertTime)) {
+							options.lastPlayTime = this.playingPractices[k].alertTime - 4;
+							break;
+						}
+					}
+				}
+
+				// this.$("#video-Player").css("overflow", "hidden");
+
+				// 切换视频时，如果有试题弹窗打开着，则关闭该弹窗；
+				if (_this.questionPop) {
+					dialog.close(_this.questionPop);
+					_this.questionPop = "";
+				}
+
+				var tipsTxt = "";
+				if (window.timilistParam.questionConfig === 0 && _this.playingPractices && _this.playingPractices.length) {
+					tipsTxt = "本视频学习含有测试练习，请学习视频并完成测试后，才可获得相应学时。";
+					// 是否答完所有的试题  true 已完成  false 没有完成
+					var isComplete = true;
+					for (var n = 0, nLen = practice.length; n < nLen; n++) {
+						if (practice[n].isAnswerQuestion != 1) {
+							isComplete = false;
+							break
+						}
+					}
+					if (this.playingVideo.studyProgress > 0 && !isComplete) {
+						tipsTxt = "本视频学习含有测试练习，请学习视频并完成测试后，才可获得相应学时。<span class='question-no-complete-tips'>本视频您还未答题。</span>";
+					}
+				}
+
+				if (videoPlaySource == 0 || !this.xgplayer) {
+					this.$("#video-Player").html("");
+					this.xgplayer = grtPlayer(options);
+					this.isClicking = 0;
+					if (qualitys && qualitys.length > 1) {
+						this.xgplayer.emit('resourceReady', qualitys);
+					}
+					this.registEventPlayer();
+
+					if (window.timilistParam.questionConfig === 0 && _this.playingPractices && _this.playingPractices.length) {
+						dialog.alert(tipsTxt)
+					}
+				} else {
+					if (this.xgplayer && this.xgplayer.switchVideo) {
+
+						this.xgplayer.switchVideo(options, function (player) {
+							_this.xgplayer = player;
+							_this.isClicking = 0;
+							// _this.$("#video-Player").css("float", "left");
+							if (qualitys && qualitys.length > 1) {
+								_this.xgplayer.emit('resourceReady', qualitys);
+							}
+							_this.registEventPlayer();
+							if (window.timilistParam.questionConfig === 0 && _this.playingPractices && _this.playingPractices.length) {
+								dialog.alert(tipsTxt)
+							}
+						});
+					}
+				}
+			}
+		},
+		//注册播放器事件
+		registEventPlayer: function () {
+			var _this = this;
+
+			// 埋点
+			this.commonEventType = "videoclick"; //事件类型 ：videoclick-播放
+			//开始播放视频时发送埋点事件
+			let sensorsParams = this.getSensorsParams("videoclick", "start");
+			SensorsDataUtils.trackSensors(sensorsParams);
+
+			this.xgplayer.once('play', function () {
+				_this.recordCourseHitNum();
+			})
+
+		},
+		//计时回调
+		countTimeBack: function (cbObj, forceFinish) {
+			// console.log(cbObj, "222222");
+			var playProgress = 0;
+			if (cbObj) {
+				playProgress = cbObj.time ? cbObj.time : 0;
+			}
+			if (this.isClockDialog == 0) {
+				if (forceFinish) {
+					this._doSyncDuration.call(this, cbObj.end, playProgress, forceFinish);
+					return
+				}
+				this._doSyncDuration.call(this, cbObj.end, playProgress);
+			}
+		},
+		/**
+		 * 同步进度至服务器
+		 * @return {[type]} [description]
+		 */
+		_doSyncDuration: function (finish, playProgress, forceFinish) {
+			var _this = this;
+			var chapterId = this.playingVideo.chapterId;
+			var videoId = this.playingVideo.videoId;
+			var configParams = window.timilistParam.clockInConfig || {};
+			$.ajax({
+				url: "/services/member/study/progress",
+				dataType: "json",
+				type: "post",
+				_removeLoading: true,
+				async: false,
+				headers: {
+					"u-platformId": window.platformInfo.id
+				},
+				data: {
+					courseId: window.courseId,
+					itemId: window.p.itemId,
+					videoId: videoId,
+					playProgress: playProgress,
+					segId: window.p.segId,
+					isFinish: finish || forceFinish,
+					type: window.p.type,
+					tjzj: 1,
+					clockInDot: playProgress,//后台要求此参数为视频播放的位置
+					sourceId: window.p.projectId,
+					chapterId: chapterId,
+					clockInRule: configParams.clockInRule,
+					timeLimit: window.timilistParam.timeLimit || -1,
+					originP: window.p.originP == 1 ? 2 : 1,  // 硬编码，等待修改
+				},
+				success: function (res) {
+					if (res.success) {
+						var resInfo = res.data;
+						_this.updateProgressRender.call(_this, res.data, videoId);
+						if (resInfo.progress && _this.playingVideo) {
+							_this.playingVideo.progress = resInfo.progress;
+						}
+						if (resInfo.videoProgress && _this.playingVideo) {
+							_this.playingVideo.videoProgress = resInfo.videoProgress;
+						}
+
+						if (resInfo && resInfo.id) {
+							if (_this.xgplayer) {
+								_this.xgplayer.pause();
+							}
+							//清楚定时器
+							clearInterval(_this.timer);
+							//弹出自动打卡弹窗，视频暂停
+							resInfo.clockInType = resInfo.clockinType;
+							// resInfo.thirdCourse = 0;//0-不是爱课程1-爱课程
+							resInfo.clockIn = 1;//0-随堂打卡1-随堂抽查
+							_this.clockInHandler.call(_this, resInfo, videoId, finish);
+						} else if (!resInfo.id && resInfo.validProgress == 1 && window.timilistParam.timeLimit > 0 && _this.timeLimitClose == 0) {
+							//validProgress=1限制了学习时长弹出提示框
+							_this.timeLimitClose = 1;
+							_this.timeLimitHandler.call(_this, finish);
+							return false;
+						} else {
+							if (finish) {
+								var TDialog = dialog.open({
+									title: "温馨提示",
+									// content: "<div class='loginOut-tip'>您已学完本资源内容，成功获得相应学时，请继续学习。</div>",
+									content: TipsHtml,
+									area: ["480px", "260px"],
+									btn: ['确定'],
+									yes: function () {
+										dialog.close(TDialog);
+										_this.autoClickNext();
+									}
+								});
+								// _this.autoClickNext();
+							}
+						}
+					}
+				},
+				error: function (xhr) {
+					var resultCode = xhr.responseJSON.resultCode;
+					var message = "跟新进度失败";
+					if (resultCode == 3003) {
+						_this.manageTagHandler();
+					}
+				}
+			});
+		},
+		//多页签打开需求处理
+		manageTagHandler: function () {
+			//如果全屏播放，强制退出全屏
+			var isFullscreen = this.isFullscreen();
+			if (isFullscreen) {
+				this.xgplayer.exitFullscreen()
+			}
+			if (this.xgplayer) {
+				this.xgplayer.pause();
+			}
+			var d = dialog.open({
+				content: stopHtml,
+				title: "",
+				closeBtn: 0,
+				btn: ['关闭页面', '刷新页面，继续学习'],
+				area: ["550px", "350px"],
+				yes: function () {
+					dialog.close(d);
+					// window.opener = null;
+					// window.open("", "_self");
+					// window.close();
+					if (navigator.userAgent.indexOf("Firefox") != -1 || navigator.userAgent.indexOf("Chrome") != -1) {
+						window.location.href = "about:blank";
+						window.close();
+					} else {
+						window.opener = null;
+						window.open("", "_self");
+						window.close();
+					}
+				},
+				cancel: function () {
+					location.reload();
+				}
+			});
+		},
+		//自动切换到下一个视频
+		autoClickNext: function () {
+			var videos_count = this.videos.length;
+			var curIndex = this.playingVideo['idx'];
+			if (videos_count == 0 || curIndex == (videos_count - 1)) {
+				return;
+			}
+			var next = this.videos.eq(curIndex + 1);
+			next.trigger('click');
+		},
+		//跟新右侧进度
+		updateProgressRender: function (data, vid) {
+			var progress = parseFloat(data.progress);
+			progressPercent = parseInt(progress * 100);
+			if (progress != -1) {
+				var id = vid;
+				this.$(".catalog").find(".video-title[data-id='" + id + "']").attr('data-progress', progress);
+				this.$(".catalog").find(".video-title[data-id='" + id + "']").attr('data-studyProgress', data.videoProgress);
+				this.$(".catalog").find(".video-title[data-id='" + id + "']").children('.four').text(progressPercent + "%");
+				this.playingVideo.studyProgress = data.videoProgress;
+			}
+		},
+		//限制学时时长
+		timeLimitHandler: function (finish) {
+			var _this = this;
+			//如果全屏播放，强制退出全屏
+			var isFullscreen = this.isFullscreen();
+			if (isFullscreen) {
+				this.xgplayer.exitFullscreen();
+			}
+			if (this.xgplayer) {
+				this.xgplayer.pause();
+			}
+			var btnTxt = ['关闭页面']
+			if (window.timilistParam.timeLimitType == 1) {
+				btnTxt = ['关闭页面', '继续学习，今日不再提示']
+			}
+			require(["js/app/views/video/dialog/timeLimit-45d69d2c81.js"], function (TimeLimit) {
+				var timeLimit = new TimeLimit();
+				$("#modal").html(timeLimit.render().el);
+				var d = dialog.open({
+					title: false,
+					closeBtn: 0,
+					content: $("#modal"),
+					area: ["550px", "350px"],
+					btn: btnTxt,
+					yes: function () {
+						dialog.close(d);
+						if (navigator.userAgent.indexOf("Firefox") != -1 || navigator.userAgent.indexOf("Chrome") != -1) {
+							window.location.href = "about:blank";
+							window.close();
+						} else {
+							window.opener = null;
+							window.open("", "_self");
+							window.close();
+						}
+					},
+					cancel: function () {
+						dialog.close(d);
+						if (finish) {
+							_this.autoClickNext();
+						} else {
+							_this.xgplayer.play();
+						}
+					}
+				});
+			})
+		},
+
+		//加载文档课件
+		loadDocument: function (fileId, state) {
+			var _this = this;
+			this.pluginType = 1;
+			this.trigger('Document_loaded');
+			//加载文档判断如果有视频播放器，先销毁
+			if (this.xgplayer) {
+				this.xgplayer.forceDestroy();
+			}
+			setTimeout(function () {
+				_this.xgplayer = null;
+				if (state != 2) {
+					_this.$("#video-Player").html("<div style='width:100%;margin-top:30%;text-align:center;font-size:18px;color:#f99933'>文档正在转码中...</div>");
+					_this.isClicking = 0;
+					return;
+				}
+
+				// PDFObject.embed(window._ctx+"/tmpfile/pdffile?fid=" + fileId, "#video-Player", {
+				//   forcePDFJS: true,
+				//   PDFJS_URL: window._ctx+"/lib/pdfjs/web/viewer.html"
+				// });
+
+				var fileUrl = window.app_servers.fileServer.host + "/";
+				$.ajax(
+					{
+						url: "/supports/preview/v1/pdf/" + fileId,
+						dataType: "json",
+						_removeLoading: true,
+						type: "get",
+						async: true,
+						success: function (res) {
+							if (res.success) {
+								var path = res.data["pdfUrl"];
+								fileUrl = fileUrl + path;
+								_this.$("#video-Player").html('<iframe style="width:100%; min-height:1031px; margin-top:-56.3%;" src="' + fileUrl + '"></iframe>');
+
+								_this.$("#video-Player").css("height", "100%");
+							}
+						},
+						error: function (xhr) {
+							// if (xhr && xhr.responseJSON) {
+							// var message = "文档读取失败";
+							// message = xhr.responseJSON.message || message;
+							// console.error(message);
+							_this.$("#video-Player").html("<div style='width:100%;margin-top:30%;text-align:center;font-size:18px;color:#f99933'>文档读取失败</div>");
+							// return;
+						}
+					}
+				);
+
+				_this.isClicking = 0;
+				// this.$("#video-Player").parent().css("height","100%");
+
+				// this.$("#video-Player").css('position','inherit');
+			}, 200);
+		},
+
+		/**
+		* 弹出打卡点组装
+		*/
+		_doClockIn: function () {
+			var _this = this;
+			var clockInTimeArr = [];
+			if (window.timilistParam.clockInConfig) {
+				var clockInTime = window.timilistParam.video[this.playingVideo.videoId];
+				if (!clockInTime || clockInTime.length == 0) {
+					return clockInTimeArr;
+				}
+				_.each(clockInTime, function (i) {
+					clockInTimeArr.push({
+						time: i, cb: function (cbObj) {
+							_this.doClocKInTimeCb.call(_this, cbObj);
+						}
+					});
+				})
+			}
+			return clockInTimeArr;
+		},
+		//打卡时间到了回调
+		doClocKInTimeCb: function (cbObj) {
+			var position = this.xgplayer.currentTime;
+			var docTime = 0;
+			if (cbObj) {
+				docTime = cbObj.time ? cbObj.time : 0;
+			}
+			this.packClockData(docTime, position);
+		},
+		//视频打卡 组装打卡数据
+		packClockData: function (docTime, position) {
+			var _this = this;
+			var configParams = window.timilistParam.clockInConfig;
+			var clockInType = configParams.clockInType;
+			var countDown = configParams.countDown;
+			this.timeOutClockInAjax(docTime, -1, clockInType, function (resp) {
+				var resInfo = resp;
+				if (!resInfo || !resInfo.id) {
+					return false;
+				}
+				if (_this.xgplayer) {
+					_this.xgplayer.pause();
+				}
+				resInfo.clockInType = configParams.clockInType;
+				resInfo.countDown = countDown;
+				resInfo.tjzjType = _this.tjzjType;
+				resInfo.chapterId = _this.playingVideo.chapterId;
+				resInfo.clockIn = 0;//0-随堂打卡1-随堂抽查
+				//天津职教需要传的参数。课程视频播放的位置
+				resInfo.videoStudyTime = position;
+				_this.clockInHandler(resInfo, _this.playingVideo.videoId);
+			});
+		},
+		//打卡点到了之后请求后台接口
+		timeOutClockInAjax: function (clockInDot, clockManageId, clockInType, cb) {
+			var _this = this;
+			var configParams = window.timilistParam.clockInConfig;
+			var chapterId = this.playingVideo.chapterId;
+			var countDown = configParams.countDown;
+			//天津职教项目，且天津职教接口里有过期时间
+			if (this.tjzjType == 1 && this.tjzjExpiresTime > 0) {
+				countDown = this.tjzjExpiresTime;
+			}
+			$.ajax({
+				type: 'post',
+				_removeLoading: true,
+				url: '/services/org/member/study/clockInDot',
+				data: {
+					courseId: window.courseId,
+					projectId: window.p.projectId,
+					videoId: _this.playingVideo.videoId ? _this.playingVideo.videoId : -1,
+					clockInDot: clockInDot ? clockInDot : 0,
+					thirdCourse: 0,
+					tjzj: _this.tjzjType == 1 ? 0 : 1,
+					clockInRule: configParams.clockInRule,
+					clockInType: clockInType,
+					clockManageId: clockManageId,
+					chapterId: _this.tjzjType == 1 ? chapterId : "",
+					countDown: countDown,
+					bizCode: _this.tjzjBizCode ? _this.tjzjBizCode : ""
+				},
+				success: function (resp) {
+					if (resp.success) {
+						cb(resp.data);
+					}
+				},
+				error: function (xhr, textStatus, errorThrown) {
+					var status = xhr.status;
+					var message = xhr.responseJSON.message || "操作失败";
+					dialog.msg(message);
+				}
+			});
+		},
+		//弹出课程打卡
+		clockInHandler: function (resInfo, vid, finish) {
+			var _this = this;
+			resInfo.thirdCourse = 0;//0-不是爱课程1-爱课程
+			//如果全屏播放，强制退出全屏
+			var isFullscreen = this.isFullscreen();
+			if (isFullscreen) {
+				this.xgplayer.exitFullscreen()
+			}
+			this.isClockDialog = 1;
+			// this.xgplayer.config.disableProgress = true;
+			require(["js/app/views/video/dialog/clockIn-89b4ffb906.js"], function (ClockInView) {
+				var clockInView = new ClockInView();
+				clockInView.resInfo = resInfo;
+				clockInView.handlerType = 0 //layer 弹窗操作类型0-确定打卡1-继续学习
+				clockInView.vid = vid,
+					clockInView.finish = finish
+				$("#modal").html(clockInView.render().el);
+				_this.clockdialog = dialog.open({
+					title: resInfo.clockIn == 0 ? "随堂打卡" : "随堂抽查",
+					closeBtn: 0,
+					content: $("#modal"),
+					area: ['650px', '500px'], //宽高
+					// btn:['确定打卡'],
+					zIndex: 99999,
+				});
+			});
+		},
+		//点击继续学习继续学习
+		cloickContinuePlay: function (finish) {
+			if (finish) {
+				this.autoClickNext();
+			} else if (this.xgplayer) {
+				this.xgplayer.play();
+			}
+		},
+		//课程点击量，包括浏览量、播放量接口=》后台要求进入详情页面调用接口
+		recordCourseHitNum: function () {
+			//source-自建1-选购
+			var schemaType = window.detailInfo.source == 0 ? 1 : 3;
+			$.ajax({
+				url: "/services/course/public/course/course_hits/" + window.courseId,
+				dataType: "json",
+				_removeLoading: true,
+				type: "post",
+				async: true,
+				data: {
+					visitType: 1,//visitType 1-播放2-查看
+					schemaType: schemaType //schemaType 1-源课程2-开放课3-推送过来的课
+				},
+				success: function (res) {
+					if (res.success) {
+					}
+				},
+				error: function (xhr) {
+					if (xhr && xhr.responseJSON) {
+						var message = "请求失败";
+						message = xhr.responseJSON.message || message;
+						console.error(message);
+					}
+				}
+			});
+		},
+		render: function () {
+			var tabContent = this.$("#video-tabContent");
+			$(".g-content-wrapper").css({ 'min-height': $(window).height() - 49 })
+			if (document.body.clientWidth < 600) {
+				this.$("#video").css({ "min-height": $(window).height() / 2 + "px" })
+			} else {
+				this.$("#video").css({ "min-height": $(window).height() - (48 + 42 + 20) + "px" })
+			}
+
+			$(".video-tab-bd .catalog").css({ height: $(window).height() - (48 + 42 + 50 + 20) + "px" });
+			$(".video-tab-bd .note").css({ height: $(window).height() - (48 + 42 + 50 + 20) + "px" });
+
+			$(window).resize(function () {
+				$(".g-content-wrapper").css({ 'min-height': $(window).height() - 49 })
+				if (document.body.clientWidth < 600) {
+					$(".video-wrapper .video").css({ 'min-height': $(window).height() / 2 + "px" });
+				} else {
+					$(".video-wrapper .video").css({ 'min-height': $(window).height() - 70 + 20 + "px" });
+				}
+
+				$(".video-tab-bd .catalog").css({ height: $(window).height() - 121 + 20 + "px" });
+				$(".video-tab-bd .note").css({ height: $(window).height() - 121 + 20 + "px" });
+			});
+
+			// 埋点-初始化
+			SensorsDataUtils.initSensors({ uid: window.userInfo.id, orgId: window.p.orgId, platformId: window.p.originP == 1 ? "400" : "300" });
+
+			$(document).on("keyup", function () {
+				if (event.keyCode == 32) {
+					return false;
+				}
+			});
+			return this;
+		},
+	});
+	return new view;
+})
