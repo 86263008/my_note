@@ -1,0 +1,1312 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
+<title>人工智能引论 吴飞.5.note - 我的笔记本</title>
+<link href="../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../assets/stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#5">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="我的笔记本" class="md-header__button md-logo" data-md-component="logo" href="../../index.html" title="我的笔记本">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            我的笔记本
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              人工智能引论  吴飞.5.note
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="浅色" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="浅色">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+</label>
+<input aria-label="深色" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="深色">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../index.html">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../tool/index.html">
+        
+  
+  
+    
+  
+  生产力工具
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../reading/index.html">
+        
+  
+  
+    
+  
+  阅读
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="index.html">
+          
+  
+  
+  learn-ai
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="我的笔记本" class="md-nav__button md-logo" data-md-component="logo" href="../../index.html" title="我的笔记本">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+    我的笔记本
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../index.html">
+<span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tool/index.html">
+<span class="md-ellipsis">
+    
+  
+    生产力工具
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../reading/index.html">
+<span class="md-ellipsis">
+    
+  
+    阅读
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    learn-ai
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    learn-ai
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="index.html">
+<span class="md-ellipsis">
+    
+  
+    人工智能引论-浙大-吴飞
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    dive into deep learning
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    dive into deep learning
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dive into deep learning/1. 引言.md">
+<span class="md-ellipsis">
+    
+  
+    1. 引言
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label=" " class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5">
+<span class="md-ellipsis">
+      
+        第5章 神经网络与深度学习
+      
+    </span>
+</a>
+<nav aria-label="第5章 神经网络与深度学习" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#51">
+<span class="md-ellipsis">
+      
+        5.1人工神经网络概述
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      
+        一、人工神经网络的本质与关键问题
+      
+    </span>
+</a>
+<nav aria-label="一、人工神经网络的本质与关键问题" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      
+        核心本质
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      
+        人工神经网络的关键问题
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      
+        二、人工神经网络各发展阶段
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      
+        主要概念
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      
+        一、基本单元
+      
+    </span>
+</a>
+<nav aria-label="一、基本单元" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-artificial-neuron">
+<span class="md-ellipsis">
+      
+        1. 人工神经元（Artificial Neuron）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-weight">
+<span class="md-ellipsis">
+      
+        2. 权重（Weight）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-bias">
+<span class="md-ellipsis">
+      
+        3. 偏置（Bias）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-activation-function">
+<span class="md-ellipsis">
+      
+        4. 激活函数（Activation Function）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#perceptron">
+<span class="md-ellipsis">
+      
+        感知机（Perceptron）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feedforward-neural-network-fnn">
+<span class="md-ellipsis">
+      
+        前馈神经网络（Feedforward Neural Network, FNN）
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      
+        二、网络结构
+      
+    </span>
+</a>
+<nav aria-label="二、网络结构" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-layer">
+<span class="md-ellipsis">
+      
+        5. 层（Layer）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6-depth">
+<span class="md-ellipsis">
+      
+        6. 深度（Depth）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#7-width">
+<span class="md-ellipsis">
+      
+        7. 宽度（Width）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#8-fully-connected-layer-dense-layer">
+<span class="md-ellipsis">
+      
+        8. 全连接层（Fully Connected Layer, Dense Layer）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#9-convolutional-layer">
+<span class="md-ellipsis">
+      
+        9. 卷积层（Convolutional Layer）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#10-pooling-layer">
+<span class="md-ellipsis">
+      
+        10. 池化层（Pooling Layer）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11-recurrent-layer">
+<span class="md-ellipsis">
+      
+        11. 循环层（Recurrent Layer）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#12-attention-mechanism">
+<span class="md-ellipsis">
+      
+        12. 注意力机制（Attention Mechanism）
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      
+        三、模型与学习
+      
+    </span>
+</a>
+<nav aria-label="三、模型与学习" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13-neural-network">
+<span class="md-ellipsis">
+      
+        13. 神经网络（Neural Network）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#14-deep-learning">
+<span class="md-ellipsis">
+      
+        14. 深度学习（Deep Learning）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#15-forward-propagation">
+<span class="md-ellipsis">
+      
+        15. 前向传播（Forward Propagation）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#16-loss-function">
+<span class="md-ellipsis">
+      
+        16. 损失函数（Loss Function）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#17-optimizer">
+<span class="md-ellipsis">
+      
+        17. 优化器（Optimizer）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#18-backpropagation">
+<span class="md-ellipsis">
+      
+        18. 反向传播（Backpropagation）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#19-gradient-descent">
+<span class="md-ellipsis">
+      
+        19. 梯度下降（Gradient Descent）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#20-learning-rate">
+<span class="md-ellipsis">
+      
+        20. 学习率（Learning Rate）
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      
+        四、正则化与泛化
+      
+    </span>
+</a>
+<nav aria-label="四、正则化与泛化" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#21-overfitting">
+<span class="md-ellipsis">
+      
+        21. 过拟合（Overfitting）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#22-regularization">
+<span class="md-ellipsis">
+      
+        22. 正则化（Regularization）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#23-dropout">
+<span class="md-ellipsis">
+      
+        23. Dropout
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#24-batch-normalization">
+<span class="md-ellipsis">
+      
+        24. 批量归一化（Batch Normalization）
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      
+        五、数据与训练过程
+      
+    </span>
+</a>
+<nav aria-label="五、数据与训练过程" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#25-training-set">
+<span class="md-ellipsis">
+      
+        25. 训练集（Training Set）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#26-validation-set">
+<span class="md-ellipsis">
+      
+        26. 验证集（Validation Set）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#27-test-set">
+<span class="md-ellipsis">
+      
+        27. 测试集（Test Set）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#28-batch">
+<span class="md-ellipsis">
+      
+        28. 批次（Batch）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#29-epoch">
+<span class="md-ellipsis">
+      
+        29. 轮次（Epoch）
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_11">
+<span class="md-ellipsis">
+      
+        六、常见网络类型（按任务/结构）
+      
+    </span>
+</a>
+<nav aria-label="六、常见网络类型（按任务/结构）" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#30-multilayer-perceptron-mlp">
+<span class="md-ellipsis">
+      
+        30. 多层感知机（Multilayer Perceptron, MLP）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#31-convolutional-neural-network-cnn">
+<span class="md-ellipsis">
+      
+        31. 卷积神经网络（Convolutional Neural Network, CNN）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#32-recurrent-neural-network-rnn">
+<span class="md-ellipsis">
+      
+        32. 循环神经网络（Recurrent Neural Network, RNN）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#33-lstm-gru">
+<span class="md-ellipsis">
+      
+        33. LSTM / GRU
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#34-transformer">
+<span class="md-ellipsis">
+      
+        34. Transformer
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>人工智能引论  吴飞.5.note</h1>
+<h2 id="5">第5章 神经网络与深度学习</h2>
+<h3 id="51">5.1人工神经网络概述</h3>
+<h3 id="_1">一、人工神经网络的本质与关键问题</h3>
+<h4 id="_2">核心本质</h4>
+<p>通过多层非线性参数化函数族 <span class="arithmatex">\(\{f_\theta\}\)</span> (人工神经网络)逼近未知输入-输出映射 <span class="arithmatex">\(f^*: \mathcal{X} \to \mathcal{Y}\)</span>（表示），并利用数据驱动的优化方法求解参数 <span class="arithmatex">\(\theta\)</span>（求解），最终实现对复杂任务的建模与预测。</p>
+<blockquote>
+<p>人工智能本质上是“解方程”，即找到输入和输出之间的映射关系。</p>
+<p>映射关系本质上是数学运算的组合，即输入通过一系列的运算（如线性变换、非线性激活）最终得到输出。</p>
+<p>不同人工智能方式本质上是使用不同模型提供不同类型的运算能力，进而表述不同的映射关系。</p>
+</blockquote>
+<h4 id="_3">人工神经网络的关键问题</h4>
+<ol>
+<li>
+<p>如何设计更具表达能力的函数族，即神经网络（表示），以适配不同复杂度的输入-输出映射？</p>
+</li>
+<li>
+<p>如何从有限数据中高效求解参数 <span class="arithmatex">\(\theta\)</span>，即数据驱动（求解），确保模型逼近真实映射 <span class="arithmatex">\(f^*\)</span>？</p>
+<blockquote>
+<p>解析方法类似于正向方法，从输入层开始，逐层总结出规律，最终得到输出层的结果。优势是用可解释的规律应用推理规则得到映射关系。</p>
+<p>数值方法通过迭代优化参数，逐步逼近最优解。优势是可从数据中直接学习到映射关系，无需人工设计。</p>
+</blockquote>
+</li>
+<li>
+<p>如何提升参数求解过程的稳定性（如避免梯度异常）与效率（如降低计算成本）（收敛）？</p>
+</li>
+<li>
+<p>如何平衡模型性能与可解释性，让“求解结果”兼具准确性与可理解性（可解释）？</p>
+</li>
+</ol>
+<h3 id="_4">二、人工神经网络各发展阶段</h3>
+<p><strong>人工神经网络各发展阶段总结表</strong></p>
+<table>
+<thead>
+<tr>
+<th>发展阶段</th>
+<th>阶段本质</th>
+<th>关键理论/方法</th>
+<th>主要贡献</th>
+<th>局限</th>
+<th>解方程类比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>早期神经元模型（1940s–1950s）</td>
+<td>用简单数学模型（如MCP模型）模拟生物神经元，将输入-输出关系转化为基础代数方程。</td>
+<td>1. <strong>MCP神经元模型</strong>（1943年，麦卡洛克与皮茨）：通过线性加权+符号函数实现二值逻辑运算；<br/>2. <strong>赫布理论</strong>（1949年，赫布）：提出“神经元突触强度随共激活频率增强”，为学习机制提供神经心理学基础。</td>
+<td>1. 首次建立神经元的数学描述框架，证明简单单元可实现基本逻辑运算（与、或、非）；<br/>2. 为后续“联结主义AI”与学习规则设计提供理论雏形。</td>
+<td>1. 仅支持二值输入，函数表达能力极有限；<br/>2. 参数需人工设定，无数据驱动的自动学习机制；<br/>3. 缺乏系统性的网络结构设计思路。</td>
+<td>如同用“固定系数的线性阈值方程”描述关系，方程参数需手动计算，无法根据观测数据调整，仅能处理最基础的线性逻辑关系。</td>
+</tr>
+<tr>
+<td>感知机阶段（1950s–1960s）</td>
+<td>构建可学习的线性模型，通过训练数据迭代更新参数，实现线性方程的自动求解。</td>
+<td>1. <strong>感知机模型</strong>（1958年，罗森布拉特）：含输入层与输出层的两层结构，支持非二值输入；<br/>2. <strong>感知机学习规则</strong>：通过“误差修正”迭代更新权重，最小化预测误差；<br/>3. <strong>方向选择性细胞理论</strong>（1950s，胡贝尔与维泽尔）：揭示视觉系统分层处理机制，为网络结构分层设计提供启发。</td>
+<td>1. 提出首个可学习的神经网络模型，建立“数据→参数更新”的系统性规则；<br/>2. 证明线性可分问题下参数求解的收敛性，推动神经网络从“手工设计”向“数据学习”转型；<br/>3. 为后续分层网络结构提供生物学参考。</td>
+<td>1. 仅能求解线性方程组，无法处理非线性关系（如异或问题）；<br/>2. 模型结构单一（单层），表达能力受限；<br/>3. 1969年明斯基《感知机》一书指出其局限性，导致研究陷入“AI寒冬”。</td>
+<td>相当于求解“一元/多元线性方程组 <span class="arithmatex">\(w^\top x + b = y\)</span>”，能通过迭代找到最优解，但无法处理方程中含非线性项（如 <span class="arithmatex">\(x^2\)</span>、<span class="arithmatex">\(xy\)</span>）的情况，面对非线性问题完全失效。</td>
+</tr>
+<tr>
+<td>多层感知机与反向传播（1970s–1980s）</td>
+<td>引入隐藏层与非线性激活函数扩展函数族，通过反向传播算法求解高维非线性方程组。</td>
+<td>1. <strong>多层感知机（MLP）结构</strong>：含输入层、隐藏层、输出层，隐藏层引入Sigmoid等非线性激活函数；<br/>2. <strong>误差反向传播算法</strong>（1974年Werbos提出，1986年Rumelhart等完善）：通过链式法则反向计算各层梯度，实现参数迭代优化；<br/>3. <strong>非线性激活函数理论</strong>：证明非线性激活函数是突破线性表达局限的核心。</td>
+<td>1. 突破线性模型局限，实现对复杂非线性映射的逼近，可处理异或等此前无法解决的问题；<br/>2. 提出反向传播算法，解决多层网络的梯度计算难题，为参数求解提供可行路径；<br/>3. 推动神经网络从“单层线性”向“多层非线性”转型，奠定现代网络的结构基础。</td>
+<td>1. 深层网络易出现梯度消失/爆炸（如Sigmoid函数梯度随层数衰减），导致方程组求解不稳定；<br/>2. 训练速度慢，计算资源需求高；<br/>3. 对参数初始化敏感，易陷入局部最优；<br/>4. 理论基础薄弱，对泛化能力的数学解释不足。</td>
+<td>如同求解“含多层嵌套非线性项的方程组（如 <span class="arithmatex">\(f(\theta,x) = \sigma(w_2\sigma(w_1x+b_1)+b_2) = y\)</span>）”，虽能处理非线性问题，但求解过程中梯度易衰减或激增，导致无法收敛到全局最优解，计算效率低。</td>
+</tr>
+<tr>
+<td>深度学习阶段（2006年至今）</td>
+<td>依托大规模数据、GPU算力与专用网络结构，高效求解超大规模非线性方程组。</td>
+<td>1. <strong>深度信念网络（DBN）与预训练技术</strong>（2006年，欣顿）：通过“逐层预训练+微调”缓解梯度问题，提出“深度学习”概念；<br/>2. <strong>专用网络结构</strong>：CNN（LeNet、AlexNet）、RNN（LSTM、GRU）、Transformer（自注意力机制）等，适配不同任务；<br/>3. <strong>优化技术</strong>：残差连接（解决梯度消失）、批量归一化（稳定训练）、Adam等自适应优化器（提升收敛效率）；<br/>4. <strong>正则化方法</strong>：Dropout、L1/L2正则化（缓解过拟合）。</td>
+<td>1. 解决深层网络训练稳定性问题，实现超深层模型（数十至数千层）的有效训练；<br/>2. 设计任务专用结构，在图像分类、自然语言处理、语音识别等领域突破传统方法性能上限；<br/>3. 实现“端到端学习”，无需人工设计特征，大幅降低应用门槛；<br/>4. 推动GPU算力与大规模数据集（如ImageNet）的发展，形成“数据-算力-算法”协同进步的生态。</td>
+<td>1. 模型参数规模庞大（数十亿至万亿级），求解过程计算成本极高；<br/>2. 非凸优化特性导致易收敛至局部最优，模型决策过程“黑箱化”，可解释性差；<br/>3. 对标注数据依赖强，小样本、零样本场景下表现不佳；<br/>4. 鲁棒性不足，易受对抗样本攻击，决策稳定性待提升。</td>
+<td>相当于求解“含百万级至万亿级参数的超高维非线性方程组”，虽能通过算力升级（GPU/TPU）与算法优化（残差连接、自适应优化器）得到高精度解，但难以解释解的推导逻辑，且求解需消耗大量计算资源，对数据质量与数量要求严苛。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5">主要概念</h3>
+<p>下面按“从基础到结构”的顺序，列出神经网络中最核心的概念和简明定义。</p>
+<hr/>
+<h2 id="_6">一、基本单元</h2>
+<h3 id="1-artificial-neuron">1. 人工神经元（Artificial Neuron）</h3>
+<ul>
+<li><strong>定义</strong>：神经网络的基本计算单元，对输入进行加权求和、加偏置后通过激活函数得到输出。</li>
+<li><strong>数学模型</strong>：
+  [
+  y = \sigma\left(\sum_i w_i x_i + b\right)
+  ]
+  其中 <span class="arithmatex">\(x_i\)</span> 为输入，<span class="arithmatex">\(w_i\)</span> 为权重，<span class="arithmatex">\(b\)</span> 为偏置，<span class="arithmatex">\(\sigma\)</span> 为激活函数。</li>
+</ul>
+<h3 id="2-weight">2. 权重（Weight）</h3>
+<ul>
+<li><strong>定义</strong>：连接两个神经元之间的“强度”参数，决定输入对输出的影响程度，是模型训练时主要学习的参数。</li>
+</ul>
+<h3 id="3-bias">3. 偏置（Bias）</h3>
+<ul>
+<li><strong>定义</strong>：每个神经元的一个额外可学习参数，相当于给加权和加一个“偏移量”，用来调节神经元的激活水平。</li>
+</ul>
+<h3 id="4-activation-function">4. 激活函数（Activation Function）</h3>
+<ul>
+<li><strong>定义</strong>：对神经元的加权和进行非线性变换的函数，用于引入非线性，使网络可以逼近复杂函数。</li>
+<li>
+<p><strong>常见</strong>：sigmoid、tanh、ReLU、Softmax 等。</p>
+<ul>
+<li>
+<p>Sigmoid（Logistic 激活函数）
+    <strong>核心特性</strong>
+        - 输出范围严格在 <span class="arithmatex">\((0, 1)\)</span> 之间，可直接解释为概率；
+        - 函数平滑可微，早期广泛用于二分类任务的输出层；
+        - 缺点：易出现梯度消失，输出非零均值导致训练梯度偏移，计算涉及指数运算效率较低。</p>
+<p><strong>数学模型</strong></p>
+<div class="arithmatex">\[\sigma(x) = \frac{1}{1 + e^{-x}}\]</div>
+<p><strong>导数公式</strong>（梯度计算用）：
+$<span class="arithmatex">\(\sigma'(x) = \sigma(x) \cdot (1 - \sigma(x))\)</span>$</p>
+</li>
+<li>
+<p>Tanh（双曲正切函数）
+    <strong>核心特性</strong>
+        - 输出范围为 <span class="arithmatex">\((-1, 1)\)</span>，零均值特性解决了 Sigmoid 的输出偏移问题；
+        - 平滑可微，但仍存在梯度消失问题，计算成本略高；
+        - 常用于早期神经网络的隐藏层，现逐步被 ReLU 系列替代。</p>
+<p><strong>数学模型</strong>
+$<span class="arithmatex">\(\tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}\)</span>$</p>
+<p><strong>导数公式</strong>（梯度计算用）：
+$<span class="arithmatex">\(\tanh'(x) = 1 - \tanh^2(x)\)</span>$</p>
+</li>
+<li>
+<p>ReLU（修正线性单元）
+    <strong>核心特性</strong>
+        - 深度学习隐藏层的「默认选择」，计算仅需最大值操作，效率极高；
+        - 正区间梯度恒为 1，有效缓解梯度消失问题；
+        - 缺点：存在「死亡 ReLU」（负输入神经元永久失活），输出非零均值。   </p>
+<p><strong>数学模型</strong>
+$<span class="arithmatex">\(\text{ReLU}(x) = \max(0, x)\)</span>$</p>
+<p><strong>导数公式</strong>：
+$<span class="arithmatex">\(\text{ReLU}'(x) =
+\begin{cases}
+1, &amp; x &gt; 0 \\
+0, &amp; x &lt; 0 \\
+\text{未定义（通常取 0）}, &amp; x = 0
+\end{cases}\)</span>$</p>
+</li>
+<li>
+<p>Leaky ReLU
+    <strong>核心特性</strong></p>
+<ul>
+<li>ReLU 的改进版，为负区间保留微小梯度，解决「死亡 ReLU」问题；</li>
+<li><span class="arithmatex">\(\alpha\)</span> 为超参数（通常取 0.01），负区间梯度为 <span class="arithmatex">\(\alpha\)</span>，正区间梯度为 1；</li>
+<li>效果比 ReLU 更稳定，但 <span class="arithmatex">\(\alpha\)</span> 需手动调参。</li>
+</ul>
+<p><strong>数学模型</strong>
+$<span class="arithmatex">\(\text{LeakyReLU}(x) = \max(\alpha x, x) \quad (\alpha \in (0, 1))\)</span>$</p>
+<p><strong>导数公式</strong>：
+$<span class="arithmatex">\(\text{LeakyReLU}'(x) =
+\begin{cases}
+1, &amp; x &gt; 0 \\
+\alpha, &amp; x \leq 0
+\end{cases}\)</span>$</p>
+<ul>
+<li>PReLU（参数化修正线性单元）
+<strong>核心特性</strong></li>
+<li>Leaky ReLU 的进阶版，将 <span class="arithmatex">\(\alpha\)</span> 设为可学习参数，由模型自动优化；</li>
+<li>增加少量参数，在大型图像任务（如 CNN）中常能提升性能；</li>
+<li>缺点：泛化性不一定优于 ReLU，需根据任务验证。</li>
+</ul>
+<p><strong>数学模型</strong>
+$<span class="arithmatex">\(\text{PReLU}(x) = \max(\alpha x, x) \quad (\alpha \text{ 为可学习参数})\)</span>$</p>
+</li>
+<li>
+<p>ELU（指数线性单元）
+    <strong>核心特性</strong></p>
+<ul>
+<li>结合 ReLU 和 Tanh 的优点，负区间为指数曲线，输出均值接近 0；</li>
+<li>抗噪声能力强，梯度消失问题更轻微；</li>
+<li>缺点：计算涉及指数运算，速度略慢于 ReLU。</li>
+</ul>
+<p><strong>数学模型</strong>
+$<span class="arithmatex">\(\text{ELU}(x) =
+\begin{cases}
+x, &amp; x &gt; 0 \\
+\alpha (e^x - 1), &amp; x \leq 0
+\end{cases}\)</span>$</p>
+<p><strong>导数公式</strong>：
+$<span class="arithmatex">\(\text{ELU}'(x) =
+\begin{cases}
+1, &amp; x &gt; 0 \\
+\text{ELU}(x) + \alpha, &amp; x \leq 0
+\end{cases}\)</span>$</p>
+</li>
+<li>
+<p>Swish
+    <strong>核心特性</strong></p>
+<ul>
+<li>谷歌提出的非线性激活函数，平滑且非单调；</li>
+<li>具有「自门控」特性，在深层模型（如 Transformer）中性能优于 ReLU；</li>
+<li>计算成本略高于 ReLU，但效果提升显著。</li>
+</ul>
+<p><strong>数学模型</strong>
+$<span class="arithmatex">\(\text{Swish}(x) = x \cdot \sigma(x) = \frac{x}{1 + e^{-x}}\)</span>$</p>
+<p><strong>导数公式</strong>（梯度计算用）：
+$<span class="arithmatex">\(\text{Swish}'(x) = \sigma(x) + x \cdot \sigma'(x) = \frac{e^x}{(1 + e^{-x})^2}\)</span>$</p>
+</li>
+<li>
+<p>GELU（高斯误差线性单元）
+    <strong>核心特性</strong></p>
+<ul>
+<li>Transformer 架构（BERT、GPT 等）的默认激活函数；</li>
+<li>融合随机正则化思想，平滑非单调，输出均值接近 0；</li>
+<li>精确公式依赖正态分布累积函数，实际常用近似公式。</li>
+</ul>
+<p><strong>数学模型</strong>
+<strong>精确公式</strong>：
+$<span class="arithmatex">\(\text{GELU}(x) = x \cdot \Phi(x)\)</span>$
+（<span class="arithmatex">\(\Phi(x)\)</span> 为标准正态分布累积函数：<span class="arithmatex">\(\Phi(x) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^x e^{-t^2/2} dt\)</span>）</p>
+<p><strong>常用近似公式</strong>：
+$<span class="arithmatex">\(\text{GELU}(x) = 0.5x \left(1 + \tanh\left(\sqrt{\frac{2}{\pi}} \left(x + 0.044715x^3\right)\right)\right)\)</span>$</p>
+</li>
+<li>
+<p>Softmax</p>
+<p><strong>核心特性</strong>
+- 专为多分类任务设计的输出层激活函数，输出为概率分布（所有类别概率和为 1）；
+- 对数值敏感，需配合数值稳定技巧（如减输入最大值）使用；
+- 缺点：训练时易出现「概率过自信」问题。</p>
+<p><strong>数学模型</strong></p>
+<p>$<span class="arithmatex">\(\text{Softmax}(x_i) = \frac{e^{x_i}}{\sum_{j=1}^n e^{x_j}}\)</span>$
+（<span class="arithmatex">\(x_i\)</span> 为第 <span class="arithmatex">\(i\)</span> 类原始输出，<span class="arithmatex">\(n\)</span> 为类别总数）</p>
+</li>
+<li>
+<p>总结</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>激活函数</th>
+<th>核心优势</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sigmoid</td>
+<td>输出概率化</td>
+<td>二分类输出层</td>
+</tr>
+<tr>
+<td>Tanh</td>
+<td>零均值</td>
+<td>早期隐藏层</td>
+</tr>
+<tr>
+<td>ReLU</td>
+<td>计算快、缓解梯度消失</td>
+<td>通用隐藏层（CNN/MLP）</td>
+</tr>
+<tr>
+<td>GELU/Swish</td>
+<td>深层模型性能优</td>
+<td>Transformer/BERT/GPT</td>
+</tr>
+<tr>
+<td>Softmax</td>
+<td>输出多分类概率分布</td>
+<td>多分类输出层</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h3 id="perceptron">感知机（Perceptron）</h3>
+<ul>
+<li>
+<p><strong>定义</strong>：感知机是一种用于二分类任务的线性判别模型，是人工神经网络的基础结构之一。它由输入特征、权重、偏置、净输入和激活函数（通常为阶跃函数）组成，通过对输入进行线性组合并经过阈值化处理，得到离散的二元输出。**</p>
+</li>
+<li>
+<p><strong>功能</strong></p>
+<ul>
+<li><strong>二分类决策</strong>：根据输入特征判断样本属于正类（1）或负类（0）。</li>
+<li><strong>线性可分问题建模</strong>：能够学习并表示线性可分数据的决策边界。</li>
+<li><strong>作为神经网络的基本单元</strong>：是多层感知机和深度学习模型的基础原型。</li>
+</ul>
+</li>
+<li>
+<p><strong>数学模型</strong></p>
+</li>
+</ul>
+<p>感知机的数学表达由以下两部分构成：</p>
+<ol>
+<li>
+<p><strong>净输入（线性组合）</strong>
+   [
+   z = \sum_{i=1}^{n} w_i x_i + b
+   ]
+   其中 <span class="arithmatex">\(x_i\)</span> 为输入特征，<span class="arithmatex">\(w_i\)</span> 为权重，<span class="arithmatex">\(b\)</span> 为偏置，<span class="arithmatex">\(z\)</span> 为净输入。</p>
+</li>
+<li>
+<p><strong>激活函数（阶跃函数）</strong>
+   [
+   \phi(z) = 
+   \begin{cases}
+   1 &amp; z &gt; 0 \
+   0 &amp; z \le 0
+   \end{cases}
+   ]</p>
+</li>
+<li>
+<p><strong>感知机输出</strong>
+   [
+   y = \phi(z) = \phi\left( \sum_{i=1}^{n} w_i x_i + b \right)
+   ]</p>
+</li>
+</ol>
+<h3 id="feedforward-neural-network-fnn">前馈神经网络（Feedforward Neural Network, FNN）</h3>
+<ul>
+<li>
+<p><strong>定义</strong>：前馈神经网络是一种由多层神经元按顺序连接构成的人工神经网络，其中信息从输入层开始，经过若干隐藏层，最终到达输出层，且网络中不存在任何循环或反馈连接。它是深度学习中最基础的网络结构，也常被称为<strong>多层感知机（MLP）</strong>。</p>
+</li>
+<li>
+<p><strong>功能</strong></p>
+<ul>
+<li><strong>非线性映射</strong>：通过堆叠多个非线性激活函数的神经元层，实现从输入到输出的复杂非线性函数逼近。</li>
+<li><strong>特征学习</strong>：隐藏层能够自动学习输入数据的多层次抽象特征。</li>
+<li><strong>多类分类与回归</strong>：可用于图像识别、语音识别、文本分类、回归预测等多种任务。</li>
+</ul>
+</li>
+<li>
+<p><strong>数学模型</strong>
+前馈神经网络由若干层组成，每一层的输出作为下一层的输入。</p>
+</li>
+<li>
+<p><strong>层的计算</strong>
+   对于第 <span class="arithmatex">\(l\)</span> 层，其净输入为：
+   [
+   z^{(l)} = W^{(l)} a^{(l-1)} + b^{(l)}
+   ]
+   其中：</p>
+</li>
+<li><span class="arithmatex">\(a^{(l-1)}\)</span>：上一层的激活输出</li>
+<li><span class="arithmatex">\(W^{(l)}\)</span>：当前层的权重矩阵</li>
+<li><span class="arithmatex">\(b^{(l)}\)</span>：当前层的偏置向量</li>
+<li>
+<p><span class="arithmatex">\(z^{(l)}\)</span>：当前层的净输入</p>
+</li>
+<li>
+<p><strong>激活函数</strong>
+   当前层的激活输出为：
+   [
+   a^{(l)} = \sigma^{(l)}(z^{(l)})
+   ]
+   其中 <span class="arithmatex">\(\sigma^{(l)}\)</span> 为非线性激活函数（如 ReLU、sigmoid、tanh 等）。</p>
+</li>
+<li>
+<p><strong>网络整体计算</strong>
+   输入层：
+   [
+   a^{(0)} = x
+   ]</p>
+</li>
+</ul>
+<p>隐藏层：
+   [
+   z^{(1)} = W^{(1)}x + b^{(1)}, \quad a^{(1)} = \sigma^{(1)}(z^{(1)})
+   ]
+   [
+   z^{(2)} = W^{(2)}a^{(1)} + b^{(2)}, \quad a^{(2)} = \sigma^{(2)}(z^{(2)})
+   ]
+   …</p>
+<p>输出层：
+   [
+   z^{(L)} = W^{(L)}a^{(L-1)} + b^{(L)}, \quad \hat{y} = a^{(L)} = \sigma^{(L)}(z^{(L)})
+   ]</p>
+<p>其中 <span class="arithmatex">\(L\)</span> 为网络的总层数，<span class="arithmatex">\(\hat{y}\)</span> 为网络的最终输出。</p>
+<h2 id="_7">二、网络结构</h2>
+<h3 id="5-layer">5. 层（Layer）</h3>
+<ul>
+<li><strong>定义</strong>：由一组神经元组成，接收同一组输入并产生一组输出，是神经网络的基本结构块。</li>
+<li><strong>常见类型</strong>：</li>
+<li>输入层（Input Layer）：接收原始数据，不进行计算。</li>
+<li>隐藏层（Hidden Layer）：位于输入层和输出层之间，用于特征提取和变换。</li>
+<li>输出层（Output Layer）：产生模型的最终预测结果（类别、数值等）。</li>
+</ul>
+<h3 id="6-depth">6. 深度（Depth）</h3>
+<ul>
+<li><strong>定义</strong>：神经网络中隐藏层的数量（有时也把输入层和输出层计入，视语境而定），是“深度学习”中“深度”的来源。</li>
+</ul>
+<h3 id="7-width">7. 宽度（Width）</h3>
+<ul>
+<li><strong>定义</strong>：某一层中神经元的数量，也可泛指网络在某一层的“容量大小”。</li>
+</ul>
+<h3 id="8-fully-connected-layer-dense-layer">8. 全连接层（Fully Connected Layer, Dense Layer）</h3>
+<ul>
+<li><strong>定义</strong>：层中每个神经元都与上一层所有神经元相连的层，是最基础的层类型。</li>
+</ul>
+<h3 id="9-convolutional-layer">9. 卷积层（Convolutional Layer）</h3>
+<ul>
+<li><strong>定义</strong>：通过卷积核在输入上滑动，计算局部区域的加权和，主要用于处理图像、序列等具有局部相关性的数据。</li>
+</ul>
+<h3 id="10-pooling-layer">10. 池化层（Pooling Layer）</h3>
+<ul>
+<li><strong>定义</strong>：对局部区域进行聚合统计（如取最大值、平均值），用于降维、保留关键信息并提高鲁棒性。</li>
+</ul>
+<h3 id="11-recurrent-layer">11. 循环层（Recurrent Layer）</h3>
+<ul>
+<li><strong>定义</strong>：具有“记忆”能力的层，通过循环连接在序列上逐步处理，适用于文本、时间序列等序列数据（如 RNN、LSTM、GRU）。</li>
+</ul>
+<h3 id="12-attention-mechanism">12. 注意力机制（Attention Mechanism）</h3>
+<ul>
+<li><strong>定义</strong>：允许模型在处理序列时，对不同位置的输入分配不同的“关注度”，从而更灵活地捕捉长距离依赖关系。</li>
+</ul>
+<hr/>
+<h2 id="_8">三、模型与学习</h2>
+<h3 id="13-neural-network">13. 神经网络（Neural Network）</h3>
+<ul>
+<li><strong>定义</strong>：由大量人工神经元通过层状结构连接形成的模型，通过数据学习输入到输出的映射关系。</li>
+</ul>
+<h3 id="14-deep-learning">14. 深度学习（Deep Learning）</h3>
+<ul>
+<li><strong>定义</strong>：使用包含多个隐藏层的深度神经网络进行学习的一类方法，能够从数据中自动学习多层次的抽象特征。</li>
+</ul>
+<h3 id="15-forward-propagation">15. 前向传播（Forward Propagation）</h3>
+<ul>
+<li><strong>定义</strong>：输入数据从输入层逐层经过计算，最终到达输出层得到预测结果的过程。</li>
+</ul>
+<h3 id="16-loss-function">16. 损失函数（Loss Function）</h3>
+<ul>
+<li><strong>定义</strong>：衡量模型预测值与真实标签之间差异的函数，是训练的“目标”。</li>
+<li><strong>常见</strong>：均方误差（回归）、交叉熵损失（分类）等。</li>
+</ul>
+<h3 id="17-optimizer">17. 优化器（Optimizer）</h3>
+<ul>
+<li><strong>定义</strong>：根据损失函数的梯度更新模型参数（权重和偏置）的算法，用于最小化损失。</li>
+<li><strong>常见</strong>：SGD、Adam、RMSprop 等。</li>
+</ul>
+<h3 id="18-backpropagation">18. 反向传播（Backpropagation）</h3>
+<ul>
+<li><strong>定义</strong>：利用链式法则，从损失出发逐层反向计算梯度，并据此更新参数的核心算法，是训练深度网络的基础。</li>
+</ul>
+<h3 id="19-gradient-descent">19. 梯度下降（Gradient Descent）</h3>
+<ul>
+<li><strong>定义</strong>：一种通过沿损失函数梯度反方向逐步更新参数来寻找最优解的优化方法。</li>
+</ul>
+<h3 id="20-learning-rate">20. 学习率（Learning Rate）</h3>
+<ul>
+<li><strong>定义</strong>：控制每次参数更新步长的超参数，决定学习过程的速度和稳定性。</li>
+</ul>
+<hr/>
+<h2 id="_9">四、正则化与泛化</h2>
+<h3 id="21-overfitting">21. 过拟合（Overfitting）</h3>
+<ul>
+<li><strong>定义</strong>：模型在训练数据上表现很好，但在未见过的测试数据上表现很差，说明模型“记住了”训练数据而不是学到了通用规律。</li>
+</ul>
+<h3 id="22-regularization">22. 正则化（Regularization）</h3>
+<ul>
+<li><strong>定义</strong>：通过在损失函数中加入额外项或对模型结构进行约束，来防止过拟合、提高泛化能力的一类技术。</li>
+<li><strong>常见</strong>：L1/L2 正则化、Dropout、早停（Early Stopping）等。</li>
+</ul>
+<h3 id="23-dropout">23. Dropout</h3>
+<ul>
+<li><strong>定义</strong>：训练时随机让一部分神经元暂时“失活”，以减少神经元之间的共适应，从而降低过拟合风险。</li>
+</ul>
+<h3 id="24-batch-normalization">24. 批量归一化（Batch Normalization）</h3>
+<ul>
+<li><strong>定义</strong>：对每一层的输入进行归一化处理，加速训练、提高稳定性，并在一定程度上起到正则化作用。</li>
+</ul>
+<hr/>
+<h2 id="_10">五、数据与训练过程</h2>
+<h3 id="25-training-set">25. 训练集（Training Set）</h3>
+<ul>
+<li><strong>定义</strong>：用于训练模型、调整参数的数据集合。</li>
+</ul>
+<h3 id="26-validation-set">26. 验证集（Validation Set）</h3>
+<ul>
+<li><strong>定义</strong>：用于在训练过程中评估模型性能、调整超参数（如学习率、层数）的数据集合。</li>
+</ul>
+<h3 id="27-test-set">27. 测试集（Test Set）</h3>
+<ul>
+<li><strong>定义</strong>：在模型训练和调参完成后，用于最终评估模型泛化能力的数据集合，应与训练过程完全隔离。</li>
+</ul>
+<h3 id="28-batch">28. 批次（Batch）</h3>
+<ul>
+<li><strong>定义</strong>：一次前向和反向传播中同时处理的样本数量，是训练时的基本计算单位。</li>
+</ul>
+<h3 id="29-epoch">29. 轮次（Epoch）</h3>
+<ul>
+<li><strong>定义</strong>：训练过程中，模型完整遍历一遍整个训练集的次数。</li>
+</ul>
+<hr/>
+<h2 id="_11">六、常见网络类型（按任务/结构）</h2>
+<h3 id="30-multilayer-perceptron-mlp">30. 多层感知机（Multilayer Perceptron, MLP）</h3>
+<ul>
+<li><strong>定义</strong>：由若干全连接层和激活函数组成的基础深度网络，适用于表格数据等。</li>
+</ul>
+<h3 id="31-convolutional-neural-network-cnn">31. 卷积神经网络（Convolutional Neural Network, CNN）</h3>
+<ul>
+<li><strong>定义</strong>：以卷积层为核心的网络结构，广泛用于图像分类、目标检测、图像分割等计算机视觉任务。</li>
+</ul>
+<h3 id="32-recurrent-neural-network-rnn">32. 循环神经网络（Recurrent Neural Network, RNN）</h3>
+<ul>
+<li><strong>定义</strong>：具有循环连接的网络，用于处理序列数据，但在长序列上梯度问题较明显。</li>
+</ul>
+<h3 id="33-lstm-gru">33. LSTM / GRU</h3>
+<ul>
+<li><strong>定义</strong>：对传统 RNN 的改进结构，通过门机制更好地捕捉长距离依赖，常用于自然语言处理、时间序列预测等。</li>
+</ul>
+<h3 id="34-transformer">34. Transformer</h3>
+<ul>
+<li><strong>定义</strong>：以自注意力机制为核心的网络结构，是现代自然语言处理（如 BERT、GPT）的基础，也逐渐用于图像等领域。</li>
+</ul>
+<hr/>
+<p>如果你需要，我可以在此基础上：
+- 按“考试复习提纲”的形式帮你整理一份更精简的重点版；
+- 或者针对某一类概念（比如 CNN 或 RNN）单独展开详细讲解和图示说明。</p>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.tabs.link", "navigation.expand", "navigation.sections", "navigation.top", "navigation.path", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+<script src="../../js/mermaid.min.js"></script>
+<script src="../../js/init_mermaid.js"></script>
+<script src="../../js/mathjax.js"></script>
+<script src="../../js/tex-mml-chtml.js"></script>
+</body>
+</html>

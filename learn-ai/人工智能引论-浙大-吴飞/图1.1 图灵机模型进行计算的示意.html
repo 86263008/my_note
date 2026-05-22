@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>图灵机计算示意图</title>
+    <style>
+        canvas { border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <canvas id="turingMachineCanvas" width="800" height="300"></canvas>
+
+    <script>
+        const canvas = document.getElementById('turingMachineCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // 绘制左侧初始纸带
+        function drawLeftTape() {
+            // 纸带外框
+            ctx.strokeRect(50, 50, 300, 40);
+            // 纸带方格
+            const leftCells = ['...', 'gcd(24,16)', '×', '10', '+', '17', '...'];
+            let x = 50;
+            leftCells.forEach(cell => {
+                ctx.strokeRect(x, 50, 50, 40);
+                ctx.fillText(cell, x + 10, 75);
+                x += 50;
+            });
+            // 读写指针箭头
+            ctx.beginPath();
+            ctx.moveTo(125, 90);
+            ctx.lineTo(125, 110);
+            ctx.lineTo(120, 105);
+            ctx.moveTo(125, 110);
+            ctx.lineTo(130, 105);
+            ctx.strokeStyle = 'orange';
+            ctx.stroke();
+            ctx.fillStyle = 'black';
+            ctx.fillText('读写控制指针', 90, 105);
+        }
+
+        // 绘制左侧程序控制器
+        function drawLeftController() {
+            // 控制器外框
+            ctx.strokeRect(100, 120, 150, 100);
+            // 指令集框
+            ctx.fillStyle = '#FFFFCC';
+            ctx.fillRect(110, 130, 30, 80);
+            ctx.strokeRect(110, 130, 30, 80);
+            ctx.fillStyle = 'black';
+            ctx.fillText('指令集', 115, 160);
+            // 指令列表
+            const cmds = ['• 最大公约数', '• 乘法', '• 加法', '• 除法', '• ...'];
+            cmds.forEach((cmd, i) => {
+                ctx.fillText(cmd, 150, 150 + i * 20);
+            });
+            ctx.fillText('程序控制器', 130, 240);
+        }
+
+        // 绘制中间箭头
+        function drawMiddleArrow() {
+            ctx.beginPath();
+            ctx.moveTo(350, 170);
+            ctx.lineTo(450, 170);
+            ctx.lineTo(445, 165);
+            ctx.moveTo(450, 170);
+            ctx.lineTo(445, 175);
+            ctx.strokeStyle = 'blue';
+            ctx.stroke();
+            ctx.fillStyle = 'black';
+        }
+
+        // 绘制右侧最终纸带
+        function drawRightTape() {
+            // 纸带外框
+            ctx.strokeRect(500, 50, 350, 40);
+            // 纸带方格
+            const rightCells = ['...', '', '', '', '', '', '97', '...'];
+            let x = 500;
+            rightCells.forEach(cell => {
+                ctx.strokeRect(x, 50, 50, 40);
+                ctx.fillText(cell, x + 10, 75);
+                x += 50;
+            });
+            // 读写指针箭头
+            ctx.beginPath();
+            ctx.moveTo(725, 90);
+            ctx.lineTo(725, 110);
+            ctx.lineTo(720, 105);
+            ctx.moveTo(725, 110);
+            ctx.lineTo(730, 105);
+            ctx.strokeStyle = 'orange';
+            ctx.stroke();
+            ctx.fillStyle = 'black';
+            ctx.fillText('读写控制指针', 690, 105);
+        }
+
+        // 绘制右侧程序控制器
+        function drawRightController() {
+            // 控制器外框
+            ctx.strokeRect(550, 120, 150, 100);
+            // 指令集框
+            ctx.fillStyle = '#FFFFCC';
+            ctx.fillRect(560, 130, 30, 80);
+            ctx.strokeRect(560, 130, 30, 80);
+            ctx.fillStyle = 'black';
+            ctx.fillText('指令集', 565, 160);
+            // 指令列表
+            const cmds = ['• 最大公约数', '• 乘法', '• 加法', '• 除法', '• ...'];
+            cmds.forEach((cmd, i) => {
+                ctx.fillText(cmd, 600, 150 + i * 20);
+            });
+            ctx.fillText('程序控制器', 580, 240);
+        }
+
+        // 初始化绘制
+        ctx.font = '12px Arial';
+        drawLeftTape();
+        drawLeftController();
+        drawMiddleArrow();
+        drawRightTape();
+        drawRightController();
+    </script>
+</body>
+</html>

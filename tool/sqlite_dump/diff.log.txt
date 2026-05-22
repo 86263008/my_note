@@ -1,0 +1,172 @@
+2025-10-10 13:31:03 - INFO - 开始对比数据库...
+2025-10-10 13:31:03 - INFO - 数据库1: C:\Users\jianh\AppData\Local\Temp\tmpgoaoi22h.sqlite
+2025-10-10 13:31:03 - INFO - 数据库2: C:\Users\jianh\AppData\Local\Temp\tmpa1e0ttxc.sqlite
+2025-10-10 13:31:03 - WARNING - ❌ 两个数据库存在差异
+2025-10-10 13:31:03 - INFO - 开始定位差异表...
+2025-10-10 13:31:03 - WARNING - - 表 orders: 仅存在于数据库2
+2025-10-10 13:31:03 - WARNING - - 表 products: 仅存在于数据库1
+2025-10-10 13:31:03 - WARNING - - 表 users: 结构或数据存在差异
+2025-10-10 13:31:03 - WARNING -   - 数据库1中表users的行数: 3
+2025-10-10 13:31:03 - WARNING -   - 数据库2中表users的行数: 2
+2025-10-10 13:31:03 - INFO - 差异表定位完成
+2025-10-10 13:31:03 - INFO - 对比结果已保存到 diff_result.md
+2025-10-10 13:31:03 - INFO - 开始对比数据库...
+2025-10-10 13:31:03 - INFO - 数据库1: C:\Users\jianh\AppData\Local\Temp\tmpgs3yc8bq.sqlite
+2025-10-10 13:31:03 - INFO - 数据库2: C:\Users\jianh\AppData\Local\Temp\tmpyvbv4gg_.sqlite
+2025-10-10 13:31:03 - INFO - ✅ 两个数据库完全相同
+2025-10-10 13:31:04 - WARNING - 获取表non_existent_table行数时出错: no such table: non_existent_table
+2025-10-10 13:54:12 - INFO - 开始对比数据库...
+2025-10-10 13:54:12 - INFO - 数据库1: C:\Users\jianh\AppData\Local\Temp\tmpvd6tipi2.sqlite
+2025-10-10 13:54:12 - INFO - 数据库2: C:\Users\jianh\AppData\Local\Temp\tmp6bn9sio6.sqlite
+2025-10-10 13:54:12 - INFO - 开始定位差异表...
+2025-10-10 13:54:12 - WARNING - - 表 orders: 仅存在于数据库2
+2025-10-10 13:54:12 - WARNING - - 表 products: 仅存在于数据库1
+2025-10-10 13:54:12 - WARNING - - 表 users: 结构或数据存在差异
+2025-10-10 13:54:12 - WARNING -   - 数据库1中表users的行数: 3
+2025-10-10 13:54:12 - WARNING -   - 数据库2中表users的行数: 2
+2025-10-10 13:54:12 - INFO - 差异表定位完成
+2025-10-10 13:54:12 - INFO - 对比结果已保存到 diff_result.md
+2025-10-10 13:54:12 - INFO - 开始对比数据库...
+2025-10-10 13:54:12 - INFO - 数据库1: C:\Users\jianh\AppData\Local\Temp\tmpz73g5kl2.sqlite
+2025-10-10 13:54:12 - INFO - 数据库2: C:\Users\jianh\AppData\Local\Temp\tmpvifccsd7.sqlite
+2025-10-10 13:54:12 - INFO - 开始定位差异表...
+2025-10-10 13:54:12 - INFO - - 表 products: 相同
+2025-10-10 13:54:12 - INFO - - 表 users: 相同
+2025-10-10 13:54:12 - INFO - 差异表定位完成
+2025-10-10 13:54:12 - INFO - 对比结果已保存到 diff_result.md
+2025-10-10 13:54:13 - WARNING - 获取表non_existent_table行数时出错: no such table: non_existent_table
+2025-10-10 13:57:05 - INFO - 开始对比数据库...
+2025-10-10 13:57:05 - INFO - 数据库1: C:\Users\jianh\AppData\Local\Temp\tmp8s8x_4nw.sqlite
+2025-10-10 13:57:05 - INFO - 数据库2: C:\Users\jianh\AppData\Local\Temp\tmpmyauhhdv.sqlite
+2025-10-10 13:57:05 - INFO - 开始定位差异表...
+2025-10-10 13:57:05 - WARNING - - 表 orders: 仅存在于数据库2
+2025-10-10 13:57:05 - WARNING - - 表 products: 仅存在于数据库1
+2025-10-10 13:57:05 - WARNING - - 表 users: 结构或数据存在差异
+2025-10-10 13:57:05 - WARNING -   - 数据库1中表users的行数: 3
+2025-10-10 13:57:05 - WARNING -   - 数据库2中表users的行数: 2
+2025-10-10 13:57:05 - INFO - 差异表定位完成
+2025-10-10 13:57:05 - INFO - 对比结果已保存到 diff_result.md
+2025-10-10 13:57:05 - INFO - 开始对比数据库...
+2025-10-10 13:57:05 - INFO - 数据库1: C:\Users\jianh\AppData\Local\Temp\tmp4hnte9w_.sqlite
+2025-10-10 13:57:05 - INFO - 数据库2: C:\Users\jianh\AppData\Local\Temp\tmpp5fdodmw.sqlite
+2025-10-10 13:57:05 - INFO - 开始定位差异表...
+2025-10-10 13:57:05 - INFO - - 表 products: 相同
+2025-10-10 13:57:05 - INFO - - 表 users: 相同
+2025-10-10 13:57:05 - INFO - 差异表定位完成
+2025-10-10 13:57:05 - INFO - 对比结果已保存到 diff_result.md
+2025-10-10 13:57:05 - WARNING - 获取表non_existent_table行数时出错: no such table: non_existent_table
+2025-10-10 13:57:19 - INFO - 开始对比数据库...
+2025-10-10 13:57:19 - INFO - 数据库1: C:\Users\jianh\AppData\Local\Temp\tmp1tg2_itk.sqlite
+2025-10-10 13:57:19 - INFO - 数据库2: C:\Users\jianh\AppData\Local\Temp\tmp436khxtx.sqlite
+2025-10-10 13:57:19 - INFO - 开始定位差异表...
+2025-10-10 13:57:19 - WARNING - - 表 orders: 仅存在于数据库2
+2025-10-10 13:57:19 - WARNING - - 表 products: 仅存在于数据库1
+2025-10-10 13:57:19 - WARNING - - 表 users: 结构或数据存在差异
+2025-10-10 13:57:19 - WARNING -   - 数据库1中表users的行数: 3
+2025-10-10 13:57:19 - WARNING -   - 数据库2中表users的行数: 2
+2025-10-10 13:57:19 - INFO - 差异表定位完成
+2025-10-10 13:57:19 - INFO - 对比结果已保存到 diff_result.md
+2025-10-10 13:57:19 - INFO - 开始对比数据库...
+2025-10-10 13:57:19 - INFO - 数据库1: C:\Users\jianh\AppData\Local\Temp\tmpco3ppoea.sqlite
+2025-10-10 13:57:19 - INFO - 数据库2: C:\Users\jianh\AppData\Local\Temp\tmpz35vxtdn.sqlite
+2025-10-10 13:57:19 - INFO - 开始定位差异表...
+2025-10-10 13:57:19 - INFO - - 表 products: 相同
+2025-10-10 13:57:19 - INFO - - 表 users: 相同
+2025-10-10 13:57:19 - INFO - 差异表定位完成
+2025-10-10 13:57:19 - INFO - 对比结果已保存到 diff_result.md
+2025-10-10 13:57:19 - WARNING - 获取表non_existent_table行数时出错: no such table: non_existent_table
+2025-10-10 13:58:02 - INFO - 开始对比数据库...
+2025-10-10 13:58:02 - INFO - 数据库1: C:\Users\jianh\AppData\Local\Temp\tmpcotq67z9.sqlite
+2025-10-10 13:58:02 - INFO - 数据库2: C:\Users\jianh\AppData\Local\Temp\tmpxdp_ue5o.sqlite
+2025-10-10 13:58:02 - INFO - 开始定位差异表...
+2025-10-10 13:58:02 - WARNING - - 表 orders: 仅存在于数据库2
+2025-10-10 13:58:02 - WARNING - - 表 products: 仅存在于数据库1
+2025-10-10 13:58:02 - WARNING - - 表 users: 结构或数据存在差异
+2025-10-10 13:58:02 - WARNING -   - 数据库1中表users的行数: 3
+2025-10-10 13:58:02 - WARNING -   - 数据库2中表users的行数: 2
+2025-10-10 13:58:02 - INFO - 差异表定位完成
+2025-10-10 13:58:02 - INFO - 对比结果已保存到 diff_result.md
+2025-10-10 13:58:02 - INFO - 开始对比数据库...
+2025-10-10 13:58:02 - INFO - 数据库1: C:\Users\jianh\AppData\Local\Temp\tmpakaa1tdp.sqlite
+2025-10-10 13:58:02 - INFO - 数据库2: C:\Users\jianh\AppData\Local\Temp\tmp6mjrrbeh.sqlite
+2025-10-10 13:58:02 - INFO - 开始定位差异表...
+2025-10-10 13:58:02 - INFO - - 表 products: 相同
+2025-10-10 13:58:02 - INFO - - 表 users: 相同
+2025-10-10 13:58:02 - INFO - 差异表定位完成
+2025-10-10 13:58:02 - INFO - 对比结果已保存到 diff_result.md
+2025-10-10 13:58:22 - WARNING - 获取表non_existent_table行数时出错: no such table: non_existent_table
+2025-10-10 14:01:23 - INFO - 配置文件 diff_config.json 不存在，已生成默认配置
+2025-10-10 14:01:23 - ERROR - 加载配置时发生错误: 源数据库文件不存在: db1.sqlite
+2025-10-10 14:01:23 - ERROR - 配置加载或数据库对比失败: 源数据库文件不存在: db1.sqlite
+2025-10-10 14:01:59 - INFO - 配置文件 C:\Users\jianh\AppData\Local\Temp\tmpfl7319l9.json 不存在，已生成默认配置
+2025-10-10 14:01:59 - ERROR - 配置文件格式错误: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-10-10 14:01:59 - INFO - 配置已成功保存到: C:\Users\jianh\AppData\Local\Temp\tmp69fd1e7n.json
+2025-10-10 14:03:12 - INFO - 配置文件 diff_config.json 不存在，已生成默认配置
+2025-10-10 14:03:21 - ERROR - 配置加载或数据库对比失败: 源数据库文件不存在: db1.sqlite
+2025-10-10 14:18:33 - INFO - 加载配置成功: 源数据库=db_main.db, 目标数据库=db_main_dump.db
+2025-10-10 14:18:33 - INFO - 开始对比数据库...
+2025-10-10 14:18:33 - INFO - 数据库1: db_main.db
+2025-10-10 14:18:33 - INFO - 数据库2: db_main_dump.db
+2025-10-10 14:18:33 - INFO - 开始定位差异表...
+2025-10-10 14:18:33 - INFO - - 表 AUTH_DEPT: 相同
+2025-10-10 14:18:33 - INFO - - 表 AUTH_ROLE: 相同
+2025-10-10 14:18:33 - INFO - - 表 AUTH_USER: 相同
+2025-10-10 14:18:33 - INFO - - 表 AlphaL2020Result: 相同
+2025-10-10 14:18:33 - INFO - - 表 AlphaResult: 相同
+2025-10-10 14:18:33 - INFO - - 表 BackgroundTest: 相同
+2025-10-10 14:18:33 - INFO - - 表 CalibrationTest: 相同
+2025-10-10 14:18:33 - INFO - - 表 CfType: 相同
+2025-10-10 14:18:33 - INFO - - 表 CurveData: 相同
+2025-10-10 14:18:33 - INFO - - 表 DrumSource: 相同
+2025-10-10 14:18:33 - INFO - - 表 DrumTest: 相同
+2025-10-10 14:18:33 - INFO - - 表 EfficiencyTest1_1: 相同
+2025-10-10 14:18:33 - INFO - - 表 Isotopics_rec: 相同
+2025-10-10 14:18:33 - INFO - - 表 Matrix: 相同
+2025-10-10 14:18:34 - INFO - - 表 SysParameters: 相同
+2025-10-10 14:18:34 - INFO - 差异表定位完成
+2025-10-10 14:18:34 - INFO - 对比结果已保存到 diff.result.md
+2025-10-10 14:21:46 - INFO - 加载配置成功: 源数据库=db_main.db, 目标数据库=db_main_dump.db
+2025-10-10 14:21:46 - INFO - 开始对比数据库...
+2025-10-10 14:21:46 - INFO - 数据库1: db_main.db
+2025-10-10 14:21:46 - INFO - 数据库2: db_main_dump.db
+2025-10-10 14:21:46 - INFO - 开始定位差异表...
+2025-10-10 14:21:46 - INFO - - 表 AUTH_DEPT: 相同
+2025-10-10 14:21:46 - INFO - - 表 AUTH_ROLE: 相同
+2025-10-10 14:21:46 - INFO - - 表 AUTH_USER: 相同
+2025-10-10 14:21:46 - INFO - - 表 AlphaL2020Result: 相同
+2025-10-10 14:21:46 - INFO - - 表 AlphaResult: 相同
+2025-10-10 14:21:46 - INFO - - 表 BackgroundTest: 相同
+2025-10-10 14:21:46 - INFO - - 表 CalibrationTest: 相同
+2025-10-10 14:21:46 - INFO - - 表 CfType: 相同
+2025-10-10 14:21:46 - INFO - - 表 CurveData: 相同
+2025-10-10 14:21:46 - INFO - - 表 DrumSource: 相同
+2025-10-10 14:21:46 - INFO - - 表 DrumTest: 相同
+2025-10-10 14:21:46 - INFO - - 表 EfficiencyTest1_1: 相同
+2025-10-10 14:21:46 - INFO - - 表 Isotopics_rec: 相同
+2025-10-10 14:21:46 - INFO - - 表 Matrix: 相同
+2025-10-10 14:21:46 - INFO - - 表 SysParameters: 相同
+2025-10-10 14:21:46 - INFO - 差异表定位完成
+2025-10-10 14:21:46 - ERROR - 数据库对比过程中发生错误: object of type 'int' has no len()
+2025-10-10 14:21:46 - ERROR - 配置加载或数据库对比失败: object of type 'int' has no len()
+2025-10-10 14:22:01 - INFO - 加载配置成功: 源数据库=db_main.db, 目标数据库=db_main_dump.db
+2025-10-10 14:22:01 - INFO - 开始对比数据库...
+2025-10-10 14:22:01 - INFO - 数据库1: db_main.db
+2025-10-10 14:22:01 - INFO - 数据库2: db_main_dump.db
+2025-10-10 14:22:01 - INFO - 开始定位差异表...
+2025-10-10 14:22:01 - INFO - - 表 AUTH_DEPT: 相同
+2025-10-10 14:22:01 - INFO - - 表 AUTH_ROLE: 相同
+2025-10-10 14:22:01 - INFO - - 表 AUTH_USER: 相同
+2025-10-10 14:22:01 - INFO - - 表 AlphaL2020Result: 相同
+2025-10-10 14:22:01 - INFO - - 表 AlphaResult: 相同
+2025-10-10 14:22:01 - INFO - - 表 BackgroundTest: 相同
+2025-10-10 14:22:01 - INFO - - 表 CalibrationTest: 相同
+2025-10-10 14:22:01 - INFO - - 表 CfType: 相同
+2025-10-10 14:22:01 - INFO - - 表 CurveData: 相同
+2025-10-10 14:22:01 - INFO - - 表 DrumSource: 相同
+2025-10-10 14:22:01 - INFO - - 表 DrumTest: 相同
+2025-10-10 14:22:01 - INFO - - 表 EfficiencyTest1_1: 相同
+2025-10-10 14:22:01 - INFO - - 表 Isotopics_rec: 相同
+2025-10-10 14:22:01 - INFO - - 表 Matrix: 相同
+2025-10-10 14:22:01 - INFO - - 表 SysParameters: 相同
+2025-10-10 14:22:01 - INFO - 差异表定位完成
+2025-10-10 14:22:01 - INFO - 对比结果已保存到 diff.result.md

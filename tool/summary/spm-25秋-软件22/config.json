@@ -1,0 +1,10 @@
+{
+  "STUDENT_FILE_PATH": "名单.xlsx",
+  "HOMEWORK_CONFIG": [
+    ["作业1.xlsx", "作业1"],
+    ["作业2.xlsx", "作业2"],
+    ["作业3.xlsx", "作业3"]
+  ],
+  "EXAM_SCORE_PATH": "笔试成绩.xlsx",
+  "OUTPUT_FILE_PATH": "成绩汇总.xlsx"
+}

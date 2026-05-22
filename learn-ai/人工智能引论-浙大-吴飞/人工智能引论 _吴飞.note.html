@@ -1,0 +1,723 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
+<title>第1章 绪论 - 我的笔记本</title>
+<link href="../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../assets/stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#1">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="我的笔记本" class="md-header__button md-logo" data-md-component="logo" href="../../index.html" title="我的笔记本">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            我的笔记本
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              第1章 绪论
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="浅色" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="浅色">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+</label>
+<input aria-label="深色" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="深色">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../index.html">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../tool/index.html">
+        
+  
+  
+    
+  
+  生产力工具
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../reading/index.html">
+        
+  
+  
+    
+  
+  阅读
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="index.html">
+          
+  
+  
+  learn-ai
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="我的笔记本" class="md-nav__button md-logo" data-md-component="logo" href="../../index.html" title="我的笔记本">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+    我的笔记本
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../index.html">
+<span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tool/index.html">
+<span class="md-ellipsis">
+    
+  
+    生产力工具
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../reading/index.html">
+<span class="md-ellipsis">
+    
+  
+    阅读
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    learn-ai
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    learn-ai
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="index.html">
+<span class="md-ellipsis">
+    
+  
+    人工智能引论-浙大-吴飞
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    dive into deep learning
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    dive into deep learning
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dive into deep learning/1. 引言.md">
+<span class="md-ellipsis">
+    
+  
+    1. 引言
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label=" " class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      
+        一、人工智能的目标与实现方法
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      
+        二、人工智能的“机器载体”：可计算理论与图灵机
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      
+        三、当前人工智能的发展现状与局限
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      
+        四、人工智能的双重属性与伦理安全
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11">
+<span class="md-ellipsis">
+      
+        五、1.1 人工智能的起源
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#12">
+<span class="md-ellipsis">
+      
+        六、1.2 可计算载体：形式化与机械化
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13">
+<span class="md-ellipsis">
+      
+        七、1.3 智能计算方法
+      
+    </span>
+</a>
+<nav aria-label="七、1.3 智能计算方法" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1_1">
+<span class="md-ellipsis">
+      
+        1. 以符号主义为核心的逻辑推理
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2">
+<span class="md-ellipsis">
+      
+        2. 以问题求解为核心的探寻搜索
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3">
+<span class="md-ellipsis">
+      
+        3. 以数据驱动为核心的机器学习
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4">
+<span class="md-ellipsis">
+      
+        4. 以行为主义为核心的强化学习
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5">
+<span class="md-ellipsis">
+      
+        5. 以博弈对抗为核心的决策智能
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6">
+<span class="md-ellipsis">
+      
+        6. 方法协同与新方向
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#14">
+<span class="md-ellipsis">
+      
+        八、1.4 新一代人工智能
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#15">
+<span class="md-ellipsis">
+      
+        九、1.5 本书知识点脉络
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#16">
+<span class="md-ellipsis">
+      
+        十、1.6 小结
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      
+        延伸阅读：当前是从过去拔萃出来的投影
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="1">第1章 绪论</h1>
+<p>“我们必须知道，我们必将知道。”<br/>
+——大卫·希尔伯特（David Hilbert）  </p>
+<h2 id="_1">一、人工智能的目标与实现方法</h2>
+<p>人类致力于让机器模拟自身在视觉、听觉、语言、行为等方面的功能，以提升生产能力、完成复杂或危险工作，核心是对人类智能的模拟，主要实现方法包括：
+1. <strong>符号主义逻辑推理</strong>：将概念（如命题）符号化，从已知判断（前提）推出新判断（结论）。
+2. <strong>问题求解探寻搜索</strong>：依据已有信息，寻找满足约束条件的问题答案。
+3. <strong>数据驱动机器学习</strong>：从数据中发现语义内在模式，利用模式完成识别、分类等任务。
+4. <strong>行为主义强化学习</strong>：根据环境奖惩反馈，学习最佳行动，在“探索（未知空间）-利用（已有经验）”间平衡，具备自我学习能力，完成序列化任务。
+5. <strong>博弈对抗群体智能</strong>：推动机器学习从“数据拟合”求优化解，向“均衡解”求取迈进。</p>
+<h2 id="_2">二、人工智能的“机器载体”：可计算理论与图灵机</h2>
+<ol>
+<li>
+<p><strong>计算载体的诞生背景</strong><br/>
+逻辑推理、搜索求解、机器学习、强化学习均需通过“计算”实现。20世纪初，可计算思想推动原始递归函数、λ演算、图灵机等“计算载体”诞生，其中图灵机以机械自动方式计算，为现代计算机理论模型奠定基础，标志自动计算时代来临，成为人工智能的核心“机器载体”。</p>
+</li>
+<li>
+<p><strong>图灵机模型原理</strong><br/>
+图灵机是抽象机械式计算装置，包含：</p>
+</li>
+<li><strong>无限长纸带</strong>：划分可擦写小方格，存储数据、程序指令或置空。</li>
+<li><strong>程序控制器</strong>：存储指令集。</li>
+<li>
+<p><strong>读写控制指针</strong>：从纸带读入信息，触发控制器指令执行操作，将结果写入纸带，直至计算结束（图灵停机），纸带信息即为计算结果。<br/>
+示例：计算“gcd(24,16)×10+17”时，图灵机先触发最大公约数指令得8，再执行乘法、加法指令，最终留下结果97后停机，该任务因有限步骤停机而“可计算”。</p>
+</li>
+<li>
+<p><strong>丘奇-图灵论题</strong><br/>
+凡是可计算的函数，都可用图灵机计算。原始递归函数、λ演算、图灵机功能等效，均可计算同一类函数，不可计算函数则均无法通过三者计算。</p>
+</li>
+</ol>
+<h2 id="_3">三、当前人工智能的发展现状与局限</h2>
+<ol>
+<li><strong>领域突破</strong><br/>
+以数据建模和学习为核心的人工智能，整合数据、模型、算力后，在计算机视觉、自然语言、语音识别等领域成果显著，典型系统包括：</li>
+<li>谷歌围棋程序AlphaGo</li>
+<li>卡内基梅隆大学扑克对弈系统Libratus</li>
+<li>IBM内容理解系统Watson</li>
+<li>
+<p>OpenAI内容合成系统GPT（基础模型）<br/>
+这些系统均属于“领域人工智能（domain-specific AI）”“弱人工智能（narrow AI）”范畴，在挑战人类智力上进步显著。</p>
+</li>
+<li>
+<p><strong>核心局限</strong><br/>
+现有算法和系统无法通过自身思考达到更高层次智能，与人类智能存在差距：人类能从数据和经验中高度自我学习、进行直觉推理、实现自适应，而机器尚不具备这些能力，目前任何智能机器都无法完全取代人类。</p>
+</li>
+</ol>
+<h2 id="_4">四、人工智能的双重属性与伦理安全</h2>
+<ol>
+<li>
+<p><strong>双重属性</strong><br/>
+人工智能是通用使能技术，兼具技术性（实现智能功能的技术体系）和社会性（与人类、社会形成的关联）。</p>
+</li>
+<li>
+<p><strong>伦理与安全要求</strong><br/>
+其伦理学讨论已超越人与人、人与自然的关系，延伸至人类与自身发明产品的社会关联。因此，人与机、机与机及人机共融的社会形态，需遵守道德伦理，确保安全防护。</p>
+</li>
+</ol>
+<h2 id="11">五、1.1 人工智能的起源</h2>
+<ol>
+<li>
+<p><strong>术语提出</strong><br/>
+1955年8月，约翰·麦卡锡（达特茅斯学院数学系助理教授，1971年图灵奖获得者）、马文·明斯基（哈佛大学数学系和神经学系初级研究员，1969年图灵奖获得者）、克劳德·香农（贝尔实验室数学家，信息理论之父）、纳撒尼尔·罗切斯特（IBM公司信息研究主管，第一代通用计算机701主设计师），在《A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence》项目建议书中，首次使用“artificial intelligence（人工智能）”术语，标志人工智能正式登上历史舞台（McCarthy et al.，1955）。</p>
+</li>
+<li>
+<p><strong>初期研究目标</strong><br/>
+四位学者希望洛克菲勒基金会资助，于1956年夏天在达特茅斯学院开展“让机器像人一样认知、思考和学习，即用计算机模拟人的智能”的前沿研究。</p>
+</li>
+<li>
+<p><strong>初期研究方向</strong><br/>
+项目建议书明确人工智能需研究的七个问题：</p>
+</li>
+<li>自动计算模拟人脑高级功能</li>
+<li>用通用语言编程模仿人脑推理</li>
+<li>神经元连接形成概念</li>
+<li>计算复杂性的度量</li>
+<li>算法自我提升</li>
+<li>算法的抽象能力</li>
+<li>
+<p>随机性与创造力</p>
+</li>
+<li>
+<p><strong>发展路径与定义</strong> </p>
+</li>
+<li><strong>发展路径</strong>：从模拟人类单一功能（感知、推理、运动等）起步，如计算机视觉识别对象、自然语言理解实现人机问答、无人驾驶在特定场景行进等。</li>
+<li>
+<p><strong>核心定义</strong>：从计算性和智能性角度，人工智能是以机器为载体实现的人类智能或生物智能。</p>
+</li>
+<li>
+<p><strong>关键问题与研究流派</strong> </p>
+</li>
+<li><strong>两大关键问题</strong>：一是承载计算的器械如何产生（推动人类从手工计算进入自动计算时代）；二是如何利用计算器械模拟人类智能。</li>
+<li><strong>三大研究流派</strong>：对第二个问题的研究形成不同流派——符号逻辑（以推理为核心）、联结主义（以统计机器学习为手段）、行为学派（从环境交互中学习策略）。</li>
+</ol>
+<h2 id="12">六、1.2 可计算载体：形式化与机械化</h2>
+<ol>
+<li>
+<p><strong>形式化的必要性</strong><br/>
+早期数学概念（公理、定理）用自然语言描述，易产生歧义（如《庄子》对极限的描述、亚里士多德三段论）。为精确表达，研究人员用符号构建形式化语言，例如“直角三角形两直角边平方和等于斜边平方”可形式化为：∀Δ∈直角三角形，x、y为直角边，z为斜边，则<span class="arithmatex">\(x^2 + y^2 = z^2\)</span>。</p>
+</li>
+<li>
+<p><strong>形式化系统的性质</strong><br/>
+若所有数学概念可形式化，结合推理规则，可从已知知识（公理、定理）推出新知识，形成“形式化系统”，其需满足三大性质：</p>
+</li>
+<li><strong>完备性</strong>：所有可从系统推导的知识，均能通过系统推出。</li>
+<li><strong>一致性</strong>：推导结果不会同时出现某判断及其否定（如不会同时推出<span class="arithmatex">\(A≥0\)</span>与<span class="arithmatex">\(A&lt;0\)</span>），系统自洽无矛盾。</li>
+<li>
+<p><strong>可判定性</strong>：存在算法，能在有限步内判定系统推导知识的真假。</p>
+</li>
+<li>
+<p><strong>希尔伯特的数学难题与哥德尔不完全性定理</strong> </p>
+</li>
+<li><strong>希尔伯特的挑战</strong>：1900年，希尔伯特在第二届国际数学会议上提出23个难题，其中第二个是“证明算术公理的相容性”，希望构建有效形式化大厦，让推理实现“自动计算”。</li>
+<li>
+<p><strong>哥德尔的突破</strong>：1931年，哥德尔发表《论数学原理及有关系统中不可判定命题》，提出“哥德尔不完全性定理”：任何表达力足够强的形式系统（递归可枚举），无法同时具备一致性和完备性，且系统自身的一致性不能在系统内证明。该定理揭示“不可计算问题”（如费马大定理不可计算）。</p>
+</li>
+<li>
+<p><strong>可计算理论的三大等价方法</strong> </p>
+</li>
+<li>哥德尔通过“原始递归函数”从数学角度研究可计算问题。</li>
+<li>阿朗佐·丘奇通过“λ演算”从数理逻辑角度研究可计算问题。</li>
+<li>图灵通过“图灵机”从机械化角度研究可计算问题，三者功能等效，但图灵机因机械化特性成为现代计算机理论模型，为人工智能提供“机器载体”，图灵也被誉为“理论计算机之父”，计算机学界最高奖“图灵奖”以其命名。</li>
+</ol>
+<h2 id="13">七、1.3 智能计算方法</h2>
+<p>以机器模拟人类智能某一方面，主要通过以下五类方法实现：</p>
+<h3 id="1_1">1. 以符号主义为核心的逻辑推理</h3>
+<ul>
+<li><strong>核心逻辑</strong>：推理是从已知判断（前提）推出新判断（结论）的过程，与搜索、约束满足并称人工智能问题求解三大方法。符号主义人工智能（早期主流学派）将概念用“符号及符号关系”表示，通过构造证明阐释判断成立或不成立（证伪）。</li>
+<li><strong>示例</strong>：用<span class="arithmatex">\(human(x)\)</span>表示“x是人”，<span class="arithmatex">\(immortal(x)\)</span>表示“x不朽”，“凡人均不朽”可表示为<span class="arithmatex">\(human(x)→¬immortal(x)\)</span>；结合“苏格拉底是人（<span class="arithmatex">\(human(Socrates)\)</span>）”，可推导出“苏格拉底不朽（<span class="arithmatex">\(¬immortal(Socrates)\)</span>）”，即亚里士多德三段论。</li>
+<li><strong>主要推理类型</strong>：</li>
+<li><strong>归纳推理</strong>：从个别事实推一般知识（如从“汉语、英语等是联合国工作语言”，推出“联合国工作语言共六种”），结论与前提是概率性关联。</li>
+<li><strong>演绎推理</strong>：从一般前提推具体结论（如从“金属导电”“铜是金属”，推出“铜导电”），前提正确且推理规则有效时，结论必然成立。</li>
+<li><strong>因果推理</strong>：判断“引起与被引起”的因果关系，核心模型包括结构因果模型（SCM）和潜在结果模型框架（Neyman-Rubin因果模型）。</li>
+<li><strong>推理的三个层次（朱迪亚·珀尔）</strong>：</li>
+<li>关联（association）：从数据直接计算的统计相关。</li>
+<li>干预（intervention）：无法从观测数据直接获取的关系（如“商品涨价的影响”）。</li>
+<li>反事实（counterfactual）：假设某事件未发生，推导可能的新结果。</li>
+<li><strong>应用</strong>：推动专家系统发展，专家系统存储领域知识（事实、规则），根据用户问题应用推理规则输出解决方案。</li>
+</ul>
+<h3 id="2">2. 以问题求解为核心的探寻搜索</h3>
+<ul>
+<li><strong>核心逻辑</strong>：依据已有信息，寻找满足约束条件的问题答案，广泛应用于最佳出行路线推荐、课程表安排等场景。</li>
+<li><strong>主要搜索类型</strong>：</li>
+<li><strong>无信息搜索（盲目搜索）</strong>：不依赖额外辅助信息，按扩展结点次序分为广度优先搜索（逐层扩展）、深度优先搜索（优先扩展深层结点）。</li>
+<li><strong>有信息搜索（启发式搜索）</strong>：利用问题相关辅助信息，代表算法为贪婪最佳优先搜索（以启发函数为评价函数）、A*搜索（评价函数=初始到当前结点代价+当前到目标结点估计代价）。</li>
+<li><strong>对抗搜索（博弈搜索）</strong>：竞争环境中，智能体目标相反（一方最大化利益，一方最小化对手利益），代表算法包括最小最大搜索（计算最优策略）、alpha-beta剪枝搜索（剪除无用分支，提升效率）、蒙特卡洛树搜索（通过采样选合理结果，非穷举）。</li>
+</ul>
+<h3 id="3">3. 以数据驱动为核心的机器学习</h3>
+<ul>
+<li><strong>核心逻辑</strong>：与逻辑推理“从知识到知识”不同，机器学习“从数据到知识”，从数据中学习概念模式，对未知数据分类或识别。</li>
+<li><strong>主要学习类型</strong>：</li>
+<li><strong>监督学习</strong>：使用含标注的训练数据<span class="arithmatex">\((X,Y)=\{(x_i,y_i),i=1,\cdots,n\}\)</span>（<span class="arithmatex">\(x_i\)</span>为数据/特征，<span class="arithmatex">\(y_i\)</span>为语义标注），从假设空间学习最优映射函数<span class="arithmatex">\(f\)</span>，使<span class="arithmatex">\(f(x_i)\)</span>与<span class="arithmatex">\(y_i\)</span>差异最小；也可学习概率模型（如判别式学习<span class="arithmatex">\(P(y_i|x_i)\)</span>、生成式学习<span class="arithmatex">\(P(X,Y)\)</span>）。<ul>
+<li>深度学习（联结主义代表）：通过“端到端”机制学习数据隐含模式，如卷积神经网络（CNN）用卷积层、池化层等构造模型，结合误差后向传播学习参数，提取丰富语义特征。</li>
+</ul>
+</li>
+<li><strong>无监督学习</strong>：数据无标注，直接学习数据分布模式（如聚类）。</li>
+<li><strong>半监督学习</strong>：部分数据有标注，部分无标注，结合两类数据学习。</li>
+<li><strong>关键理论与算法</strong>：赫布理论为联结主义提供认知神经基础；监督学习算法还包括回归分析、提升算法、支持向量机、决策树等，生成式学习可通过期望最大化（EM）算法估计参数。</li>
+</ul>
+<h3 id="4">4. 以行为主义为核心的强化学习</h3>
+<ul>
+<li><strong>核心逻辑</strong>：赋予智能体自监督学习能力，使其与环境交互，根据奖惩反馈改进策略，解决序贯决策优化问题，目标是获取最大累积奖励。</li>
+<li><strong>核心机制</strong>：智能体在某状态采取行动进入新状态，环境给出奖惩反馈，智能体调整“状态-行动”策略，平衡“探索（未知）”与“利用（已知）”。</li>
+<li><strong>关键概念与模型</strong>：</li>
+<li><strong>Q学习</strong>：学习Q函数（记录状态-行动的奖惩值），构建状态-行为效用矩阵，智能体依据矩阵选高效用行动；因状态/行动过多时泛化能力弱，衍生出深度强化学习（用神经网络拟合Q函数）。</li>
+<li><strong>马尔可夫决策过程（MDP）</strong>：刻画“状态-行动-新状态-奖惩”的机制，是强化学习的重要理论基础。</li>
+<li><strong>与其他学习的差异</strong>：监督学习依赖一次性标注数据，做单步静态决策；无监督学习依赖一次性无标注数据；强化学习数据在序列交互中产生，做序列决策，奖惩反馈滞后。</li>
+</ul>
+<h3 id="5">5. 以博弈对抗为核心的决策智能</h3>
+<ul>
+<li><strong>核心逻辑</strong>：博弈论与人工智能融合，研究最优对抗策略及稳定局势，推动机器学习从“求优化解”向“求均衡解”转变。</li>
+<li><strong>发展历程</strong>：1944年冯·诺依曼与摩根斯特恩合著《博弈论与经济行为》，奠定数学基础；1950年纳什提出“非合作博弈”与“纳什均衡”（均衡解存在），纳什获1994年诺贝尔经济学奖。</li>
+<li><strong>博弈行为特点</strong>：多主体竞争，“两害相权取其轻，两利相权取其重”，需在规则内寻求合理行为方式。</li>
+</ul>
+<h3 id="6">6. 方法协同与新方向</h3>
+<ul>
+<li><strong>方法优劣</strong>：逻辑推理解释性强但难拓展，搜索依赖机械式匹配，数据驱动擅长预测但过程难理解，强化学习善探索但依赖策略，博弈对抗在完全信息下表现好但非完全信息无通用框架，需协同多种方法构建融合知识、数据、反馈的模型。</li>
+<li><strong>典型案例</strong>：AlphaGo结合深度学习（棋盘特征提取）、强化学习（自我博弈提升）、蒙特卡洛树搜索（寻找佳落子）。</li>
+<li><strong>新方向</strong>：类脑计算（脑启发计算），受脑功能和神经网络连接机制启发，模拟大脑结构与功能，在微观（基因、蛋白质）、介观（细胞、神经环路）、宏观（脑区、认知行为）尺度探索智能。</li>
+</ul>
+<h2 id="14">八、1.4 新一代人工智能</h2>
+<ol>
+<li>
+<p><strong>发展动力</strong><br/>
+人工智能发展受内部（研究突破）和外部（信息环境变化、社会需求）驱动，外部动力更关键（如恩格斯所言“社会技术需求比十所大学更能推动科学进步”）。</p>
+</li>
+<li>
+<p><strong>当前发展环境变化</strong> </p>
+</li>
+<li><strong>空间结构演变</strong>：世界从“物理世界-人类社会”二元结构（PH），演变为“信息空间-物理世界-人类社会”三元结构（CPH），计算与感知遍布生活，网络连接个体与群体。</li>
+<li><strong>社会需求扩大</strong>：智能城市、医疗、交通、物流等领域迫切需求人工智能，AlphaGo（围棋）、AlphaFold（蛋白质结构预测）等案例引发研究热潮。</li>
+<li>
+<p><strong>目标与理念转变</strong>：从“用计算机模拟人智能”，拓展为“机器+人”（混合智能系统）、“机器+人+网络”（群体智能系统）、“机器+人+网络+物”（复杂智能系统），从“造人制脑”走向“赋能社会”。</p>
+</li>
+<li>
+<p><strong>中国战略规划</strong> </p>
+</li>
+<li>2015年12月：中国工程院启动“中国人工智能2.0发展战略研究”项目。</li>
+<li>2016年5月：项目组上报《建议我国启动“中国人工智能2.0”重大科技计划》，获国家重视。</li>
+<li>2017年7月：国务院印发《新一代人工智能发展规划》（中国首份人工智能系统性战略规划），提出面向2030年的指导思想、目标、任务，明确五种技术形态：大数据智能、跨媒体智能、群体智能、增强智能、智能自主系统。</li>
+</ol>
+<h2 id="15">九、1.5 本书知识点脉络</h2>
+<p>人工智能兼具“至小有内”（核心算法）与“至大无外”（广泛应用）特点，与计算机科学、机器人学、认知科学交叉，本书以“数据智能”为核心，按“表达与推理、搜索与优化、建模与学习、伦理与安全”组织内容，共10章：
+1. 可计算理论与图灵机
+2. 知识表达与推理（知识表示、命题/谓词逻辑、知识图谱推理、概率图推理、因果推理）
+3. 搜索探寻与问题求解（贪婪最佳优先搜索、A*搜索、最小最大搜索、alpha-beta剪枝、蒙特卡洛树搜索）
+4. 机器学习（模型评估、回归、决策树、聚类、特征降维、演化学习）
+5. 神经网络与深度学习（感知机、CNN、RNN、注意力机制、正则化）
+6. 强化学习（MDP、贝尔曼方程、策略/价值优化、深度强化学习）
+7. 人工智能博弈（博弈论、纳什均衡、虚拟遗憾最小化算法）
+8. 人工智能伦理与安全（可信公平、可解释性、算法攻防）
+9. 人工智能架构与系统（软硬件框架、AI芯片、分布式训练）
+10. 人工智能应用（大模型、机器翻译、图像分类、机器人控制、科学计算）</p>
+<p>附录以“卡片式”介绍Ada Boosting、非负矩阵分解、主题建模等进阶知识点；每章含选择、思考、计算、证明题，书后设编程实践题；浙江大学“智海-三乐”大模型提供智能问答、试题生成等服务。</p>
+<h2 id="16">十、1.6 小结</h2>
+<ol>
+<li>
+<p><strong>人工智能的“初心”与挑战</strong><br/>
+1955年提出人工智能时，目标是“仿真人类行为”，但因脑科学、神经科学尚未厘清人脑机理，难以直接用机器实现人脑功能。经典人工智能基于演绎逻辑和语义描述，受“先决条件问题”（枚举行为触发前提）和“隐性分支问题”（枚举行为潜在结果）限制，难处理不确定性、开放性、动态性问题。</p>
+</li>
+<li>
+<p><strong>当前人工智能的定位与差距</strong><br/>
+当前数据建模与机器学习驱动的人工智能，在特定领域（计算机视觉、自然语言等）成果显著，系统属“领域/弱人工智能”；GPT等基础模型向通用人工智能迈进，但仍无法自主思考，与人类自我学习、直觉推理、自适应能力及情感行为存在差距。</p>
+</li>
+<li>
+<p><strong>未来方向：混合-增强智能</strong><br/>
+图灵机可计算任务为可递归的（有序、可枚举），但人类面临问题多具不确定性、脆弱性、开放性；且人类是机器的服务对象和“价值判断”仲裁者，需协同人类与机器智能。现有机器智能无法完全取代人类，需引入人类认知模型，形成“混合-增强智能”（hybrid-augmented intelligence），这是人工智能可行的成长模式。</p>
+</li>
+<li>
+<p><strong>探索精神传承</strong><br/>
+希尔伯特1930年“我们必须知道，我们必将知道”的乐观主义，将激励研究者持续探索人工智能，推动人类社会深刻变革。</p>
+</li>
+</ol>
+<h2 id="_5">延伸阅读：当前是从过去拔萃出来的投影</h2>
+<ul>
+<li><strong>历史脉络</strong>：人类对智能的追求贯穿历史，远古用神话解释自然现象，古希腊荷马在《伊利亚特》中用“automaton”寄托智能梦想；毕达哥拉斯“万物皆数”预示数字化，20世纪30年代“可计算思想”推动自动化，图灵机模型是关键突破；1955年达特茅斯会议首次提出“人工智能”，后续经历三起两落，中国“新一代人工智能”与大模型成为新探索阶段。</li>
+<li><strong>关键细节</strong>：人工智能历史由诸多细节构成，如拉蒙·柳利“知识树”、莱布尼茨“人类思想字母表”、李世石对AlphaGo第78步落子揭示的“地平线问题”、李悝“平籴法”体现的决策树思维、费米“四个参数画大象”、伯克利招生录取率背后的辛普森悖论等。</li>
+<li><strong>当下与过往的关联</strong>：当前内容合成、语音会议、在线支付等AI应用的便利，源于先驱者的尝试与奋斗，体现“当前是过去的投影”的历史逻辑。</li>
+</ul>
+<p>当前文件内容过长，豆包只阅读了前 65%。</p>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.tabs.link", "navigation.expand", "navigation.sections", "navigation.top", "navigation.path", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+<script src="../../js/mermaid.min.js"></script>
+<script src="../../js/init_mermaid.js"></script>
+<script src="../../js/mathjax.js"></script>
+<script src="../../js/tex-mml-chtml.js"></script>
+</body>
+</html>

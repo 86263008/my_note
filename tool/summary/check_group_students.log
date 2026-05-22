@@ -1,0 +1,37 @@
+2026-01-27 23:52:34,817 - INFO - check_group_students - 分组名单学号检查工具开始运行
+2026-01-28 00:13:12,684 - INFO - check_group_students - 分组名单学号检查工具开始运行
+2026-01-28 00:13:12,686 - INFO - check_group_students - 使用数据目录: spm-practice-25秋-软件22
+2026-01-28 00:13:12,687 - INFO - check_group_students - 配置文件加载成功，学生名单文件: 名单.xlsx, 输出文件: missing_students.csv, 分组名单文件: 分组名单.xlsx
+2026-01-28 00:13:12,688 - INFO - check_group_students - 开始加载学生名单文件: 名单.xlsx
+2026-01-28 00:13:13,065 - INFO - check_group_students - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 128
+2026-01-28 00:13:13,065 - INFO - check_group_students - 开始加载分组名单文件: 分组名单.xlsx
+2026-01-28 00:13:13,095 - INFO - check_group_students - 成功加载分组名单文件: 分组名单.xlsx, 总组数: 37
+2026-01-28 00:13:13,096 - INFO - check_group_students - 开始检查分组名单中的学号
+2026-01-28 00:13:13,097 - WARNING - check_group_students - 组33 智演未来——情景式 AI 演讲技能提升平台 - 成员2: 224080010408 未在学生名单中找到
+2026-01-28 00:13:13,097 - WARNING - check_group_students - 组35 书籍管理系统 - 项目经理: 2240808010317 未在学生名单中找到
+2026-01-28 00:13:13,097 - INFO - check_group_students - 检查完成，共检查 128 个学号，其中 2 个未在学生名单中找到
+2026-01-28 00:13:13,098 - INFO - check_group_students - 开始保存未找到的学号到: spm-practice-25秋-软件22\missing_students.csv
+2026-01-28 00:13:13,104 - INFO - check_group_students - 成功保存未找到的学号到: spm-practice-25秋-软件22\missing_students.csv，共 2 条记录
+2026-01-28 00:13:13,104 - INFO - check_group_students - 程序执行完成，输出文件: D:\WS_Edu\my-notes\mkdocs_notes\my-note\docs\tool\summary\spm-practice-25秋-软件22\missing_students.csv
+2026-01-28 00:22:53,280 - INFO - check_group_students - 分组名单学号检查工具开始运行
+2026-01-28 00:22:53,282 - INFO - check_group_students - 使用数据目录: spm-practice-25秋-软件22
+2026-01-28 00:22:53,282 - INFO - check_group_students - 配置文件加载成功，学生名单文件: 名单.xlsx, 输出文件: missing_students.csv, 分组名单文件: 分组名单.xlsx
+2026-01-28 00:22:53,283 - INFO - check_group_students - 开始加载学生名单文件: 名单.xlsx
+2026-01-28 00:22:53,573 - INFO - check_group_students - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 128
+2026-01-28 00:22:53,574 - INFO - check_group_students - 开始加载分组名单文件: 分组名单.xlsx
+2026-01-28 00:22:53,608 - INFO - check_group_students - 成功加载分组名单文件: 分组名单.xlsx, 总组数: 37
+2026-01-28 00:22:53,608 - INFO - check_group_students - 开始检查分组名单中的学号
+2026-01-28 00:22:53,609 - INFO - check_group_students - 检查完成，共检查 128 个学号，其中 0 个未在学生名单中找到
+2026-01-28 00:22:53,609 - INFO - check_group_students - 没有未找到的学号，跳过保存
+2026-01-28 00:22:53,609 - INFO - check_group_students - 程序执行完成，输出文件: D:\WS_Edu\my-notes\mkdocs_notes\my-note\docs\tool\summary\spm-practice-25秋-软件22\missing_students.csv
+2026-01-28 00:23:14,118 - INFO - check_group_students - 分组名单学号检查工具开始运行
+2026-01-28 00:23:14,120 - INFO - check_group_students - 使用数据目录: spm-practice-25秋-软件22
+2026-01-28 00:23:14,121 - INFO - check_group_students - 配置文件加载成功，学生名单文件: 名单.xlsx, 输出文件: missing_students.csv, 分组名单文件: 分组名单.xlsx
+2026-01-28 00:23:14,122 - INFO - check_group_students - 开始加载学生名单文件: 名单.xlsx
+2026-01-28 00:23:14,428 - INFO - check_group_students - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 128
+2026-01-28 00:23:14,428 - INFO - check_group_students - 开始加载分组名单文件: 分组名单.xlsx
+2026-01-28 00:23:14,462 - INFO - check_group_students - 成功加载分组名单文件: 分组名单.xlsx, 总组数: 37
+2026-01-28 00:23:14,462 - INFO - check_group_students - 开始检查分组名单中的学号
+2026-01-28 00:23:14,463 - INFO - check_group_students - 检查完成，共检查 128 个学号，其中 0 个未在学生名单中找到
+2026-01-28 00:23:14,463 - INFO - check_group_students - 没有未找到的学号，跳过保存
+2026-01-28 00:23:14,463 - INFO - check_group_students - 程序执行完成，输出文件: D:\WS_Edu\my-notes\mkdocs_notes\my-note\docs\tool\summary\spm-practice-25秋-软件22\missing_students.csv

@@ -3,9 +3,18 @@
 }
 
 .md-typeset hr  {
-  margin-bottom: 50em;
+  margin-bottom: 00em;
 }
 
 .md-grid {
   max-width: 1920px; /* (1)! */
+}
+
+/* 仅覆盖 .md-content 容器内的所有段落（<p> 标签），不影响标题（h1-h6） */
+.md-content p {
+  /* 配置宋体，兼顾中文和西文显示，强制覆盖段落默认样式 */
+  font-family: SimSun, "Songti SC", "STSong", "Times New Roman", serif !important;
+  /* 可选：优化宋体段落阅读体验，调整字号和行高 */
+  font-size: 28px;
+  line-height: 2;
 }

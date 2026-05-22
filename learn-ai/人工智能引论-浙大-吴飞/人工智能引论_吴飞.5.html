@@ -1,0 +1,1066 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
+<title>人工智能引论 吴飞.5 - 我的笔记本</title>
+<link href="../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../assets/stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#5">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="我的笔记本" class="md-header__button md-logo" data-md-component="logo" href="../../index.html" title="我的笔记本">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            我的笔记本
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              人工智能引论 吴飞.5
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="浅色" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="浅色">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+</label>
+<input aria-label="深色" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="深色">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../index.html">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../tool/index.html">
+        
+  
+  
+    
+  
+  生产力工具
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../reading/index.html">
+        
+  
+  
+    
+  
+  阅读
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="index.html">
+          
+  
+  
+  learn-ai
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="我的笔记本" class="md-nav__button md-logo" data-md-component="logo" href="../../index.html" title="我的笔记本">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+    我的笔记本
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../index.html">
+<span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tool/index.html">
+<span class="md-ellipsis">
+    
+  
+    生产力工具
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../reading/index.html">
+<span class="md-ellipsis">
+    
+  
+    阅读
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    learn-ai
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    learn-ai
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="index.html">
+<span class="md-ellipsis">
+    
+  
+    人工智能引论-浙大-吴飞
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    dive into deep learning
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    dive into deep learning
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dive into deep learning/1. 引言.md">
+<span class="md-ellipsis">
+    
+  
+    1. 引言
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label=" " class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5">
+<span class="md-ellipsis">
+      
+        第5章 神经网络与深度学习笔记
+      
+    </span>
+</a>
+<nav aria-label="第5章 神经网络与深度学习笔记" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#51">
+<span class="md-ellipsis">
+      
+        5.1人工神经网络概述
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#52">
+<span class="md-ellipsis">
+      
+        5.2前馈神经网络
+      
+    </span>
+</a>
+<nav aria-label="5.2前馈神经网络" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#521">
+<span class="md-ellipsis">
+      
+        5.2.1神经元
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#522">
+<span class="md-ellipsis">
+      
+        5.2.2感知机
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#523">
+<span class="md-ellipsis">
+      
+        5.2.3前馈神经网络
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#53">
+<span class="md-ellipsis">
+      
+        5.3神经网络参数优化
+      
+    </span>
+</a>
+<nav aria-label="5.3神经网络参数优化" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#531">
+<span class="md-ellipsis">
+      
+        5.3.1损失函数
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#532">
+<span class="md-ellipsis">
+      
+        5.3.2梯度下降
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#533">
+<span class="md-ellipsis">
+      
+        5.3.3误差反向传播
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#534">
+<span class="md-ellipsis">
+      
+        5.3.4误差反向传播与参数更新示例
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#54">
+<span class="md-ellipsis">
+      
+        5.4卷积神经网络
+      
+    </span>
+</a>
+<nav aria-label="5.4卷积神经网络" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#541">
+<span class="md-ellipsis">
+      
+        5.4.1卷积计算
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#542">
+<span class="md-ellipsis">
+      
+        5.4.2池化
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#55">
+<span class="md-ellipsis">
+      
+        5.5 循环神经网络
+      
+    </span>
+</a>
+<nav aria-label="5.5 循环神经网络" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#551">
+<span class="md-ellipsis">
+      
+        5.5.1循环神经网络模型
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#552">
+<span class="md-ellipsis">
+      
+        5.5.2 长短时记忆网络
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#553">
+<span class="md-ellipsis">
+      
+        5.5.3 门控循环单元
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#56">
+<span class="md-ellipsis">
+      
+        5.6 注意力机制
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#57">
+<span class="md-ellipsis">
+      
+        5.7 神经网络正则化
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#58">
+<span class="md-ellipsis">
+      
+        5.8 深度学习在自然语言和计算机视觉中的应用
+      
+    </span>
+</a>
+<nav aria-label="5.8 深度学习在自然语言和计算机视觉中的应用" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#581">
+<span class="md-ellipsis">
+      
+        5.8.1 词向量模型
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#582">
+<span class="md-ellipsis">
+      
+        5.8.2 图像分类与目标定位
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#59">
+<span class="md-ellipsis">
+      
+        5.9 小结
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      
+        延伸阅读:爬上树梢与攀登月球
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>人工智能引论 吴飞.5</h1>
+<h2 id="5">第5章 神经网络与深度学习<a href="%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BC%95%E8%AE%BA%20_%E5%90%B4%E9%A3%9E.5.note.html">笔记</a></h2>
+<p>Neurons that re together, wire together.
+--Donald Hebb</p>
+<p>深度学习模型受到了神经系统层次化结构特性的启发，以"层层递进、逐层抽象"机制来完成特定任务。1949年，心理学家唐纳德·赫布(Donald Hebb)提出了有名的赫布理论(Hebbian theory)：神经元之间持续、重复的经验刺激可导致突触传递效能增加(Neurons that fire together, wire together)，即学习和记忆的本质是大脑结构在后期经验刺激下改变神经元之间强弱联结的权重的结果。</p>
+<p>受到这一思想启发，1957年，弗朗克·罗森布拉特(Frank Rosenblatt)提出了一种用于解决二分类问题的线性分类器，这种神经网络仅包含输入层和输出层，且连接权重和阈值可学习，被称为"感知机(perceptron)"。但是感知机处理能力有限，这一方法并未引起广泛注意。</p>
+<p>在感知器的输入层和输出层之间加入多个隐藏层构成了深度神经网络(deep neural network, DNN)，也被称为多层感知机(multilayer perceptron, MLP)或前馈神经网络(feed-forward neural network)。在早期的深度神经网络中，相邻隐藏层之间的神经元相互全连接(但是同一隐藏层内的神经元之间没有任何连接)。为了实现输入端和输出端之间的映射，深度神经网络在每个神经元中引入了具有非线性映射能力的激活函数(activation function)。非线性映射函数的引入，使得深度神经网络比传统感知机具有更好的表达能力。</p>
+<p>为了能够"正确"地将输入数据映射到其给定的语义空间，在标注大数据驱动下，可通过链式求导(chain rule derivatives)和误差后向传播(error backpropagation)对神经网络参数进行优化学习。</p>
+<p>综上所述，深度学习是一种基于深度神经网络，通过”端到端(end-to-end)”机制学习如何更好表达数据中所蕴含语义的良好特征方法。</p>
+<h3 id="51">5.1人工神经网络概述</h3>
+<p>长久以来，研究者不断探索人类认知的神经基础，这不仅需要精确刻画不同层面的认知现象(如从所观测行为来推测神经元、神经系统和神经回路的工作机理)，进而对在不同层面所观测现象之间的因果联系在现有计算载体上进行机械实现，以启发人工智能模型来提高性能和扩展认知能力。</p>
+<p>1943年，神经科学家瓦伦·麦卡洛克(Warren McCulloch)和逻辑学家沃尔特·皮茨(Walter Pitts)合作提出了"McCulloch-Pitts MCP neuron"的思想。MCP可对输入信号进行线性加权组合，再用符号函数来输出线性加权组合结果，以模拟大脑复杂的活动模式。MCP是最早的神经网络雏形(McCulloch etal., 1943)。MCP模型虽简单，却开启了建立神经网络大厦地基的征途。但是，在MCP中，输入数据只能是0或1这样的二值化数据，网络中连接权重和符号函数阈值等参数无法从数据中学习，需要预先人为手工设置。</p>
+<p>1949年，心理学家唐纳德·赫布提出了著名的赫布理论，指出"神经元之间持续、重复的经验刺激可导致突触传递效能增加"，"神经元之间突触的强弱变化是学习与记忆的生理学基础"。这一理论为联结主义人工智能研究提供了认知神经心理学基础(Hebb, 1949)。</p>
+<p>1958年，戴维·胡贝尔(David Hubel)和托尔斯滕·维泽尔(Torsten Wiesel)在实验中发现小猫后脑皮层中不同视觉神经元与瞳孔所受刺激之间存在某种对应关系，由此发现了一种被称为"方向选择性细胞(orientation selective cell)"的神经元细胞，从而揭示了"视觉系统信息分层处理"这一机制(Hubel etal., 1959, 1962)。由于这一贡献，他们共同获得了1981年的诺贝尔生理学或医学奖。</p>
+<p>神经网络研究的突破来自弗朗克·罗森布拉特在20世纪50年代提出的感知机模型(Rosenblatt, 1962)。感知机模型是一个仅包含输入层和输出层的两层神经网络。对于一个线性可分二分类问题，从理论上可证明感知机能且一定能将线性可分的两类数据区分开来。在具体计算中，感知机先将输入数据按照一定权值进行线性累加，再利用符号函数对累加结果进行映射，以获得1或-1形式的输出结果，来解决二分类问题。与MCP不同，感知机中的连接权重和符号函数阈值可以从数据中进行学习，且不再要求输入数据是二值化结果。1969年，马文·明斯基(Marvin Minsky)和西摩·佩珀特(Seymour A.Papert)出版了《感知机：计算几何学》(Minsky etal., 1969)，书中证明了由输入层和输出层构成的感知机能力极其有限，甚至无法完成异或(XOR)这一基本逻辑计算问题。并且指出，如果在感知机中增加隐藏层，则会因计算量过大而无法学习得到良好的模型参数。这本书的出版使得神经网络的早期发展陷入低谷。</p>
+<p>由于感知机中没有包含非线性变换操作的隐藏层，因此感知机表达能力较弱(如无法解决异或问题)。如果在感知机中加入多个隐藏层，那么所形成的多层感知机则具备更强的表达能力，只是一旦增加了隐藏层，就需要有效的计算方法来解决深度神经网络模型中参数的优化训练问题。</p>
+<p>最早由Werbos提出(Werbos, 1974, 1990)并且由鲁梅尔哈特(Rumelhart)和欣顿(Hinton等人(Rumelhart etal., 1986)完善的误差后向传播算法解决了多层感知机中参数优化这一难题。在多层感知机中，由于隐藏层中每个神经元均包含具备非线性映射能力的激活函数(如sigmoid)，因此其可用来构造复杂的非线性分类函数。</p>
+<p>2006年，欣顿在Science等期刊上发表论文，首次提出"深度信念网络(deep belief network)"模型(Hinton etal., 2006)，在相关分类任务中可取得性能超过传统浅层学习模型(如支持向量机)的结果，使得深度架构引起了大家的关注。与传统的训练方式不同，深度信念网络有一个"预训练(pre-training)"的过程，可为神经网络中的连接权重找到一个接近最优解的值，之后再使用"微调(fine-tuning)"技术对整个网络的参数进行优化训练。这两项技术大幅度减少了训练多层神经网络的时间开销。欣顿给与多层神经网络相关的学习方法赋予了一个新名词--"深度学习"。</p>
+<p>深度学习的兴起推动了不同类型深度学习网络模型的研究。为了解决前馈神经网络无法处理反馈信息的不足，循环神经网络(recurrent neural network, RNN)思想被提出，其中包括霍恩·霍普菲尔德(John Hopfield)提出的霍普菲尔德反馈神经网络(Hopfield neural network)(Hopfield, 1982)、Elman-RNN (Elman, 1990)、Jordan-RNN (Jordan, 1997)，以及长短时记忆网络(Hochreiter etal., 1997)、门控循环单元(gated recurrent unit, GRU)(Cho etal., 2014)；从早期进行手写体识别的卷积神经网络LeNet(Lecun etal., 1998)到2012年推动深度学习成为热点，用于图像分类任务的卷积神经网络AlexNet(Krizhevsky etal., 2012)；从神经语言模型(neural language model)(Bengio etal., 2003)到词向量模型(word2vec)(Mikolov etal., 2013) 及BERT (bidirectional encoder representations from transformers) 模型 (Devlin etal., 2018)等。</p>
+<p>深度学习的基本动机在于通过"端到端学习(end-to-end learning)"这一机制来构建多层神经网络，以学习隐含在数据内部的关系，从而使学习所得特征具有更强的表达能力。在大规模数据上进行的实验已经表明：通过深度学习得到的特征表示在自然语言理解、图像分类、语音处理和视频识别等领域表现出了良好性能。</p>
+<h3 id="52">5.2前馈神经网络</h3>
+<p>前馈神经网络作为最基础的神经网络，一般包括输入层、隐藏层和输出层。每层神经元只和相邻层的神经元相连，即每层神经元只接收相邻前序神经层中神经元所传来的信息，只给相邻后续神经层中神经元传递信息。在前馈神经网络中，同一层的神经元之间没有任何连接，后续神经层不向其前序相邻神经层传递任何信息。前馈神经网络是目前应用最为广泛的神经网络之一。在正式介绍前馈神经网络之前，先介绍神经元、感知机和激活函数等概念。</p>
+<h4 id="521">5.2.1神经元</h4>
+<p>在生物学中，神经元细胞有兴奋与抑制两种状态。大多数神经元细胞在正常情况下处于抑制状态，一旦某个神经元受到刺激并且电位超过一定的阈值后，这个神经元细胞就被激活，处于兴奋状态，并向其他神经元传递信息。基于神经元细胞的结构特性与信息传递方式，神经科学家瓦伦·麦卡洛克和逻辑学家沃尔特·皮茨合作提出了MCP模型。在人工神经网络中，MCP模型成为最基本的结构。MCP模型结构如图5.1所示。</p>
+<p><img alt="" src="%E5%9B%BE5.1MCP%E6%A8%A1%E5%9E%8B%E7%BB%93%E6%9E%84.png"/></p>
+<p>图5.1 MCP模型结构</p>
+<p>从图5.1可见，给定n个二值化(0或1)的输入数据<span class="arithmatex">\(x_{i}(1 ≤i ≤n)\)</span>与连接参数<span class="arithmatex">\(w_i(1 ≤i ≤n)\)</span>，MCP神经元模型对输入数据线性加权求和，然后使用函数<span class="arithmatex">\(\phi(\cdot)\)</span>将加权累加结果映射为0或1，以完成二分类任务，即：
+$<span class="arithmatex">\(y=\Phi\left(\sum_{i=1}^{n} w_{i} x_{i}\right)\)</span>$
+其中，<span class="arithmatex">\(w_{i}\)</span>为预先设定的连接权重值(一般在0和1中取一个值或者1和-1中取一个值)，用来表示其所对应输入数据对输出结果的影响(即权重)。<span class="arithmatex">\(\Phi(\cdot)\)</span>将输入端数据与连接权重所得线性加权累加结果与预先设定的值进行比较，根据比较结果输出1或0。具体而言，如果线性加权累加结果(即<span class="arithmatex">\(\sum_{i=1}^{n} w_{i} x_{i}\)</span>)大于阅值阈则函数<span class="arithmatex">\(\Phi(\cdot)\)</span>的输出为1，否则为0。也就是说，如果线性加权累加结果大于阈值θ，则神经元细胞处于兴奋状态，向后传递1的信息；否则该神经元细胞处于抑制状态而不向后传递信息。</p>
+<p>从另外一个角度来看，对于任何输入数据<span class="arithmatex">\(x_{i}(1 ≤i ≤n)\)</span>，MCP模型可得到1或0这样的输出结果，也就是实现了将输入数据分类到1或0两个类别中，解决了二分类问题。</p>
+<p>瓦伦·麦卡洛克于1954年在《英国科学哲学期刊》发表的一篇题为《走出形而上学的洞穴》(roughthe Den of the Metaphysician)的文章中激动、骄傲地写道："在科学史上第一次，我们知道了我们是怎么知道的。(For the first time in the history of science we know how we know and hence are able to state it clearly.)"。他认为可通过如上计算方式来模拟神经元对输入信号进行抑制和兴奋的机制。若干个MCP神经元前后相连就构成了最早的神经网络雏形。</p>
+<h4 id="522">5.2.2感知机</h4>
+<p>1957年，弗朗克·罗森布拉特提出了一种简单的人工神经网络，称为感知机。早期的感知机结构和MCP模型相似，由一个输入层和一个输出层构成，因此也被称为"单层感知机"。感知机的输入层负责接收实数值的输入向量，输出层则能输出1或-1两个值。单层感知机可作为一种两类线性分类模型，如图5.2所示。</p>
+<p><img alt="" src="%E5%9B%BE5.2%E6%84%9F%E7%9F%A5%E6%9C%BA%E6%A8%A1%E5%9E%8B.png"/></p>
+<p>图5.2 感知机模型</p>
+<p>对于具有n个输人及对应连接权重系数为<span class="arithmatex">\(w_i\)</span>的感知机，首先通过线性加权得到输入数据的累加结果<span class="arithmatex">\(z=w_{1} x_{1}+w_{2} x_{2}+\cdots+b\)</span>。这里<span class="arithmatex">\(x_{1}, x_{2}, \cdots, x_{n}\)</span>为感知机的输入，b为偏置项(bias)。然后将<span class="arithmatex">\(z\)</span>作为激活函数<span class="arithmatex">\(\phi(\cdot)\)</span>的输入，激活函数会将z与某一阈值(此例中阈值为0)进行比较，如果大于该阈值，则感知器输出为1；否则输出为-1。通过这样的操作，输入数据被分类为1或-1这两个不同类别。</p>
+<p>单层感知机与MCP模型在连接权重的设置上不同，即感知机中的连接权重参数并不是预先设定好的，而是通过多次迭代训练得到的。具体而言，单层感知机通过构建损失函数来计算模型预测值与数据真实值之间的"误差"，通过最小化损失函数取值来优化模型参数。</p>
+<p>单层感知机可被用来区分线性可分数据。在图5.3中，逻辑与(AND)、逻与非(NAND)和逻辑或(OR)为线性可分函数，因此可利用单层感知机来模拟这些逻辑函数。但是，由于逻辑异或(XOR)是非线性可分的逻辑函数，因此单层感知机无法模拟逻辑异或函数的功能。</p>
+<p><img alt="" src="%E5%9B%BE5.3%E5%8D%95%E5%B1%82%E6%84%9F%E7%9F%A5%E6%9C%BA%E6%A8%A1%E6%8B%9F%E4%B8%8D%E5%90%8C%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E5%8A%9F%E8%83%BD%E7%A4%BA%E6%84%8F.png"/></p>
+<p>图5.3 单层感知机模拟不同逻辑函数功能示意</p>
+<h4 id="523">5.2.3前馈神经网络</h4>
+<p>无法模拟诸如异或及其他复杂函数的功能，使得单层感知机的应用较为单一。一个简单的想法是，如果能在感知机模型中增加若干隐藏层，增强神经网络的非线性表达能力，就会让神经网络具有更强的拟合能力。因此，由多个隐藏层构成的多层感知机被提出，这也被称为前馈神经网络。</p>
+<p>如图5.4所示，前馈神经网络由输入层、输出层和若干隐藏层构成。网络中各个隐藏层中的神经元可接收相邻前序隐藏层中所有神经元传递而来的信息，经过加工处理后，将信息输出给相邻后续隐藏层中的所有神经元。</p>
+<p><img alt="" src="%E5%9B%BE5.4%E5%89%8D%E9%A6%88%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B.png"/></p>
+<p>图5.4 前馈神经网络模型</p>
+<p>前馈神经网络中相邻层所包含的神经元之间通常使用全连接方式进行连接。所谓全连接，是指两个相邻层之间的神经元相互成对连接，但同一层内的神经元之间没有连接。前馈神经网络可以模拟复杂非线性函数的功能，所模拟函数的复杂性取决于网络隐藏层的数目和各层中神经元的数目。</p>
+<p>在前馈神经网络中，输入一个数据(如狗的图像)，输入的空间像素点信息以层层递进、逐层抽象的方式被加工处理，模型试图以最大概率输出正确结果(文本语义单词"狗")。在这个过程中，神经元起了重要作用。每个神经元对前序相邻神经元传递过来的信息按照连接权重加权累加，然后对加权累加结果施以非线性变换。</p>
+<p>在现实世界中，非线性是世界万事万物运转的魂魄。恩里科·费米(Enrico Fermi)曾经说过，"圣经中并没有说过一切大自然的定律都可以用线性方程来表示"，线性系统实际上只是对少数简单非线性系统的理论近似。一个神经元对信息进行了一次非线性加工，亿万个神经元所组成的神经网络就可实现将输入数据(如图像、文本和听觉等信息)从一个空间(如像素点空间)映射到另外一个空间(如文本单词空间等)，这一过程就是一个复杂的非线性变换。</p>
+<p>如果映射出现误差，则稍后介绍的误差后向传播算法会将误差(由损失函数定义)从输出端由后向前传播，逐层更新神经元连接权重和非线性映射函数等参数，使得神经网络模型拟合数据(data fitting)。这一过程好比在大数据驱动下，神经网络中一条条通道被打通，让神经元之间记住这种刺激或者强化信息流通路，打通"任督二脉"，从而在输入数据和输出结果之间建立关联。</p>
+<p>神经网络多以激活函数(activation function)来实现单个神经元的非线性映射变换，通过对多个非线性函数进行组合，最终实现对输入信息的非线性变换。下面介绍若干有代表性的激活函数(见表5.1)。后面将介绍，为了能够使用梯度下降方法通过误差后向传播来训练神经网络参数，激活函数必须是连续可导的。</p>
+<p>表5.1 有代表性的激活函数</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>函数</th>
+<th>图像</th>
+<th>导数</th>
+<th>值域</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sigmoid</td>
+<td><span class="arithmatex">\(f(x)=\frac{1}{1 + e^{-x}}\)</span></td>
+<td></td>
+<td><span class="arithmatex">\(f'(x) = f(x)\left(1 - f(x)\right)\)</span></td>
+<td>(0,1)</td>
+</tr>
+<tr>
+<td>tanh</td>
+<td><span class="arithmatex">\(f(x)=\frac{1 - e^{-2x}}{1 + e^{-2x}}\)</span></td>
+<td></td>
+<td><span class="arithmatex">\(f'(x)=1 - f(x)^2\)</span></td>
+<td>(-1,1)</td>
+</tr>
+<tr>
+<td>ReLU</td>
+<td><span class="arithmatex">\(f(x)=\begin{cases}0, &amp; x \leq 0 \\ x, &amp; x &gt; 0\end{cases}\)</span></td>
+<td></td>
+<td><span class="arithmatex">\(f'(x)=\begin{cases}0, &amp; x \leq 0 \\ 1, &amp; x &gt; 0\end{cases}\)</span></td>
+<td><span class="arithmatex">\((0, +\infty)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>1.sigmoid函数</strong></p>
+<p>对于输入数据x，sigmoid函数的数学表达式如下所示：</p>
+<div class="arithmatex">\[f(x)=\frac{1}{1 + e^{-x}}\]</div>
+<p>选取sigmoid函数作为激活函数，因其具有如下优点：</p>
+<p>(1)概率形式输出。sigmoid函数的值域为(0,1)，因此sigmoid函数的输出可视为概率值。</p>
+<p>(2)单调递增。sigmoid函数对输入x的取值范围没有限制，但当x大于一定值时，函数输出无限趋近于1；而当x小于一定数值时，函数输出无限趋近于0。特别地，当x=0时，函数输出为0.5。</p>
+<p>(3)非线性变化。当x取值在0附近时，函数输出值的变化幅度比较大(函数值变化陡峭)，意味着函数在0附近容易被激活且是非线性变化的。当x取值很大或很小时，函数输出值几乎不变，这是基于概率的一种认识与需要。</p>
+<p>sigmoid函数的导数可以通过如下方式推导得到：</p>
+<div class="arithmatex">\[
+\begin{aligned} 
+f'(x) &amp; =\left(\frac{1}{1+e^{-x}}\right)'=\frac{e^{-x}}{\left(1+e^{-x}\right)^{2}}=\frac{1+e^{-x}-1}{\left(1+e^{-x}\right)^{2}}=\frac{1}{\left(1+e^{-x}\right)}\left(1-\frac{1}{\left(1+e^{-x}\right)}\right) \\ 
+&amp; =f(x)(1-f(x)) 
+\end{aligned}
+\]</div>
+<p>由于<span class="arithmatex">\(0 &lt; f(x) &lt; 1\)</span>且<span class="arithmatex">\(0 &lt; 1 - f(x) &lt; 1\)</span>，因此sigmoid函数的导数<span class="arithmatex">\(f(x)(1 - f(x))\)</span>小于1。这样，当把sigmoid函数作为激活函数时，在使用反向传播算法更新参数的过程中易出现导数过于接近于0的情况，即梯度消失(vanishing gradient)的问题，并且这个问题会随着网络的深度增加而变得愈发严重。</p>
+<p><strong>2.tanh函数</strong></p>
+<p>对于输入数据x，tanh函数的数学表达式如下所示：</p>
+<div class="arithmatex">\[f(x)=\frac{1 - e^{-2x}}{1 + e^{-2x}}\]</div>
+<p>tanh函数的函数图像和sigmoid函数较为相似，它在定义域上也为单调递增，值域为(-1,1)。相较于sigmoid函数，tanh函数在坐标原点附近的梯度更大。在实际应用中，使用tanh函数的神经网络更容易收敛。</p>
+<p>但是，tanh函数与sigmoid函数都面临梯度消失问题，即梯度会随着网络深度增加而逐渐消失。</p>
+<p><strong>3.ReLU函数</strong></p>
+<p>ReLU(rectified linear unit, 修正线性单元)函数是目前使用较为普遍的激活函数，其数学表达式如下所示：</p>
+<div class="arithmatex">\[f(x)=\begin{cases}0, &amp; x &lt; 0 \\ x, &amp; x \geq 0\end{cases}或者f(x)=max(0,x)\]</div>
+<p>ReLU函数的导数为：</p>
+<div class="arithmatex">\[f'(x)=\begin{cases}0, &amp; x &lt; 0 \\ 1, &amp; x \geq 0\end{cases}\]</div>
+<p>当输入<span class="arithmatex">\(x \geq 0\)</span>时，ReLU的导数为常数，这样可有效缓解梯度消失问题。当<span class="arithmatex">\(x &lt; 0\)</span>时，ReLU的梯度总是0，导致神经网络中若干参数的激活值为0，即参与分类等任务的神经元数目稀缺，这种稀疏性可以在一定程度上克服机器学习中经常出现的过拟合现象。然而，当<span class="arithmatex">\(x &lt; 0\)</span>时，ReLU梯度为0也导致神经元"死亡"，即神经元对应的权重永远不会更新。为了解决这个问题，可以使用其他激活函数，如LeakyReLU或Parametric ReLU，它们在<span class="arithmatex">\(x &lt; 0\)</span>时的梯度取非零值。</p>
+<p><strong>4.softmax激活函数</strong></p>
+<p>softmax函数一般用于多分类问题中，它是对逻辑斯谛回归的一种推广，也被称为多项逻辑斯谛回归模型(multi-nominal logistic mode)。假设要实现k个类别的分类任务，softmax函数将输入数据<span class="arithmatex">\(x_{i}\)</span>映射到第i个类别的概率<span class="arithmatex">\(y_{i}\)</span>如下计算：</p>
+<div class="arithmatex">\[y_{i}=softmax(x_i)=\frac{e^{x_{i}}}{\sum_{j=1}^{k} e^{x_{j}}}\]</div>
+<p>显然，<span class="arithmatex">\(0 &lt; y_{i} &lt; 1\)</span>。图5.5给出了三分类问题的softmax输出示意。在图中，对于取值为4、1和-4的<span class="arithmatex">\(x_{1}\)</span>、<span class="arithmatex">\(x_{2}\)</span>和<span class="arithmatex">\(x_{3}\)</span>，通过softmax变换后，将其映射到(0,1)之间的概率值。</p>
+<p><img alt="" src="%E5%9B%BE5.5%E4%B8%89%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98%E7%9A%84softmax%E8%BE%93%E5%87%BA%E7%A4%BA%E6%84%8F.png"/></p>
+<p>图5.5 三分类问题的softmax输出示意</p>
+<p>由于softmax输出结果的值累加起来为1，因此可将输出概率最大的作为分类目标(在图5.5中被分类为第一类)。</p>
+<p>也可以从如下角度来理解图5.5中的内容：给定某个输入数据，可得到其分类为三个类别的初始结果，分别用<span class="arithmatex">\(x_{1}\)</span>、<span class="arithmatex">\(x_{2}\)</span>和<span class="arithmatex">\(x_{3}\)</span>表示。这三个初始分类结果分别是4、1和-4。通过softmax函数，得到三个类别分类任务中以概率表示的更好的分类结果，即分别以95.25%、4.71%和0.04%归属于类别1、类别2和类别3。显然，基于这样的概率值，可判断输入数据属于第一类。可见，通过使用softmax函数，可求取输入数据在所有类别上的概率分布。</p>
+<h3 id="53">5.3神经网络参数优化</h3>
+<p>在设计完成一个多层神经网络的结构(例如多少个隐藏层，每个隐藏层中包含的神经元数目及神经元采用的非线性激活函数等)后，需要对神经网络中的参数(如神经元之间的连接权重系数及激活函数系数等)进行优化学习，以使得神经网络能够将给定输入数据映射到所期望的输出语义空间(如将一幅由像素点构成的图像数据映射为人脸)，完成分类识别等任务。</p>
+<p>神经网络参数优化是一个监督学习的过程。给定n个标注样本数据<span class="arithmatex">\((x_{i}, y_{i})\)</span>，这里<span class="arithmatex">\(x_{i}\)</span>是输入数据，<span class="arithmatex">\(y_{i}\)</span>是<span class="arithmatex">\(x_{i}\)</span>的类别等标注信息。假设输入数据<span class="arithmatex">\(x_{i}\)</span>经过神经网络处理后所得输出预测值为<span class="arithmatex">\(\hat{y}_{i}\)</span>，则可通过损失函数来计算模型预测值与真实值之间的误差或损失，利用其来优化模型参数，以便让神经网络按照<span class="arithmatex">\(x_{i}\)</span>的真实信息<span class="arithmatex">\(y_{i}\)</span>输出，即让神经网络对数据进行拟合。</p>
+<p>具体而言，模型会利用反向传播算法将损失函数计算所得误差从输出端出发，由后向前传递给神经网络中每个单元，然后通过梯度下降算法对神经网络中的参数进行更新。随着迭代的进行，模型预测所得<span class="arithmatex">\(\hat{y}_{i}\)</span>与真实值<span class="arithmatex">\(y_{i}\)</span>之间的误差逐步缩小，模型预测准确率得以提升，预测的能力得以增强，当迭代达到一定轮次或准确率达到一定水平时，则可认为模型参数已被优化完毕。</p>
+<h4 id="531">5.3.1损失函数</h4>
+<p>损失函数(loss function)又称为代价函数(cost function)，用来计算模型预测值与真实值之间的误差。损失函数是神经网络设计中的一个重要组成部分。通过定义与任务相关的良好损失函数，在训练过程中可根据损失函数来计算神经网络的误差大小，进而优化神经网络参数。</p>
+<p>下面介绍两种最常用的损失函数：均方误差损失函数和交叉损失函数。</p>
+<p><strong>1.均方误差损失函数</strong></p>
+<p>均方误差损失函数通过计算预测值与实际值之间距离(即误差)的平方来衡量模型优劣。假设有n个训练数据<span class="arithmatex">\(x_{i}\)</span>，每个训练数据<span class="arithmatex">\(x_{i}\)</span>的真实输出为<span class="arithmatex">\(y_{i}\)</span>，模型对<span class="arithmatex">\(x_{i}\)</span>的预测值为<span class="arithmatex">\(\hat{y}_{i}\)</span>。该模型在n个训练数据下所产生的均方误差损失可定义如下：</p>
+<div class="arithmatex">\[MSE=\frac{1}{n}\sum_{i=1}^{n}(y_{i}-\hat{y}_{i})^{2}\]</div>
+<p><strong>2.交叉熵损失函数</strong></p>
+<p>在物理学中，"熵"被用来表示热力学系统所呈现的无序程度。香农将这一概念引入信息论领域，提出了"信息熵"概念，通过对数函数来测量信息的不确定性。</p>
+<p>交叉熵(cross entropy)是信息论中的重要概念，主要用来度量两个概率分布间的差异。<span class="arithmatex">\(y_{i}\)</span>是样本<span class="arithmatex">\(x_{i}\)</span>分类的真实概率，<span class="arithmatex">\(\hat{y}_{i}\)</span>是模型预测概率，通过<span class="arithmatex">\(\hat{y}_{i}\)</span>来表示<span class="arithmatex">\(y_{i}\)</span>的交叉熵可如下计算：</p>
+<div class="arithmatex">\[H(y_{i},\hat{y}_{i})=-y_{i}×\log\hat{y}_{i}\]</div>
+<p>交叉熵刻画了两个概率分布之间的距离，旨在描绘通过概率分布<span class="arithmatex">\(\hat{y}_{i}\)</span>来表达概率分布<span class="arithmatex">\(y_{i}\)</span>的困难程度。根据公式不难理解，两个概率分布<span class="arithmatex">\(y_{i}\)</span>和<span class="arithmatex">\(\hat{y}_{i}\)</span>越接近，交叉熵越小。也就是说，预测类别分布概率与实际类别分布概率之间的差距越小，交叉熵就越小。</p>
+<p>这里以一个示例子来说明这个事实。假设模型1和模型2分别对三个分别属于类别1、类别2和类别3的样本进行分类，得到如表5.2所示的分类结果。</p>
+<p>表5.2 两个模型的分类结果</p>
+<table>
+<thead>
+<tr>
+<th>样本</th>
+<th>真实值</th>
+<th>模型1预测结果</th>
+<th>模型2预测结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>样本1(类别1)</td>
+<td>0 0 1</td>
+<td>0.3 0.3 0.4</td>
+<td>0.1 0.2 0.7</td>
+</tr>
+<tr>
+<td>样本2(类别2)</td>
+<td>0 1 0</td>
+<td>0.3 0.4 0.3</td>
+<td>0.1 0.7 0.2</td>
+</tr>
+<tr>
+<td>样本3(类别3)</td>
+<td>1 0 0</td>
+<td>0.1 0.2 0.7</td>
+<td>0.3 0.4 0.3</td>
+</tr>
+</tbody>
+</table>
+<p>模型1在三个样本上的交叉熵损失平均值为：</p>
+<div class="arithmatex">\[
+\begin{align*}
+\frac{1}{3}[&amp;-(0×\log0.3 + 0×\log0.3 + 1×\log0.4 + 0×\log0.3 + 1×\log0.4 + 0×\log0.3 + 1×\log0.1 + 0×\log0.2 + 0×\log0.7)]\\
+=&amp;1.37
+\end{align*}
+\]</div>
+<p>模型2在三个样本上的交叉熵损失平均值为：</p>
+<div class="arithmatex">\[
+\begin{align*}
+\frac{1}{3}[&amp;-(0×\log0.1 + 0×\log0.2 + 1×\log0.7 + 0×\log0.1 + 1×\log0.7 + 0×\log0.2 + 1×\log0.3 + 0×\log0.4 + 0×\log0.3)]\\
+=&amp;0.63
+\end{align*}
+\]</div>
+<p>可见，交叉熵损失函数准确给出了模型2预测性能优于模型1预测性能的事实。如果模型预测值与真实值一致，则交叉熵损失为零。</p>
+<h4 id="532">5.3.2梯度下降</h4>
+<p>梯度下降(gradient descent)算法是机器学习中对模型参数进行优化时所采用的常用方法。为了让模型预测结果与真实结果之间的损失误差最小，利用梯度下降法来逐步迭代优化模型参数。当损失误差最小时，此时学习得到的模型参数即为模型的最优参数。</p>
+<p>下面说明损失函数梯度的反方向是损失误差下降最快的方向。假设损失函数<span class="arithmatex">\(f(x)\)</span>是连续可微的多元变量函数，其泰勒展开如下：</p>
+<div class="arithmatex">\[f(x+\Delta x)=f(x)+f'(x)\Delta x+\frac{1}{2}f''(x)(\Delta x)^{2}+\cdots+\frac{1}{n!}f^{(n)}(x)(\Delta x)^{n}\]</div>
+<div class="arithmatex">\[f(x+\Delta x) - f(x) \approx \left( \nabla f(x) \right)^{\mathrm{T}} \Delta x\]</div>
+<p>假设参数变量当前取值为x，其对应的损失误差数值为<span class="arithmatex">\(f(x)\)</span>。在不断促使损失误差减少的下一步迭代时，x取值变化为<span class="arithmatex">\(x+\Delta x\)</span>，则损失误差数值相应地变为<span class="arithmatex">\(f(x+\Delta x)\)</span>。</p>
+<p>由于<span class="arithmatex">\(f(x)\)</span>是损失函数，因此在迭代中希望<span class="arithmatex">\(f(x+\Delta x)\)</span>取值小于<span class="arithmatex">\(f(x)\)</span>，即损失误差随着模型参数被优化而逐渐减少，使得<span class="arithmatex">\(f(x+\Delta x) &lt; f(x)\)</span>，于是<span class="arithmatex">\((\nabla f(x))^{T}\Delta x &lt; 0\)</span>。</p>
+<p>在<span class="arithmatex">\((\nabla f(x))^{T}\Delta x=\|\nabla f(x)\|\|\Delta x\| \cos\theta\)</span>中，<span class="arithmatex">\(\|\nabla f(x)\|\)</span>和<span class="arithmatex">\(\|\Delta x\|\)</span>分别为损失函数梯度的模和下一轮迭代中x取值增量的模，两者均为正数。为了保证损失误差减少，只要保证<span class="arithmatex">\(\cos\theta &lt; 0\)</span>即可。当<span class="arithmatex">\(\theta = 180^{\circ}\)</span>时，<span class="arithmatex">\(\cos\theta=-1\)</span>，这时损失函数减少的幅度值<span class="arithmatex">\((\nabla f(x))^{T}\Delta x\)</span>最小。可见，当损失函数梯度<span class="arithmatex">\(\nabla f(x)\)</span>和x取值增量<span class="arithmatex">\(\Delta x\)</span>之间的夹角为<span class="arithmatex">\(180^{\circ}\)</span>时，损失误差减少最多。于是，在迭代过程中为了最小化损失误差，每次迭代时可沿着损失函数梯度的反方向(即<span class="arithmatex">\(\theta = 180^{\circ}\)</span>)以<span class="arithmatex">\(\Delta x\)</span>幅度来改变x取值，这样会保证<span class="arithmatex">\(f(x+\Delta x)\)</span>和<span class="arithmatex">\(f(x)\)</span>之间的差值最大(即损失误差下降最快)。</p>
+<p>于是，当<span class="arithmatex">\(\theta = 180^{\circ}\)</span>时，<span class="arithmatex">\(f(x+\Delta x)\)</span>和<span class="arithmatex">\(f(x)\)</span>之间的差值为<span class="arithmatex">\(f(x+\Delta x)-f(x)=\|\Delta f(x)\|\|\Delta x\| \cos\theta=-\|\Delta x\|\|\Delta f(x)\|\)</span>。这说明只要沿着损失函数梯度的反方向选取x的增量<span class="arithmatex">\(\Delta x\)</span>，就能保证损失误差下降最多、下降最快，犹如从山峰处沿着最陡峭的路径可快速走到山谷。前面的推导中忽略了损失函数的二阶导数及其高阶导数的取值，因此在实际中引入步长<span class="arithmatex">\(\eta\)</span>、用<span class="arithmatex">\(x - \eta\nabla f(x)\)</span>来更新x(在具体实现时<span class="arithmatex">\(\eta\)</span>可取一个定值)。</p>
+<p>从下面的公式可以计算得到变量的增量为<span class="arithmatex">\(-\eta\nabla f(x)\)</span>，即：
+$<span class="arithmatex">\(x_{t+1}=x_{t}-\eta\nabla f(x_{t})\)</span>$
+由于<span class="arithmatex">\(f(x+\Delta x)-f(x)\approx(\nabla f(x))^{T}\Delta x=-\eta(\nabla f(x))^{2}&lt;0\)</span>，因此损失误差会不断减少。由于又选择了损失函数梯度的反方向来改变变量权重，因此损失函数计算的误差减少最快。</p>
+<p>在上面的推导中，如果<span class="arithmatex">\(\theta = 0^{\circ}\)</span>，即沿着函数梯度的方向以<span class="arithmatex">\(\Delta x\)</span>来改变x取值，则<span class="arithmatex">\(f(x+\Delta x)-f(x)\)</span>之差为最大值。这意味着函数的梯度方向是函数值增加最快的方向，而梯度的反方向则是函数值下降最快的方向。</p>
+<p>这里要注意的是，多元函数在某一点的梯度是其由多元函数对每个变量的偏导数组成的(即求函数梯度时需要对各个变量求偏导)，其方向为函数在该点增加最快的方向，梯度大小为多元函数在该点的最大变化率。多元函数相对于它的某个自变量的偏导数，是假定其他自变量不变时，对该自变量的导数。</p>
+<p>对于优化问题来说，凸函数具有一个良好性质：凸函数的局部最优解即是全局最优解。因此对于凸函数而言，梯度下降法总是能够找到函数的全局最小值。为了达到这一目的，损失函数一般采用凸函数。</p>
+<h4 id="533">5.3.3误差反向传播</h4>
+<p>误差反向传播(error back propagation)算法主要利用损失函数来计算模型预测结果与真实结果之间的误差以优化调整模型参数，这一优化调整机制是从输出端向输入端，由后向前递进进行的。</p>
+<p>如前所述，损失函数梯度反方向是损失误差下降最快的方向。在求取损失函数梯度时需要对各个变量求偏导，这一求取偏导的过程要用到链式法则(chain rule)。</p>
+<p>如图5.6所示，out是一个神经单元，其在神经网络中完成两个任务：(1)将相邻前序神经元传递而来的信息线性加权累加，得到结果<span class="arithmatex">\(\chi\)</span>，即<span class="arithmatex">\(\chi=\sum_{i}w_{i}×out_{i}(1 ≤i ≤3)\)</span>，这里<span class="arithmatex">\(out_{i}\)</span>和<span class="arithmatex">\(w_{i}\)</span>分别是与out前序相连的第i个神经元后向传递的信息及第i个神经元与out之间的连接权重系数；(2)使用激活函数对加权累加结果进行非线性变换。图5.6中使用的激活函数为sigmoid，即<span class="arithmatex">\(O=\frac{1}{1 + e^{-\chi}}\)</span>。可见，O的大小就是神经网络对输入样本数据的预测输出。</p>
+<p><img alt="" src="%E5%9B%BE5.6%E9%93%BE%E5%BC%8F%E6%B1%82%E5%AF%BC%E4%B8%8E%E6%A8%A1%E5%9E%8B%E5%8F%82%E6%95%B0%E6%9B%B4%E6%96%B0%E7%A4%BA%E6%84%8F.png"/>
+图5.6 链式求导与模型参数更新示意</p>
+<p>图5.6中，模型预测结果O与真实结果之间的损失误差loss由所定义的损失函数L计算得到。现在的问题是如何根据这个误差来优化调整连接权重系数<span class="arithmatex">\(w_{i}\)</span>(以及按照同样的模式来调整图中未出现的神经网络的其他参数)，使得训练得到的模型尽可能输出预期结果。</p>
+<p>首先看如何调整<span class="arithmatex">\(w_{1}\)</span>。按照前面的讨论，损失函数L取值下降最快的方向是其梯度方向的反方向。为了使损失函数L取值减少(从而保证模型预测结果与实际结果之间的差距越来越小)，需要求取损失函数L相对于<span class="arithmatex">\(w_{1}\)</span>的偏导，然后按照损失函数梯度的反方向选取一个微小的增量来调整<span class="arithmatex">\(w_{1}\)</span>的取值，就能够保证损失函数取值减少。即将<span class="arithmatex">\(w_{1}\)</span>更新为<span class="arithmatex">\(w_{1}-\eta\frac{\partial L}{\partial w_{1}}\)</span>后，能使得损失误差减少，这里<span class="arithmatex">\(\frac{\partial L}{\partial w_{1}}\)</span>为损失函数L对<span class="arithmatex">\(w_{1}\)</span>的偏导。</p>
+<p>由于<span class="arithmatex">\(w_{1}\)</span>与加权累加函数<span class="arithmatex">\(\chi\)</span>、O函数均有关，此<span class="arithmatex">\(\frac{\partial L}{\partial w_{1}}=\frac{\partial L}{\partial O}\frac{\partial O}{\partial \chi}\frac{\partial \chi}{\partial w_{1}}\)</span>。这个链式求导中：<span class="arithmatex">\(\frac{\partial L}{\partial O}\)</span>与损失函数的定义有关；<span class="arithmatex">\(\frac{\partial O}{\partial \chi}\)</span>是sigmoid求导，结果为<span class="arithmatex">\(\frac{1}{1 + e^{-\chi}}×(1 - \frac{1}{1 + e^{-\chi}})\)</span>；<span class="arithmatex">\(\frac{\partial \chi}{\partial w_{1}}\)</span>是加权累加函数<span class="arithmatex">\(w_{1}×out_{1}+w_{2}×out_{2}+w_{3}×out_{3}\)</span>对<span class="arithmatex">\(w_{1}\)</span>求导，结果为out₁。</p>
+<p>链式求导实现了损失函数对某个自变量求偏导，好比将损失误差从输出端向输入端逐层传播，通过这个传播过程更新该自变量的取值。由梯度下降法可知，只要沿着损失函数梯度的反方向更新参数，就可使得损失函数下降最快。</p>
+<p>因此，假设损失函数为<span class="arithmatex">\(L(\theta)\)</span>(<span class="arithmatex">\(\theta\)</span>为参数)，可使用如下梯度下降算法对参数<span class="arithmatex">\(\theta\)</span>进行更新：<span class="arithmatex">\(\theta^{new}=\theta-\eta×\nabla_{\theta}L(\theta)\)</span>。其中，<span class="arithmatex">\(\eta\)</span>也被称为学习速率(learning rate)，其大小会影响模型参数的收敛速度，<span class="arithmatex">\(\nabla_{\theta}L(\theta)\)</span>是损失函数对参数<span class="arithmatex">\(\theta\)</span>求偏导的结果。神经网络中任意一个参数相对于损失函数的导数都可通过链式求导得到(这一求导过程可视为误差后向传播过程)。</p>
+<p>在图5.6中，参数<span class="arithmatex">\(w_{1}\)</span>在下一轮迭代中的取值被更新为<span class="arithmatex">\(w_{1}^{new}=w_{1}-\eta×\frac{\partial L}{\partial w_{1}}=w_{1}-\eta×\frac{\partial L}{\partial O}\frac{\partial O}{\partial \chi}\frac{\partial \chi}{\partial w_{1}}=w_{1}-\eta×\frac{\partial L}{\partial O}×\frac{1}{1 + e^{-\chi}}×(1 - \frac{1}{1 + e^{-\chi}})×out_{1}\)</span>。按照同样的方法，可调整<span class="arithmatex">\(w_{2}\)</span>及其他图中未显示参数的取值。经这样的调整，在模型参数新的值作用下，损失函数<span class="arithmatex">\(L(\theta)\)</span>会以最快下降方式逐渐减少，直至减少到最小值(即全局最小值)。</p>
+<p>梯度下降算法可以分为批量梯度下降算法(batch gradient descent)、随机梯度下降算法(stochastic gradient descent)和小批量梯度下降算法(mini-batch gradient descent)等类型。批量梯度下降算法是在整个训练集上计算损失误差<span class="arithmatex">\(L(\theta)\)</span>。如果数据集较大，则会因内存容量不足而无法完成梯度计算。随机梯度下降算法是使用训练集中的每个训练样本计算<span class="arithmatex">\(L(\theta)\)</span>来分别更新参数。因为随机梯度下降每次迭代只使用一个样本，导致梯度方向具有很大的波动，因此其收敛速度通常较慢。尽管如此，随机梯度下降的随机性有助于跳出局部最优解，有时可能找到更好的解。小批量梯度下降算法是选取训练集中的小批量样本计算<span class="arithmatex">\(L(\theta)\)</span>，根据每一批量样本所得到的累加误差来更新参数，这样可保证训练过程更稳定，而且采用批量训练方法也可利用矩阵计算优势，因此其成为目前最常用的梯度下降算法。</p>
+<h4 id="534">5.3.4误差反向传播与参数更新示例</h4>
+<p>在了解误差反向传播算法与梯度下降算法后，下面通过一个三分类的具体示例来介绍神经网络中参数的更新过程。给定一个包含输入层、一层隐藏层和输出层的多层感知机(见图5.7)，其中隐藏层由两个神经元构成。这里为了简化介绍过程，只使用了一层隐藏层。网络使用sigmoid函数作为神经元的激活函数，使用均方损失函数来计算网络输出值与实际值之间的误差。</p>
+<p><img alt="" src="%E5%9B%BE5.7%E5%8C%85%E5%90%AB%E4%B8%80%E4%B8%AA%E9%9A%90%E8%97%8F%E5%B1%82%E7%9A%84%E5%89%8D%E9%A6%88%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C.png"/>
+图5.7 包含一个隐藏层的前馈神经网络</p>
+<p>在图5.7中，每个神经元完成如下两项任务：(1)对相邻前序层传递的信息进行线性加权累加；(2)对加权累加结果进行非线性变换。假设样本数据输入为<span class="arithmatex">\((x_{1}, x_{2}, x_{3})\)</span>，其标注信息为<span class="arithmatex">\((y_{1}, y_{2}, y_{3})\)</span>。在三分类问题中，对于输入数据<span class="arithmatex">\((x_{1}, x_{2}, x_{3})\)</span>，<span class="arithmatex">\(y_{1}\)</span>，<span class="arithmatex">\(y_{2}\)</span>，和<span class="arithmatex">\(y_{3}\)</span>中只有一个取值为1，其余两个取值为0。</p>
+<p>表5.3给出了<span class="arithmatex">\(h_{1}\)</span>、<span class="arithmatex">\(h_{2}\)</span>、<span class="arithmatex">\(o_{1}\)</span>、<span class="arithmatex">\(O_{2}\)</span>和<span class="arithmatex">\(O_{3}\)</span>所承担两项任务的内容。</p>
+<p>表5.3 图5.7中神经网络各单元的计算结果
+|单元|相邻前序神经元所传递信息的线性加权累加|非线性变换|
+|----|----|----|
+|h₁|<span class="arithmatex">\(in_{1}=w_{1}x_{1}+w_{2}x_{2}+w_{3}x_{3}\)</span>|out₁ = sigmoid(in₁)|
+|h₂|<span class="arithmatex">\(in_{2}=w_{4}x_{1}+w_{5}x_{2}+w_{6}x_{3}\)</span>|out₂ = sigmoid(in₂)|
+|o₁|<span class="arithmatex">\(in_{3}=w_{7}out_{1}+w_{8}out_{2}+w_{9}\)</span>|out₃ = sigmoid(in₃)|
+|o₂|<span class="arithmatex">\(in_{4}=w_{10}out_{1}+w_{11}out_{2}+w_{12}\)</span>|out₄ = sigmoid(in₄)|
+|o₃|<span class="arithmatex">\(in_{5}=w_{13}out_{1}+w_{14}out_{2}+w_{15}\)</span>|out₅ = sigmoid(in₅)|</p>
+<p>一旦神经网络在当前参数下给出了预测结果后，通过均方误差损失函数来计算模型预测值<span class="arithmatex">\((out_{3}, out_{4}, out_{5})\)</span>与真实值<span class="arithmatex">\((y_{1}, y_{2}, y_{3})\)</span>之间的误差，记为<span class="arithmatex">\(loss=\frac{1}{3}\sum_{i=1}^{3}(\hat{y}_{i}-y_{i})^{2}\)</span></p>
+<p>接下来通过梯度下降和误差反向传播方法，沿着损失函数梯度的反方向更改参数变量的取值，使得损失函数快速下降到其最小值。由于损失函数对<span class="arithmatex">\(w_{7}~w_{12}\)</span>的偏导计算相似，在此以<span class="arithmatex">\(w_{7}\)</span>为例来介绍如何更新<span class="arithmatex">\(w_{7}\)</span>这一参数的取值。记损失函数为<span class="arithmatex">\(L(w)\)</span>，<span class="arithmatex">\(L(w)=\frac{1}{3}\sum_{i=1}^{3}(\hat{y}_{i}-y_{i})^{2}\)</span>，损失函数L对参数<span class="arithmatex">\(w_{7}\)</span>的偏导可如下计算：
+$$
+\begin{align<em>}
+\frac{\partial L}{\partial w_{7}}&amp;=\frac{\partial L}{\partial \hat{y}<em 1="1">{1}}\cdot\frac{\partial \hat{y}</em>\
+&amp;=\frac{2}{3}(\hat{y}}}{\partial in_{3}}\cdot\frac{\partial in_{3}}{\partial w_{7}<em 1="1">{1}-y</em>})\cdot\hat{y<em 1="1">{1}(1 - \hat{y}</em>
+\end{align})\cdot out_{1</em>}
+$$
+上述公式中每一项的结果如下：
+$$
+\frac{\partial L}{\partial \hat{y}<em 1="1">{1}}=\hat{y}</em>
+$$
+$$
+\frac{\partial \hat{y}}-y_{1<em 3="3">{1}}{\partial in</em>}}=\hat{y<em 1="1">{1}(1 - \hat{y}</em>)
+$$
+$$
+\frac{\partial in_{3}}{\partial w_{7}}=out_{1}
+$$</p>
+<p>同理，可计算出损失函数相对于<span class="arithmatex">\(w_{1}~w_{6}\)</span>的偏导结果。下面以<span class="arithmatex">\(w_{1}\)</span>为例介绍损失函数L对<span class="arithmatex">\(w_{1}\)</span>的偏导<span class="arithmatex">\(\delta_{1}\)</span>：
+$$
+\begin{align<em>}
+\delta_{1}&amp;=\frac{\partial L}{\partial w_{1}}\
+&amp;=\frac{\partial L}{\partial out_{1}}\cdot\frac{\partial out_{1}}{\partial in_{1}}\cdot\frac{\partial in_{1}}{\partial w_{1}}\
+&amp;=\left[\frac{\partial L}{\partial \hat{y}<em 1="1">{1}}\cdot\frac{\partial \hat{y}</em>}}{\partial in_{3}}\cdot\frac{\partial in_{3}}{\partial out_{1}}+\frac{\partial L}{\partial \hat{y<em 2="2">{2}}\cdot\frac{\partial \hat{y}</em>}}{\partial in_{4}}\cdot\frac{\partial in_{4}}{\partial out_{1}}+\frac{\partial L}{\partial \hat{y<em 3="3">{3}}\cdot\frac{\partial \hat{y}</em>\
+&amp;=\left[\frac{2}{3}(\hat{y}}}{\partial in_{5}}\cdot\frac{\partial in_{5}}{\partial out_{1}}\right]\cdot out_{1}(1 - out_{1})\cdot x_{1<em 1="1">{1}-y</em>})\cdot\hat{y<em 1="1">{1}(1 - \hat{y}</em>})\cdot w_{7}+\frac{2}{3}(\hat{y<em 2="2">{2}-y</em>})\cdot\hat{y<em 2="2">{2}(1 - \hat{y}</em>})\cdot w_{10}+\frac{2}{3}(\hat{y<em 3="3">{3}-y</em>})\cdot\hat{y<em 3="3">{3}(1 - \hat{y}</em>
+\end{align})\cdot w_{13}\right]\cdot out_{1}(1 - out_{1})\cdot x_{1</em>}
+$$</p>
+<p>在计算得到所有参数相对于损失函数L的偏导结果后，利用梯度下降算法，通过<span class="arithmatex">\(w_{i}^{new}=w_{i}-\eta×\delta_{i}\)</span>来更新参数取值。然后不断迭代，直至模型参数收敛，此时损失函数减少到其最小值。</p>
+<h3 id="54">5.4卷积神经网络</h3>
+<p>在前馈神经网络中，输入层的输入数据直接与第一个隐藏层中的所有神经元相互连接。如果输入数据是一幅图像，需要把灰度图像(二维矩阵)或彩色图像(三维矩阵)转换为向量形式。例如，给定一幅分辨率为1000×1000的灰度图像，输入数据为一个1000000维的向量，如果输入数据与第一个隐藏层中的所有神经元均相连，且第一个隐藏层的维度与输入维度一致，则输入层到第一个隐藏层之间待训练的参数数量为<span class="arithmatex">\(10^{12}\)</span>个，模型参数数量如此巨大，不仅会占用大量计算机内存，而且也会使神经网络模型的训练变得难以收敛。因此，对于图像这样的数据，不能直接将所构成的像素点向量与前馈神经网络中的每个神经元相连。</p>
+<p>1959年，戴维·胡贝尔和托尔斯滕·维泽尔发现了人脑"视觉系统信息分层处理"这一机制，即可视皮层对外界信息是分级感受的。受这一发现启发，1980年，Kunihiko Fukushima对神经科学所发现的结构进行了计算机模拟，提出通过级联方式(cascade，即逐层滤波)实现一种满足平移不变性的网络Neocognitron，这就是卷积神经网络的前身(Fukushima, 1980, 1988)。20世纪90年代，LeCun等人设计了一种被称为LeNet-5的卷积神经网络用于手写体识别，初步确立了卷积神经网络的基本结构。</p>
+<p>如今，虽然针对不同应用场景的卷积神经网络结构已变得愈发复杂，性能也变得更加强劲，但是究其本质，这些复杂网络结构仍是以卷积操作与池化操作为核心构建而</p>
+<h4 id="541">5.4.1卷积计算</h4>
+<p>图像中的像素点具有很强的空间依赖性，卷积(convolution)就是针对像素点的空间依赖性对图像进行处理的一种技术。</p>
+<p>在图像卷积计算中，需要定义一个卷积核(kernel)。卷积核是一个二维矩阵，矩阵中的数值为对图像中与卷积核同样大小的子块像素点进行卷积计算时所采用的权重。</p>
+<p>如图5.8所示，给定一个权重为<span class="arithmatex">\(w_{i}(1 ≤i ≤9)\)</span>、大小为3×3的卷积核及一个5×5大小的灰度图像。该卷积核对图像的卷积操作就是分别以图像中g、h、i、l、m、n、q、r和s所在像素点位置为中心，形成一个3×3大小的图像子块区域，然后用卷积核定义的权重<span class="arithmatex">\(w_{i}\)</span>对图像子块区域内的每个像素点进行加权累加，所得结果即为图像子块区域中心像素点被卷积(即滤波)后的结果。滤波也可视为在给定卷积核权重的前提下，记住邻域像素点之间的若干特定空间模式而忽略某些空间模式。</p>
+<p><img alt="" src="%E5%9B%BE5.8%E5%9B%BE%E5%83%8F%E5%8D%B7%E7%A7%AF%E4%BE%8B%E5%AD%90.png"/>
+图5.8 图像卷积例子
+(注：卷积核权重在卷积神经网络中是通过数据驱动方法学习得到的，而非手工事先指定)</p>
+<p>这里以像素点g为中心像素点进行滤波处理为例，以其为中心形成的3×3大小的子块中包含其邻域的a、b、c、f、h、k、l、m八个像素点，用卷积核中的权重<span class="arithmatex">\(w_{i}\)</span>对这些像素点(含像素点g)进行加权累加，所得到的结果即为像素点g的卷积滤波结果，即<span class="arithmatex">\(g = w_{1}×a + w_{2}×b + w_{3}×c + w_{4}×f + w_{5}×g + w_{6}×h + w_{7}×k + w_{8}×l + w_{9}×m\)</span></p>
+<p>同理，可得到像素点h、i、l、m、n、q、r和s的卷积滤波结果(见图5.8)，卷积滤波结果在卷积神经网络中被称为特征图(feature map)。</p>
+<p>在图像卷积计算中，给定某个中心像素点，通过卷积核给其周围像素点赋予不同权重，以对该像素点的值进行调整。卷积这一思想利用了图像中像素点存在"空间依赖度"的特点，即相邻像素点之间具有很强的相关性，而彼此远离的像素点之间的相关性很弱。卷积过程中需要注意如下三点：
+(1)由于无法以被卷积图像边界的像素点为中心形成卷积核大小的图像子块区域，因此边界像素点无法参与卷积计算。在图5.8中，输入图像中的第1行、第5行、第1列和第5列所包含的像素点无法参与卷积计算。
+(2)图像卷积计算对图像进行了下采样(down sampling)操作。在5.8中，被卷积图像的分辨率为5×5，卷积后图像的分辨率为3×3，这样被卷积图像就被"约减"了。对卷积得到的图像结果不断卷积滤波，则原始图像就会被"层层抽象、层层约减"，从而使得含在图像中的重要信息"显山露水"。
+(3)卷积核中的权重系数<span class="arithmatex">\(w_{i}\)</span>是通过数据驱动机制学习得到的，其用来捕获图像中某像素点及其邻域像素点所构成的特有空间模式。一旦从数据中学习得到权重系数，这些权重系数就刻画了图像中像素点构成的空间分布的不同模式。</p>
+<p>图像卷积操作符合"视觉系统信息分层处理"这一机制，即视觉感知是由低层细胞到高层细胞对原始输入信息不断抽象完成的，更高层细胞拥有更高级的感受野，并且对一些偏移、旋转等具有一定的不变性。例如，无论如何旋转手机，给出不同旋转状态的手机图像，人脑总是可以从这些不同旋转角度的图像中辨认出手机这一语义对象。</p>
+<p>图5.9给出了同一幅图像经过两个不同的7×7高斯卷积核进行卷积滤波的结果。高斯卷积核中的权重系数具有如下特点：卷积核中心位置权重系数的取值最大，从中心位置向四周边缘扩散过程中，权重系数的取值逐渐减小。在高斯卷积核中，所有权重系数的累加和为1。由图5.9可见，卷积核中心位置的权重系数越小且与其他卷积权重系数的差别越小，则卷积所得到图像滤波的结果越模糊，这被称为图像平滑操作。图5.9中右下图比右上图模糊，其原因在于右下图所对应的卷积核权重系数相差不大，从而使得像素点所对应的卷积滤波结果之间彼此相差不大。可以想象，在卷积过程中，被卷积图像子块中心位置像素点所对应的卷积权重系数小且与其他卷积权重系数差别不大，则意味着该像素点色度值与其近邻像素点色度值之间的差距在卷积后将减小，该像素点与其近邻像素点之间的色度值也将趋同，从而使得图像变"模糊"。这很好利用了图像相邻像素点之间存在"空间依赖"的特点。</p>
+<p><img alt="" src="%E5%9B%BE5.9%E5%90%8C%E4%B8%80%E5%B9%85%E5%9B%BE%E5%83%8F%E8%A2%AB%E4%B8%A4%E4%B8%AA%E4%B8%8D%E5%90%8C%E5%8D%B7%E7%A7%AF%E6%A0%B8%E8%AE%A1%E7%AE%97%E7%9A%84%E7%BB%93%E6%9E%9C.png"/>
+图5.9 同一幅图像被两个不同卷积核计算的结果</p>
+<p>在进行卷积操作时，经常会采用填充(padding)和步长(striding)这两种方法。
+- 填充：从前面的介绍可知，位于被卷积图像边缘位置的像素点无法形成一个以其为中心、与卷积核大小一致的图像子块区域，因此无法对边缘位置的像素点进行卷积滤波。为了使边缘位置的图像像素点也参与卷积滤波，填充技术被提出。该方法在边缘像素点周围填充"0"(即0填充)，使得可以以边缘像素点为中心形成与卷积核同样大小的图像子块区域。注意，在这种填充机制下，卷积后的图像分辨率将与卷积前的图像分辨率一致，不存在下采样。
+- 步长：在进行卷积操作时，通常希望被卷积所得的图像分辨率与卷积前的图像分辨率相比逐渐减少，即图像被约减。步长方法通过改变卷积核在被卷积图像中移动步长的大小来跳过一些像素，进行卷积滤波。当stride = 1时，卷积核滑动跳过1个像素，这是最基本的单步滑动，也是标准的卷积模式(如图5.8中的示例所示)。stride = k表示卷积核移动跳过的步长是k。对于图5.8中的卷积操作，如果将步长改为2，则可得到一个2×2的卷积滤波图像结果(见图5.10)。</p>
+<p><img alt="" src="%E5%9B%BE5.10%E5%8D%B7%E7%A7%AF%E6%AD%A5%E9%95%BF%E4%B8%BA2%E6%97%B6%E7%9A%84%E5%8D%B7%E7%A7%AF%E7%BB%93%E6%9E%9C.png"/>
+图5.10 卷积步长为2时的卷积结果</p>
+<p>在实际操作中，给定一幅图像，为了捕获图像中相邻像素点所构成的不同空间模式，或者感应原始图像中不同侧面的重要信息，可通过不同权重系数的不同卷积核对原始图像进行卷积操作。</p>
+<p>图5.11中使用了三个卷积核对图像进行卷积操作,可得到三三个卷积结果。</p>
+<p><img alt="" src="%E5%9B%BE5.11%E4%B8%89%E4%B8%AA%E5%8D%B7%E7%A7%AF%E6%A0%B8%E5%AF%B9%E5%9B%BE%E5%83%8F%E8%BF%9B%E8%A1%8C%E5%8D%B7%E7%A7%AF%E7%A4%BA%E6%84%8F.png"/></p>
+<p>图5.11 三个卷积核对图像进行卷积示意</p>
+<p>神经科学家发现,人的视觉神经细胞对不同的视觉模式具有特征选择性(feature selectivity),即不同视觉神经细胞对边界、运动和颜色等不同信息具有强弱不同的选择性。因此,不同卷积核可被用来刻画视觉神经细胞对外界信息感受时的不同选择性。同时也可以看到,卷积所得结果中,每个输出点的取值仅依赖于其在输入图像中该点及其邻域区域点的取值,而与这个区域之外其他点的取值均无关,该区域被称为感受野(receptive field),正所谓"管中窥豹、见微知著"。在卷积神经网络中,感受野是卷积神经网络每一层输出的特征图中的像素点在输入图像中映射的区域大小。也就是说，感受野是特征图中的一个点对应输入图像中的区域。</p>
+<p>值得注意的是，卷积操作是一个线性变换（线性加权累加），但是卷积操作中的权重参数可学习、可被重复使用，从而更适合数据中蕴含的实际空间模式且减少了参数总数。这种“局部感知、参数共享”的特点减少了网络参数，一定程度上防止了过拟合。</p>
+<p>假设被卷积图像大小为<span class="arithmatex">\(w \times w\)</span>，卷积核大小为<span class="arithmatex">\(F \times F\)</span>，上下左右四个边缘填充像素行/列数为<span class="arithmatex">\(p = [F/2]\)</span>，步长为<span class="arithmatex">\(S\)</span>，则被卷积结果的分辨率是<span class="arithmatex">\(\frac{w-F+2P}{S}+1\)</span>。</p>
+<h4 id="542">5.4.2池化</h4>
+<p>由于图像中存在较多冗余，在图像处理中，可用某一区域子块的统计信息(如最大值或均值等)来刻画该区域中所有像素点呈现的空间分布模式，以替代区域子块中所有像素点的取值，这就是卷积神经网络中的池化(pooling)操作。池化操作对卷积结果特征图进行约减，实现了下采样，同时保留了特征图中的主要信息。下面介绍几种常见的池化操作。</p>
+<ul>
+<li>最大池化(max pooling)：从输入特征图的某个区域子块中选择值最大的像素点作为最大池化结果(见图5.12)。</li>
+<li>平均池化(average pooling)：计算区域子块所包含所有像素点的均值，将均值作为平均池化结果。</li>
+<li>k-max池化(k-max pooling)：对输入特征图区域子块中的像素点取前k个最大值。如图5.13所示，从包含4个取值的每一列中选取前2个最大值就得到了k-max池化结果。</li>
+</ul>
+<p><img alt="" src="%E5%9B%BE5.12%E6%9C%80%E5%A4%A7%E6%B1%A0%E5%8C%96%E4%B8%8E%E5%B9%B3%E5%9D%87%E6%B1%A0%E5%8C%96%E6%93%8D%E4%BD%9C%E7%A4%BA%E6%84%8F.png"/>
+图5.12 最大池化与平均池化操作示意</p>
+<p><img alt="" src="%E5%9B%BE5.13k-max%E6%B1%A0%E5%8C%96%E6%93%8D%E4%BD%9C%E7%A4%BA%E6%84%8F.png"/>
+图5.13 k-max池化操作示意</p>
+<p>池化操作是一种下采样操作，是对信息进行约减和抽象的过程，可简化卷积神经网络计算的复杂度，保持特征的某种不变性(选择、平移和伸缩等)，以增强神经网络所学习特征的稳健性(防止过拟合与过学习)。</p>
+<p>基于卷积与池化操作，就可以定义一个完整的卷积神经网络。如图5.14所示，对于32×32×3的彩色图像，先用6个5×5×3的卷积核对其进行卷积操作(步长为1，无填充)，得到6个28×28的卷积结果(特征图)，然后以2×2大小进行池化，得到6个14×14大小的特征图。最后通过若干个全连接层得到原始图像的向量表达，再对这个向量表达通过softmax函数进行分类识别，得到输入图像隶属于n个类别的概率。</p>
+<p><img alt="" src="%E5%9B%BE5.14%E5%9F%BA%E4%BA%8E%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB%E7%A4%BA%E6%84%8F.png"/>
+图5.14 基于卷积神经网络的图像分类示意</p>
+<p>对于输入的海量标注数据，通过多次迭代训练，卷积神经网络在若干次卷积操作，对卷积所得结果进行激活函数操作和池化操作下，最后通过全连接层学习得到输入数据的特征表达，即分布式向量表达(distributed vector representation)。基于该向量表达，就可以完成诸如图像分类，视觉对象定位等任务。</p>
+<p>卷积操作提取了图像中的局部模式，得到的不同特征图是对图像中像素点局部空间模式不同角度的描述，这些不同的局部空间模式所对应的激活系数在全连接层被组合起来，用来进行识别和分类。全连接层起到了"部分组成整体"的作用。</p>
+<p>如果一个神经网络中的激活函数采用sigmoid或ReLU等函数，则神经网络的参数就是卷积核权重系数和全连接系数等参数，这些参数都是通过数据驱动方式学习得到的。一般地，全连接层的参数数量较多，可占整个网络参数的80%~90%，优化这些参数会耗费过多的资源，甚至产生惊人的碳排放(Strubelletal.,2019)。为了进一步减少需要学习的参数数量，一些性能优异的网络模型如ResNet和GoogLeNet等均用全局平均池化(global average pooling, GAP)取代全连接层来融合学到的深度特征。</p>
+<p>卷积操作利用了图像像素点之间存在的空间局部依赖性，使得卷积操作可捕获图像局部特征，但是无法明了图像全局特征。也就是说，卷积操作是"不识庐山真面目，只缘身在此山中"。在一系列卷积操作后，使用全连接层可将不同的局部特征进行组合，完成对全局特征的挖掘，因此全连接层可视为"不畏浮云遮望眼，自缘身在最高层"。</p>
+<p>当然，卷积操作和全连接计算在算法上是可相互转换的，如全连接计算可等效于卷积核为1×1的卷积运算。</p>
+<h3 id="55">5.5 循环神经网络</h3>
+<p>循环神经网络(recurrentneural network,RNN)是一类处理序列数据(如文本句子、视频帧等)时所采用的网络结构。前文介绍的前馈神经网络或卷积神经网络所需要处理的输入数据一次性给定,难以处理存在前后依赖关系的数据。</p>
+<p>1990年,Jeffrey LEIman提出循环神经网络的最初概念框架(EIman,1990)。循环神经网络的本质是希望模拟人所具有的记忆能力,在学习过程中记住部分已经出现的信息,并利用所记住的信息影响后续结点的输出。循环神经网络在自然语言处理,例如语音识别、情感分析、机器翻译等领域有重要应用。</p>
+<h4 id="551">5.5.1循环神经网络模型</h4>
+<p>图5.15展示了循环神经网络的结构。由"循环"两字可知,循环神经网络在处理数据过程中构成了一个循环体。对于一个序列数据,在每一时刻<span class="arithmatex">\(t\)</span>,循环神经网络单元会读取当前输入数据<span class="arithmatex">\(x\)</span>和前一时刻输入数据<span class="arithmatex">\(x_{t-1}\)</span>所对应的隐式编码结果<span class="arithmatex">\(h_{t-1}\)</span>,一起生成<span class="arithmatex">\(t\)</span>时刻的隐式编码结果<span class="arithmatex">\(h_{t}\)</span>。接着将<span class="arithmatex">\(h_{t}\)</span>向后传,参与生成<span class="arithmatex">\(t+1\)</span>时刻输入数据<span class="arithmatex">\(x_{t+1}\)</span>的隐式编码<span class="arithmatex">\(h_{t+1}\)</span>。如此循环处理,直至该序列数据被处理完毕。</p>
+<p><img alt="" src="%E5%9B%BE5.15%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E5%B1%95%E5%BC%80%E5%BD%A2%E5%BC%8F%E7%A4%BA%E6%84%8F.png"/>
+图5.15 循环神经网络结构及其展开形式示意</p>
+<p>可见,时刻<span class="arithmatex">\(t\)</span>得到的隐式编码<span class="arithmatex">\(h_{t}\)</span>是由上一时刻的隐式编码<span class="arithmatex">\(h_{t-1}\)</span>和当前输入的<span class="arithmatex">\(x_{t}\)</span>共同参与生成的,这可认为隐式编码<span class="arithmatex">\(h_{t-1}\)</span>已经"记忆"了<span class="arithmatex">\(t\)</span>时刻之前的时序信息,或者说前序时刻信息影响了后续时刻信息的处理。与前馈神经网络和卷积神经网络在处理时需要将所有数据一次性输入不同,循环神经网络能够刻画序列数据中存在的时序依赖关系。</p>
+<p>在时刻<span class="arithmatex">\(t\)</span>,一旦得到当前输入数据<span class="arithmatex">\(x_{t}\)</span>,循环神经网络会结合前一时刻<span class="arithmatex">\(t-1\)</span>得到的隐式编码<span class="arithmatex">\(h_{t-1}\)</span>,如下产生当前时刻的隐式编码<span class="arithmatex">\(h_{t}\)</span>：
+$<span class="arithmatex">\(h_{t}=\Phi\left(U × x_{t}+W × h_{t-1}\right)\)</span>$</p>
+<p>这里<span class="arithmatex">\(\Phi(\cdot)\)</span>是激活函数,一般可为sigmoid或者tanh激活函数, <span class="arithmatex">\(U\)</span>与<span class="arithmatex">\(W\)</span>为模型参数。从这里可看出,当前时刻的隐式编码输出<span class="arithmatex">\(h_{t}\)</span>不仅仅与当前输入数据<span class="arithmatex">\(x_{t}\)</span>相关,也与网络已有的"记忆"<span class="arithmatex">\(h_{t-1}\)</span>有着密不可分的联系。</p>
+<p>为了更加直观地展示在循环神经网络中前序时刻信息如何被"记住"来影响当前时刻的信息编码,这里对上述公式进行如下变化：
+$$
+\begin{align<em>}
+h_{t}&amp;=\Phi\left(U × x_{t}+W × h_{t-1}\right)\
+&amp;=\Phi\left(U × x_{t}+W × \Phi\left(U × x_{t-1}+W × h_{t-2}\right)\right)\
+&amp;=\Phi\left(U × x_{t}+W × \Phi\left(U × x_{t-1}+W × \Phi\left(U × x_{t-2}+W × h_{t-3}\right)\right)\right)\
+&amp;=\cdots\
+&amp;=\Phi\left(U × x_{t}+W × \Phi\left(U × x_{t-1}+W × \Phi\left(\cdots + W × \Phi\left(U × x_{1}+W × h_{0}\right)\cdots\right)\right)\right)
+\end{align</em>}
+$$</p>
+<p>从上式可见,当前时刻编码中的确均包含历史信息,这也说明了循环神经网络能够记忆的原因,使得一些需要记忆历史过往信息的任务能够被循环神经网络有效处理。</p>
+<p>实际上,按照时间将循环神经网络展开后(见图5.15),可以得到一个和前馈神经网络相似的网络结构。这个网络结构可利用反向传播算法和梯度下降算法来训练模型参数,这种训练方法称为"沿时间反向传播算法(backpropagation through time, BPTT)"。由于循环神经网络每个时刻都有一个输出,因此在计算循环神经网络的损失时,通常需要将所有时刻(或者部分时刻)的损失进行累加。</p>
+<p>下面以自然语言为例来解释循环神经网络是如何处理时序数据的。假设希望将自然语言句子进行分类,分类为饮食、体育、文化等不同类别。首先,对文本语句进行分词操作,如图5.16所示,循环神经网络在读入每个单词后,产生对应单词的隐式编码,并利用其来参与后续单词的隐式编码。一旦得到每个单词的隐式编码,通常可以通过如下方法得到一个句子的向量编码：(1)考虑到句子中所有单词的信息均被后向传递,因此将最后一个单词的输出作为整个句子的向量编码表示；(2)将每个单词的隐式编码进行加权平均,将加权平均结果作为句子的向量编码表示。这样,一旦得到句子的向量编码表示,就可以利用某个分类器对句子的类别进行判断。</p>
+<p><img alt="" src="%E5%9B%BE5.16%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%BA%94%E7%94%A8%E7%A4%BA%E4%BE%8B.png"/></p>
+<p>图5.16 循环神经网络的应用示例</p>
+<p>在图5.16中,"南北""存在差异""南甜北咸""南方人""甜豆花"等单词之间存在前后依赖,这种依赖会被有效利用起来,得到各单词的隐式编码及句子的向量表达。</p>
+<p>在循环神经网络中,根据输入序列数据与输出序列数据中所包含"单元"的多寡,循环神经网络可以实现"多对多"(即输入和输出序列数据中包含多个单元,常用于机器翻译)、"多对一"(即输入序列数据包含多个单元,输出序列数据只包含一个单元,常用于文本的情感分类)和"一对多"(即输入序列数据包含一个单元,输出序列数据包含多个单元,常用于图像描述生成)三种模式,如图5.17所示。</p>
+<p><img alt="" src="%E5%9B%BE5.17%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E4%B8%8D%E5%90%8C%E6%83%85%E5%86%B5%E4%B8%8B%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84%E7%A4%BA%E4%BE%8B.png"/>
+图5.17 输入输出不同情况下循环神经网络结构示例</p>
+<p>循环神经网络虽然具有一定的记忆能力,但当彼此相关信息在序列中相距较远时,循环神经网络无法捕捉到数据之中的时序依赖关系。除此之外,当输入序列过长时,循环神经网络也容易出现梯度消失(gradient vanishing)或者梯度爆炸(gradient exploding)问题。</p>
+<p>图5.18以词性标注为例给出了一个输入序列数据<span class="arithmatex">\((x_{1},\cdots,x_{t-1},x_{t},x_{t+1},\cdots,x_{T})\)</span>被循环神经网络处理的示意。在图5.18中,时刻<span class="arithmatex">\(t\)</span>输入数据<span class="arithmatex">\(x_{t}\)</span> (文本中的单词)的隐式编码为<span class="arithmatex">\(h_{t}\)</span>,其真实输出为<span class="arithmatex">\(y_{t}\)</span> (单词词性),模型预测<span class="arithmatex">\(x_{t}\)</span>的词性是<span class="arithmatex">\(o_{t}\)</span>。参数<span class="arithmatex">\(W_{x}\)</span>将<span class="arithmatex">\(x_{t}\)</span>映射为隐式编码<span class="arithmatex">\(h_{t}\)</span>,参数<span class="arithmatex">\(W_{o}\)</span>将<span class="arithmatex">\(h_{t}\)</span>映射为预测输出<span class="arithmatex">\(o_{t}\)</span>, <span class="arithmatex">\(h_{t-1}\)</span>通过参数<span class="arithmatex">\(W_{h}\)</span>参与<span class="arithmatex">\(h_{t}\)</span>的生成。图中, <span class="arithmatex">\(W_{x}\)</span>, <span class="arithmatex">\(W_{o}\)</span>和<span class="arithmatex">\(W_{h}\)</span>是复用参数。</p>
+<p>假设时刻<span class="arithmatex">\(t\)</span>的隐式编码如下得到: <span class="arithmatex">\(h_{t}=\tanh(W_{x}x_{t}+W_{h}h_{t-1}+b)\)</span>。使用交叉熵损失函数计算时刻<span class="arithmatex">\(t\)</span>预测输出与实际输出的误差<span class="arithmatex">\(E_{t}\)</span>。显然,整个序列产生的误差为<span class="arithmatex">\(E=-\frac{1}{2}\sum_{i=1}^{T}E_{t}\)</span></p>
+<p><img alt="" src="%E5%9B%BE5.18%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%AD%E6%A2%AF%E5%BA%A6%E4%BC%A0%E9%80%92%E7%A4%BA%E6%84%8F.png"/>
+图5.18 循环神经网络中梯度传递示意</p>
+<p>下面介绍如何根据时刻<span class="arithmatex">\(t\)</span>所得误差更新参数<span class="arithmatex">\(W_{x}\)</span>。在时刻<span class="arithmatex">\(t\)</span>计算所得<span class="arithmatex">\(o_{t}\)</span>不仅涉及时刻<span class="arithmatex">\(t\)</span>的<span class="arithmatex">\(W_{x}\)</span>,而且也涉及前面所有时刻的<span class="arithmatex">\(W_{x}\)</span>,按照链式求导法则, <span class="arithmatex">\(E_{t}\)</span>在对<span class="arithmatex">\(W_{x}\)</span>求导时,也需要对前面时刻的<span class="arithmatex">\(W_{x}\)</span>依次求导,然后再将求导结果进行累加,即</p>
+<p>其中</p>
+<p>令<span class="arithmatex">\(t=3\)</span>,则有</p>
+<p>由于tanh函数的导数取值位于0~1区间,对于长序列而言,若干个0~1区间的小数相乘,会使得参数求导结果很小,引发梯度消失问题。<span class="arithmatex">\(E_{t}\)</span>对<span class="arithmatex">\(W_{h}\)</span>的求导类似,这里就不列出了。为了缓解梯度消失问题,长短时记忆网络(long short-term memory, LSTM)模型被提出。</p>
+<h4 id="552">5.5.2 长短时记忆网络</h4>
+<p>与简单的循环神经网络结构不同,长短时记忆网络中引入了内部记忆单元(internal memory cell)和门(gate)结构来对当前时刻输入信息及前序时刻所生成信息进行整合和传递。这里,内部记忆单元中的信息可视为对"历史信息"的累积。</p>
+<p>常见的LSTM模型中有输入门(input gate)、遗忘门(forget gate)和输出门(output gate)三种门结构。对于给定的当前时刻输入数据<span class="arithmatex">\(x_{t}\)</span>和前一时刻隐式编码<span class="arithmatex">\(h_{t-1}\)</span>,输入门、遗忘门和输出门通过各自参数对其编码,分别得到三种门结构的输出<span class="arithmatex">\(i_{t}\)</span>、<span class="arithmatex">\(f_{t}\)</span>和<span class="arithmatex">\(o_{t}\)</span>。</p>
+<p>在此基础上,再进一步结合前一时刻内部记忆单元信息<span class="arithmatex">\(c_{t-1}\)</span>来更新当前时刻内部记忆单元信息<span class="arithmatex">\(c_{t}\)</span>,最终得到当前时刻的隐式编码<span class="arithmatex">\(h_{t}\)</span>。表5.4描述了长短时记忆网络中所用符号及其含义。</p>
+<p>表5.4 长短时记忆网络中所用符号及其含义
+| 符号 | 内容描述或操作 |
+| --- | --- |
+| <span class="arithmatex">\(x_{t}\)</span> | 时刻<span class="arithmatex">\(t\)</span>的输入数据 |
+| <span class="arithmatex">\(i_{t}\)</span> | 输入门的输出: <span class="arithmatex">\(i_{t}=\text{sigmoid}(W_{xi}x_{t}+W_{hi}h_{t-1}+b_{i})\)</span>（<span class="arithmatex">\(W_{xi}\)</span>、<span class="arithmatex">\(W_{hi}\)</span>和<span class="arithmatex">\(b_{i}\)</span>为输入门的参数） |
+| <span class="arithmatex">\(f_{t}\)</span> | 遗忘门的输出: <span class="arithmatex">\(f_{t}=\text{sigmoid}(W_{xf}x_{t}+W_{hf}h_{t-1}+b_{f})\)</span>（<span class="arithmatex">\(W_{xf}\)</span>、<span class="arithmatex">\(W_{hf}\)</span>和<span class="arithmatex">\(b_{f}\)</span>为遗忘门的参数） |
+| <span class="arithmatex">\(o_{t}\)</span> | 输出门的输出: <span class="arithmatex">\(o_{t}=\text{sigmoid}(W_{xo}x_{t}+W_{ho}h_{t-1}+b_{o})\)</span>（<span class="arithmatex">\(W_{xo}\)</span>、<span class="arithmatex">\(W_{ho}\)</span>和<span class="arithmatex">\(b_{o}\)</span>为输出门的参数） |
+| <span class="arithmatex">\(c_{t}\)</span> | 内部记忆单元的输出: <span class="arithmatex">\(c_{t}=f_{t}\odot c_{t-1}+i_{t}\odot\tanh(W_{xc}x_{t}+W_{hc}h_{t-1}+b_{c})\)</span>（注: <span class="arithmatex">\(W_{xc}\)</span>、<span class="arithmatex">\(W_{hc}\)</span>和<span class="arithmatex">\(b_{c}\)</span>为记忆单元的参数。输入门<span class="arithmatex">\(i_{t}\)</span>控制有多少信息流入当前时刻内部记忆单元<span class="arithmatex">\(c_{t}\)</span>,遗忘门控制上一时刻内部记忆单元<span class="arithmatex">\(c_{t-1}\)</span>中有多少信息可累积到当前时刻内部记忆单元<span class="arithmatex">\(c_{t}\)</span>） |
+| <span class="arithmatex">\(h_{t}\)</span> | 时刻<span class="arithmatex">\(t\)</span>输入数据的隐式编码: <span class="arithmatex">\(h_{t}=o_{t}\odot\tanh(c_{t})=o_{t}\odot\tanh(f_{t}\odot c_{t-1}+i_{t}\odot\tanh(W_{xc}x_{t}+W_{hc}h_{t-1}+b_{c}))\)</span>（注:输入门、遗忘门和输出门的信息<span class="arithmatex">\(i_{t}\)</span>、<span class="arithmatex">\(f_{t}\)</span>、<span class="arithmatex">\(o_{t}\)</span>一起参与得到<span class="arithmatex">\(h_{t}\)</span>） |
+| <span class="arithmatex">\(\odot\)</span> | 两个向量中对应元素按位相乘(element-wise product)。例如, <span class="arithmatex">\([1,0,6,3,7]\odot[0.2,0.1,0.8,0.5]=[0.2,0.0,4.8,1.5,3.5]\)</span> |</p>
+<p>当给定序列数据中当前时刻<span class="arithmatex">\(t\)</span>的输入数据<span class="arithmatex">\(x_{t}\)</span>和前一时刻的隐式编码<span class="arithmatex">\(h_{t-1}\)</span>时,根据表5.4和图5.19,可按照如下公式计算内部记忆单元信息和隐式编码:
+输入门信息输出：<span class="arithmatex">\(i_t = \text{sigmoid}\left( W_{xi}x_t + W_{hi}h_{t-1} + b_i \right)\)</span></p>
+<p><img alt="" src="%E5%9B%BE5.19%E9%95%BF%E7%9F%AD%E6%97%B6%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B.png"/></p>
+<p>图5.19 长短时记忆网络模型
+（注:在每个时刻,只有内部记忆单元信息和隐式编码,这两种信息起到了对信息进行传递的作用；只有<span class="arithmatex">\(h_{t}\)</span>作为本时刻的输出用于分类等处理）</p>
+<p>输入门信息输出: <span class="arithmatex">\(i_{t}=\text{sigmoid}(W_{xi}x_{t}+W_{hi}h_{t-1}+b_{i})\)</span></p>
+<p>遗忘门信息输出: <span class="arithmatex">\(f_{t}=\text{sigmoid}(W_{xf}x_{t}+W_{hf}h_{t-1}+b_{f})\)</span></p>
+<p>输出门信息输出: <span class="arithmatex">\(o_{t}=\text{sigmoid}(W_{xo}x_{t}+W_{ho}h_{t-1}+b_{o})\)</span></p>
+<p>内部记忆单元信息输出: <span class="arithmatex">\(c_{t}=f_{t}\odot c_{t-1}+i_{t}\odot\tanh(W_{xc}x_{t}+W_{hc}h_{t-1}+b_{c})\)</span></p>
+<p>隐式编码输出: <span class="arithmatex">\(h_{t}=o_{t}\odot\tanh(c_{t})\)</span>或者<span class="arithmatex">\(h_{t}=o_{t}\odot\tanh(f_{t}\odot c_{t-1}+i_{t}\odot\tanh(W_{xc}x_{t}+W_{hc}h_{t-1}+b_{c}))\)</span></p>
+<p>输入门、遗忘门和输出门通过各自参数对当前时刻输入数据<span class="arithmatex">\(x_{t}\)</span>和前一时刻隐式编码<span class="arithmatex">\(h_{t-1}\)</span>进行处理后,利用sigmoid对处理结果进行非线性映射,因此三种门结构的输出<span class="arithmatex">\(i_{t}\)</span>、<span class="arithmatex">\(f_{t}\)</span>和<span class="arithmatex">\(o_{t}\)</span>的值域为(0,1)。正是由于三个门结构的输出值为位于0~1之间的向量,因此其在信息处理中起到了"调控开关"的"门"作用。三个门结构所输出向量的维数、内部记忆单元的维数和隐式编码的维数均相等。</p>
+<p>以输入门<span class="arithmatex">\(i_{t}=\text{sigmoid}(W_{xi}x_{t}+W_{hi}h_{t-1}+b_{i})\)</span>为例,在sigmoid函数作用下,假设输入门<span class="arithmatex">\(i_{t}\)</span>的取值为(0.05,0.1,0.8),则通过<span class="arithmatex">\(i_{t}\odot\tanh(W_{xc}x_{t}+W_{hc}h_{t-1}+b_{c})\)</span>中按位相乘操作,输入门会"阻断"一些信息进行后续操作(如0.05和0.1所对应按位相乘的信息),也会"放入"一些信息进行后续操作(如0.8所对应按位相乘的信息)。当然,如果门的某一位取值为0,表示这一位所对应的信息为全闭,禁止信息通过；如果门的某一位取值为1,表示这一位所对应的信息为全开,允许信息全部通过。遗忘门不允许一些信息后向传递,从另外一个侧面而言是为了关注需要关注的信息。</p>
+<p>从<span class="arithmatex">\(c_{t}=f_{t}\odot c_{t-1}+i_{t}\odot\tanh(W_{xc}x_{t}+W_{hc}h_{t-1}+b_{c})\)</span>可以看出,对当前时刻<span class="arithmatex">\(t\)</span>所对应内部记忆单元中信息的调整涉及遗忘门信息、<span class="arithmatex">\(t-1\)</span>时刻所对应内部记忆单元中的信息、输入门信息和<span class="arithmatex">\(t-1\)</span>时刻的隐式编码。</p>
+<p>由于sigmoid函数的值域在(0,1)之间,输入门、遗忘门和输出门三种门结构采用sigmoid这一非线性映射函数起到了信息"控制门"的作用。在内部记忆单元和隐式编码中,使用tanh这一非线性映射函数而没有继续使用sigmoid非线性映射函数,其原因在于tanh函数的值域为(-1,1),使得tanh函数在进行信息整合时可起到信息"增(为正)"或"减(为负)"的效果。</p>
+<p>在介绍循环神经网络时,谈到了根据误差来更新参数存在梯度消失问题,下面介绍LSTM如何避免梯度消失问题。</p>
+<p>对于<span class="arithmatex">\(c_{t}=f_{t}\odot c_{t-1}+i_{t}\odot\tanh(W_{xc}x_{t}+W_{hc}h_{t-1}+b_{c})\)</span>,有如下求导结果存在:
+$$
+\frac{\partial c_{t}}{\partial c_{t-1}}=f_{t}+\frac{\partial f_{t}}{\partial c_{t-1}} \times c_{t-1}+\cdots
+$$</p>
+<p>可见, <span class="arithmatex">\(\frac{\partial c_{t}}{\partial c_{t-1}}\)</span>求导的结果至少大于或等于<span class="arithmatex">\(f_{t}\)</span>（即遗忘门的输出结果）,如果遗忘门选择保留旧状态,则这一求导结果就接近1（或者接近向量1）,使得梯度存在,从而避免梯度消失问题。也就是说,LSTM通过引入门结构,在从<span class="arithmatex">\(t\)</span>到<span class="arithmatex">\(t+1\)</span>过程中引入加法来进行信息更新,避免了梯度消失问题。</p>
+<p>整体来看,内部记忆单元信息<span class="arithmatex">\(c_{t}\)</span>和隐式编码<span class="arithmatex">\(h_{t}\)</span>这两种信息起到了对序列信息进行传递的作用。内部记忆单元信息好比人脑的长时记忆,隐式编码<span class="arithmatex">\(h_{t}\)</span>代表了短时记忆。</p>
+<h4 id="553">5.5.3 门控循环单元</h4>
+<p>门控循环单元(gated recurrent unit, GRU)是一种对LSTM简化的深度学习模型。与长短时记忆网络相比,GRU不再使用记忆单元来传递信息,仅使用隐藏状态来进行信息的传递。因此,相比长短时记忆网络,GRU有更快的计算速度。</p>
+<p>GRU只包含更新门(update gate)和重置门(reset gate)两个门结构(见图5.20)。</p>
+<p><img alt="" src="%E5%9B%BE5.20GRU%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84.png"/></p>
+<p>图5.20 GRU网络结构</p>
+<p>给定当前时刻输入数据<span class="arithmatex">\(x_{t}\)</span>和前一时刻隐式编码<span class="arithmatex">\(h_{t-1}\)</span>,GRU利用更新门和重置门来输出当前时刻的隐式编码,并且通过隐式编码将信息向后传递。记更新门和重置门信息为<span class="arithmatex">\(z_{t}\)</span>和<span class="arithmatex">\(r_{t}\)</span>,GRU的信息更新如下:</p>
+<div class="arithmatex">\[
+\begin{align*}
+&amp;\text{重置门信息输出: } r_{t}=\text{sigmoid}(W_{xr}x_{t}+U_{hr}h_{t-1}+b_{r})\\
+&amp;\text{更新门信息输出: } z_{t}=\text{sigmoid}(W_{xz}x_{t}+U_{hz}h_{t-1}+b_{z})\\
+&amp;\text{候选隐状态: } \tilde{h}_{t}=\tanh(W_{xh}x_{t}+r_{t}\odot U_{hh}h_{t-1}+b_{h})\\
+&amp;\text{隐式编码输出: } h_{t}=(1-z_{t})\odot h_{t-1}+z_{t}\odot \tilde{h}_{t}
+\end{align*}
+\]</div>
+<p>与循环神经网络一样,这里的<span class="arithmatex">\(W_{xr}\)</span>、<span class="arithmatex">\(U_{hr}\)</span>、<span class="arithmatex">\(b_{r}\)</span>、<span class="arithmatex">\(W_{xz}\)</span>、<span class="arithmatex">\(U_{hz}\)</span>、<span class="arithmatex">\(b_{z}\)</span>、<span class="arithmatex">\(W_{xh}\)</span>、<span class="arithmatex">\(U_{hh}\)</span>和<span class="arithmatex">\(b_{h}\)</span>都是模型参数,需要通过训练优化。</p>
+<p>更新门的作用类似于长短时记忆模型中的遗忘门和输入门。它决定要忘记哪些信息,以及哪些新信息需要被添加,用于控制前一时刻的状态信息被保留到当前状态中的程度。更新门的值越大,说明前一时刻的状态信息保留越多。</p>
+<p>重置门用于控制忽略前一时刻的状态信息的程度。重置门的值越小,说明信息可通过的程度越低,信息被忽略得越多。</p>
+<h3 id="56">5.6 注意力机制</h3>
+<p>注意指意识对一定信息或对象的指向与集中的过程,具有选择性和集中性等特点,是一切心理过程得以产生和进行的必不可少的心理属性。</p>
+<p>在自然语言中,注意力可理解为句子级或篇章级中单词和单词之间因为上下文而共同出现的概率；在图像分析中,注意力可理解为在一定视觉区域中视觉子块之间的空间分布模式；在机器翻译中,注意力可理解为输入源语言单词和输出目标语言单词之间的关联。</p>
+<p>谷歌公司的研究人员于2017年提出了Transformer模型,引入"自注意力(self-attention)"来计算自然语言句子中单词和单词之间的概率关联(Ashish et al.,2017)。</p>
+<p>图5.21给出了由四个单词组成的句子"项庄舞剑、意在沛公"中单词"意在"与句子中其他单词之间概率关联的计算示意。</p>
+<p>单词<span class="arithmatex">\(w_{3}\)</span>与其他单词之间的自注意力(self-attention)权重: <span class="arithmatex">\(\sum a_{3i} \times v_{i}\)</span> </p>
+<p><img alt="" src="%E5%9B%BE5.21%E5%8F%A5%E5%AD%90%E4%B8%AD%E6%AF%8F%E4%B8%AA%E5%8D%95%E8%AF%8D%E4%B8%8E%E5%85%B6%E4%BB%96%E5%8D%95%E8%AF%8D%E8%87%AA%E6%B3%A8%E6%84%8F%E5%8A%9B%E5%8F%96%E5%80%BC%E8%AE%A1%E7%AE%97%E7%A4%BA%E6%84%8F.png"/>
+图5.21 句子中每个单词与其他单词自注意力取值计算示意（以单词<span class="arithmatex">\(w_{3}\)</span>为例）</p>
+<p><span class="arithmatex">\(a_{31} \times v_{1}\)</span> <span class="arithmatex">\(a_{32} \times v_{2}\)</span> <span class="arithmatex">\(a_{33} \times v_{3}\)</span> <span class="arithmatex">\(a_{34} \times v_{4}\)</span>
+<span class="arithmatex">\(a_{31}\)</span> <span class="arithmatex">\(a_{32}\)</span> <span class="arithmatex">\(a_{33}\)</span> <span class="arithmatex">\(a_{34}\)</span>
+Softmax(<span class="arithmatex">\(a_{3i}\)</span>)=<span class="arithmatex">\(\exp(a_{3i})/\sum_{j}\exp(a_{3j})\)</span>（归一化）
+<span class="arithmatex">\(a_{31}=q_{3} \cdot k_{1}\)</span> <span class="arithmatex">\(a_{32}=q_{3} \cdot k_{2}\)</span> <span class="arithmatex">\(a_{33}=q_{3} \cdot k_{3}\)</span> <span class="arithmatex">\(a_{34}=q_{3} \cdot k_{4}\)</span> 非自回归
+并行计算
+<span class="arithmatex">\(q_{1}\)</span> <span class="arithmatex">\(q_{2}\)</span> <span class="arithmatex">\(q_{3}\)</span> <span class="arithmatex">\(q_{4}\)</span>
+<span class="arithmatex">\(v_{3}\)</span> <span class="arithmatex">\(k_{1}\)</span> <span class="arithmatex">\(v_{1}\)</span>
+<span class="arithmatex">\(q=W^{q} \times w\)</span>
+位置向量 <span class="arithmatex">\(k=W^{k} \times w\)</span>
+项庄 <span class="arithmatex">\(w_{1}\)</span> 舞剑 <span class="arithmatex">\(w_{2}\)</span> 意在 <span class="arithmatex">\(w_{3}\)</span> 沛公 <span class="arithmatex">\(w_{4}\)</span> <span class="arithmatex">\(v=W^{v} \times w\)</span></p>
+<p>首先生成每个单词的内嵌向量(包含单词在句子中位置编码的向量信息),记为<span class="arithmatex">\(w_{i}(1 \leq i \leq 4)\)</span>,如下计算每个单词<span class="arithmatex">\(w_{i}\)</span>的查询向量(query)、键向量(key)和值向量(value):
+- 查询向量: <span class="arithmatex">\(q_{i}=W^{q} \times w_{i}\)</span>
+- 键向量: <span class="arithmatex">\(k_{i}=W^{k} \times w_{i}\)</span>
+- 值向量: <span class="arithmatex">\(v_{i}=W^{v} \times w_{i}\)</span></p>
+<p>后面会介绍,对每个单词<span class="arithmatex">\(w_{i}\)</span>而言, <span class="arithmatex">\(W^{q}\)</span>、<span class="arithmatex">\(W^{k}\)</span>和<span class="arithmatex">\(W^{v}\)</span>三个映射矩阵都是一样的,也是自注意力模型需要训练的全部参数。</p>
+<p>自注意力模型就是要挖掘单词<span class="arithmatex">\(w_{i}\)</span>与其他单词在句子中因为上下文(context)关联而具有的自注意力取值大小。以图5.21中单词<span class="arithmatex">\(w_{3}\)</span>与其他单词之间自注意力取值大小计算为例:
+1. 计算<span class="arithmatex">\(w_{3}\)</span>所对应查询向量与其他单词键向量之间的点积,该点积可作为单词<span class="arithmatex">\(w_{3}\)</span>与其他单词之间的关联度: <span class="arithmatex">\(a_{3i}=q_{3} \cdot k_{i}\)</span>
+2. 对<span class="arithmatex">\(a_{3i}\)</span>通过softmax函数进行归一化操作,得到<span class="arithmatex">\(a_{3i}'\)</span>。对于给定的"项庄舞剑、意在沛公"句子, <span class="arithmatex">\(a_{34}'\)</span>记录了"意在"单词与其他单词所具有的重要程度(即注意力)。
+3. <span class="arithmatex">\(a_{3i}'\)</span>乘以每个单词<span class="arithmatex">\(w_{i}\)</span>所对应的值向量<span class="arithmatex">\(v_{i}\)</span>,即<span class="arithmatex">\(a_{3i}' \times v_{i}\)</span>
+4. 对步骤(3)的结果进行求和: <span class="arithmatex">\(\sum_{i} a_{3i}' \times v_{i}\)</span>,这个结果作为在当前句子语境下单词<span class="arithmatex">\(w_{3}\)</span>"意在"与其他单词的关联程度(self-attention)。</p>
+<p>这里的查询向量、键向量和值向量可从搜索引擎角度来理解:查询向量为搜索单词,键向量为被搜索物品的描述信息(如标题等),值向量为被搜索物品的语义内容。于是可如下理解自注意力关联:在每个单词具有自身内容(值向量表示)的基础上,给定自然语言句子,计算给定单词和句子中其他单词之间的归一化关联度,利用关联度大小对每个单词的自身内容进行调整和加权取和,以反映每个单词在句子中因上下文语义而与其他单词之间的自注意力。</p>
+<p>当然,也可引入"多头"注意力(multi-headed attention)机制,从更多角度来挖掘某个单词与其他单词之间的概率关联。同时也应该了解,某个单词的自注意力关联可并行计算,而不像循环神经网络那样,需要通过自回归的方式一个单词接着一个单词处理。</p>
+<p>一旦计算得到单词和其他单词所形成的自注意力关联后,Transformer再将这些自注意力关联通过前向神经网络(feed-forward)进行非线性映射。非线性变换的引入能帮助模型捕捉到更丰富的特征和语义信息,有助于提高模型的表达能力(如更好地捕捉单词和单词之间复杂的共现概率)。</p>
+<h3 id="57">5.7 神经网络正则化</h3>
+<p>深度神经网络结构复杂、参数众多,很容易造成过拟合(over-fitting)。为了缓解神经网络在训练过程中出现的过拟合现象,需要采取一些正则化技术来提升神经网络的泛化能力(generalization)。</p>
+<p><strong>1. Dropout</strong>
+Dropout指在训练神经网络的过程中随机丢掉一部分神经元来降低神经网络的复杂度,从而防止过拟合。Dropout的实现方法简单:在每次迭代训练中,以一定概率随机屏蔽每一层中的若干神经元,用余下神经元构成的网络继续训练,如图5.22所示。</p>
+<p><img alt="" src="%E5%9B%BE5.22%E4%BD%BF%E7%94%A8Dropout%E7%9A%84%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B.png"/>
+图5.22 使用Dropout的神经网络模型</p>
+<p><strong>2. 批归一化</strong>
+随着神经网络深度的增加,输入数据经过激活函数若干次非线性变换后,其整体分布逐渐向非线性函数的值域上下限两端偏移。例如,对于sigmoid函数来说,它所接收的输入往往是数值较大的正数或者负数,因此在经过sigmoid函数非线性变换后,输出结果大多偏向于1或者0。在1或0附近,sigmoid函数的梯度较小,因此导致在反向传播时,靠近输入端处容易出现梯度消失问题,致使网络收敛很缓慢。</p>
+<p>批归一化(batch normalization)就是通过规范化手段,把神经网络每层中任意神经元的输入值分布改变成均值为0、方差为1的标准正态分布,把偏移较大的分布强制映射为标准正态分布。经过批归一化处理,激活函数的输入值被映射到非线性函数梯度较大的区域,使得梯度变大从而克服梯度消失问题,进而加快收敛速度。</p>
+<p><strong>3. <span class="arithmatex">\(L_{1}\)</span>和<span class="arithmatex">\(L_{2}\)</span>正则化</strong>
+对于具有<span class="arithmatex">\(n\)</span>个训练数据<span class="arithmatex">\(\{(x_{1}, y_{1}), \cdots, (x_{n}, y_{n})\}\)</span>的神经网络,其中<span class="arithmatex">\((x_{i}, y_{i})(1 \leq i \leq n)\)</span>分别为输入样本及其对应的标签。加入正则化项后,神经网络的损失函数一般可如下表示:
+$$
+\min \frac{1}{n} \sum_{i=1}^{n} \underbrace{\text{Loss}(y_{i}, f(W, x_{i}))}<em _text_正则化权重="\text{正则化权重">{\text{损失函数}} + \underbrace{\lambda}</em>
+$$
+其中, }} \times \underbrace{\Phi(W)}_{\text{正则化项}<span class="arithmatex">\(f(W, x_{i})\)</span>表示参数为<span class="arithmatex">\(W\)</span>的神经网络对输入<span class="arithmatex">\(x_{i}\)</span>的预测, <span class="arithmatex">\(\Phi(W)\)</span>为正则化项(又称惩罚项), <span class="arithmatex">\(\lambda\)</span>为正则化权重。</p>
+<p>正则化项<span class="arithmatex">\(\Phi(W)\)</span>一般用模型参数<span class="arithmatex">\(W\)</span>的范数形式来表示。假设神经网络模型中的参数数目为<span class="arithmatex">\(d\)</span>,则参数的范数形式主要有如下三种:
+- <span class="arithmatex">\(L_{0}\)</span>范数: 数学表示为<span class="arithmatex">\(\|W\|_{0}=\sum_{i=1}^{d} \mathbb{I}[w_{i} \neq 0]\)</span>,其中<span class="arithmatex">\(\mathbb{I}\)</span>是指示函数,若括号内表达式为真,则函数值为1,反之为0。因此, <span class="arithmatex">\(L_{0}\)</span>范数指模型参数<span class="arithmatex">\(W\)</span>中的非零元素个数。<span class="arithmatex">\(L_{0}\)</span>范数可实现模型参数的稀疏化。但是,由于<span class="arithmatex">\(L_{0}\)</span>范数正则化是一个NP难(NP-hard)问题,难以求解,因此一般不用<span class="arithmatex">\(L_{0}\)</span>范数。
+- <span class="arithmatex">\(L_{1}\)</span>范数: 数学表示为<span class="arithmatex">\(\|W\|_{1}=\sum_{i=1}^{d} |w_{i}|\)</span>,指模型参数<span class="arithmatex">\(W\)</span>中各个元素的绝对值之和。<span class="arithmatex">\(L_{1}\)</span>范数也被称为"稀疏规则算子(lasso regularization)"。
+- <span class="arithmatex">\(L_{2}\)</span>范数: 数学表示为<span class="arithmatex">\(\|W\|_{2}=\sqrt{\sum_{i=1}^{d} w_{i}^{2}}\)</span>,指模型参数<span class="arithmatex">\(W\)</span>中各个元素平方和的开方。</p>
+<h3 id="58">5.8 深度学习在自然语言和计算机视觉中的应用</h3>
+<h4 id="581">5.8.1 词向量模型</h4>
+<p>在基于规则和统计的自然语言传统方法中,通常将单词视为独立符号。为了表达文本,"词袋(bag of words)"模型被采用,但是这一模型忽略了文本单词之间的依赖关系,仅仅将文本看作单词的集合(忽略了单词之间的先后次序)。</p>
+<p>在词袋模型中,一个单词按照词典序被表示为一个词典维数大小的向量(称为one-hot vector),向量中该单词所对应位置按照其在文档中出现与否取值为1或0。1表示该单词在文档中出现,0表示没有出现(见图5.23)。每个单词被表达为单词向量后,一些与自然语言相关的工作(如聚类、同义词计算、主题挖掘等)可以依次开展。</p>
+<p><img alt="" src="%E5%9B%BE5.23%E8%AF%8D%E5%85%B8%E6%A8%A1%E5%9E%8B%E4%B8%8E%E8%AF%8D%E5%90%91%E9%87%8F%E6%A8%A1%E5%9E%8B%E8%A1%A8%E7%A4%BA%E6%96%87%E6%9C%AC.png"/>
+图5.23 词典模型与词向量模型表示文本</p>
+<p>然而,随着文本数目增加,单词词典大小也会增加,从而使得词袋模型中每个单词的维数不断增加。因此,使用词袋模型表示单词时,往往会遭遇维度灾难问题。除此之外,词袋模型无法刻画单词之间的语义关联,"高兴"和"愉快"两个单词的向量表达很不相同,虽然其具有很强的语义相似性。</p>
+<p>为了刻画不同单词之间的语义相关性,研究人员希望使用一种分布式向量表达(distributed vector representation)对不同单词进行表达。利用深度学习模型,可将每个单词表征为<span class="arithmatex">\(N\)</span>维实数值的分布式向量。这样一来,可以把对文本内容的分析简化为<span class="arithmatex">\(N\)</span>维向量空间中的向量运算,如两个单词在向量空间中的计算结果可用来衡量这两个单词之间的相似度。用深度学习算法生成每个单词的向量表达,词向量(word2vec)是较为经典的模型。</p>
+<p>假设词典中有<span class="arithmatex">\(V\)</span>个不同的单词,现在考虑如何生成第<span class="arithmatex">\(k\)</span>个单词的<span class="arithmatex">\(N\)</span>维词向量(见图5.24)。首先,将该单词表示成<span class="arithmatex">\(V\)</span>维one-hot向量<span class="arithmatex">\(x\)</span>,向量<span class="arithmatex">\(x\)</span>中第<span class="arithmatex">\(k\)</span>个位置取值为1,其余位置取值均为0。隐藏层神经元大小为<span class="arithmatex">\(N\)</span>,每个神经元记为<span class="arithmatex">\(h_{i}(1 \leq i \leq N)\)</span>。向量<span class="arithmatex">\(x\)</span>中每个<span class="arithmatex">\(x_{i}(1 \leq i \leq V)\)</span>与隐藏层神经元是全连接的,连接权重矩阵为<span class="arithmatex">\(W_{V \times N}\)</span>。输出层是<span class="arithmatex">\(V\)</span>维归一化的概率值,其中<span class="arithmatex">\(y_{k}\)</span>对应第<span class="arithmatex">\(k\)</span>个单词归一化的概率值,显然其取值应该远大于其他输出所对应的归一化概率值。</p>
+<p>在图5.24中,输入层中<span class="arithmatex">\(x_{k}\)</span>与隐藏层的连接权重为<span class="arithmatex">\(\{w_{k1}, w_{k2}, \cdots, w_{kN}\}\)</span>,输入单词的<span class="arithmatex">\(N\)</span>维隐式表达<span class="arithmatex">\(h=W^{T} \times x=v_{w_{k}}^{T}\)</span>。所得到的隐藏层结果与输出层是全连接的,全连接权重矩阵为<span class="arithmatex">\(W_{N \times V}'\)</span>。从图中可知,第<span class="arithmatex">\(k\)</span>个单词对应的输出为<span class="arithmatex">\(y_{k}=(v_{w_{k}}^{T})_{1 \times N} \times (W_{(:,k)}')_{N \times 1}\)</span>。这里<span class="arithmatex">\(W_{(:,k)}'\)</span>指的是从连接权重矩阵<span class="arithmatex">\(W_{N \times V}'\)</span>中取出第<span class="arithmatex">\(k\)</span>列的向量。接着对<span class="arithmatex">\(y_{k}\)</span>通过softmax函数进行归一化,得到第<span class="arithmatex">\(k\)</span>个单词对应的归一化概率输出。显然,第<span class="arithmatex">\(k\)</span>个单词归一化的概率值应该远远大于输出层中其他位置对应的归一化概率值。</p>
+<p>这里<span class="arithmatex">\(W_{V \times N}\)</span>和<span class="arithmatex">\(W_{N \times V}'\)</span>为模型参数。一旦训练得到如图5.24所示的神经网络,就可以将输入层中的<span class="arithmatex">\(x_{k}\)</span>与隐藏层连接权重<span class="arithmatex">\(\{w_{k1}, w_{k2}, \cdots, w_{kN}\}\)</span>作为第<span class="arithmatex">\(k\)</span>个单词的<span class="arithmatex">\(N\)</span>维词向量(word vector)。</p>
+<p><img alt="" src="%E5%9B%BE5.24%E5%8D%95%E4%B8%AA%E5%8D%95%E8%AF%8D%E7%9A%84%E8%AF%8D%E5%90%91%E9%87%8F%E7%94%9F%E6%88%90%E7%A4%BA%E6%84%8F.png"/>
+图5.24 单个单词的词向量生成示意</p>
+<p>为了训练词向量模型,可将训练目标进行如下形式化描述:
+$$
+\max \prod_{w \in \text{Corpus}} P(w | \text{context}(w))
+$$
+其中,星号(*)表示预测值。对上式取其相反数,令其最小,则得到损失函数:
+$$
+\min -\sum_{w \in \text{Corpus}} \log P(w | \text{context}(w))
+$$
+这样就可以利用梯度下降和误差后向传播来优化训练参数<span class="arithmatex">\(W_{V \times N}\)</span>和<span class="arithmatex">\(W_{N \times V}'\)</span>。</p>
+<p>通常,word2vec的模型参数有两种训练模式:一种是continuous bag-of-words (CBOW),即根据某个单词所处的上下文单词来预测该单词；另一种是skip-gram,即利用某个单词来分别预测该单词的上下文单词。</p>
+<p>图5.25所示为基于CBOW得到词向量的示意。给出包含<span class="arithmatex">\(c\)</span>个单词的句子<span class="arithmatex">\(\{x_{1}, \cdots, x_{k-1}, x_{k}, x_{k+1}, \cdots, x_{c}\}\)</span>,在CBOW中,可用<span class="arithmatex">\(x_{k}\)</span>的前序<span class="arithmatex">\(k-1\)</span>个单词和后续<span class="arithmatex">\(c-k\)</span>个单词一起来预测<span class="arithmatex">\(x_{k}\)</span>。每个输入单词仍然是<span class="arithmatex">\(V\)</span>维向量(可以是one-hot表达),隐式编码为每个输入单词所对应编码的均值<span class="arithmatex">\(h=\frac{1}{c-1} W^{T} \times (x_{1}+\cdots+x_{k-1}+x_{k+1}+\cdots+x_{c})\)</span>。对于计算得到的隐式编码,要求其输出的归一化概率中,单词<span class="arithmatex">\(x_{k}\)</span>对应的<span class="arithmatex">\(y_{k}\)</span>取值最大,即用<span class="arithmatex">\(x_{k}\)</span>的上下文来预测<span class="arithmatex">\(x_{k}\)</span>。定义好相应的损失函数,可训练得到参数<span class="arithmatex">\(W_{V \times N}\)</span>和<span class="arithmatex">\(W_{N \times V}'\)</span>。</p>
+<p><img alt="" src="%E5%9B%BE5.25%E5%9F%BA%E4%BA%8ECBOW%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%8D%95%E8%AF%8D%E8%AF%8D%E5%90%91%E9%87%8F%E7%94%9F%E6%88%90%E7%A4%BA%E6%84%8F.png"/>
+图5.25 基于CBOW模型的单词词向量生成示意</p>
+<p>无论是CBOW还是skip-gram模式,随着单词个数增加,模型参数数量也迅速上升。例如:如果单词个数为100,希望每个单词所对应的词向量维度为300,则模型隐藏层的神经元数量为300,模型连接权重参数数量为<span class="arithmatex">\(2 \times 100 \times 300=60000\)</span>；如果单词个数为1000,则模型参数数量为<span class="arithmatex">\(2 \times 1000 \times 300=600000\)</span>。</p>
+<p>为此,word2vec模型在训练过程中使用了两种巧妙方法来加快模型训练,分别为层次化softmax(hierarchical softmax)与负采样(negative sampling)。</p>
+<h4 id="582">5.8.2 图像分类与目标定位</h4>
+<p>图像分类与目标定位(image classification and object localization)是机器视觉领域的核心问题之一,其不仅将图像分为不同类别,而且要对图像中的视觉对象进行定位。</p>
+<p>如图5.26所示,给定一张图像,图像分类和目标定位模型需要在图像中找到视觉对象目标的位置。视觉对象目标的位置可用包围盒(bounding box)表示,即一个矩形方框左上角的横坐标和纵坐标及该矩形框的高与宽。</p>
+<p>目前,已有的图像分类与目标定位算法可以分为两类:①基于候选区域的目标检测方法。这类方法大体上分为两个步骤,第一步为产生候选区域,第二步为对候选区域分类。基于候选区域的目标检测方法的典型代表有R-CNN(Girshick et al.,2014)、Fast R-CNN (Girshick,2015)、Faster R-CNN (Ren et al.,2015)等。②单次目标检测方法。即不经过候选区域检测这个过程,直接对输入图像进行处理而得到视觉对象区域预测结果,也称为单阶段模型。单次目标检测方法的典型代表有SSD(Liu et al.,2016)、YOLO(Redmon et al.,2016)等。下文将基于单次目标检测方法思想来介绍深度学习的应用。</p>
+<p><img alt="alt text" src="%E5%9B%BE5.26%E5%88%A9%E7%94%A8%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%BF%9B%E8%A1%8C%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB%E4%B8%8E%E7%9B%AE%E6%A0%87%E5%AE%9A%E4%BD%8D%E7%A4%BA%E6%84%8F.png"/>
+图5.26 利用卷积神经网络进行图像分类与目标定位示意</p>
+<p>在图像分类与目标定位过程中,单次目标检测模型不仅要检测物体的位置,同时也要判断所检测物体的类别标签。因此,图像分类与目标定位需要同时完成回归问题(位置判断)与分类问题(物体识别)两个任务,这种同时解决两个及以上问题的任务为多任务学习(multi-task learning)。</p>
+<p>输入一幅图像,首先利用卷积神经网络来提取视觉特征。在图5.26中,给定一幅图像,卷积神经网络经过若干次卷积与池化操作,可提取一个特征向量来表示输入图像。这个向量作为输入特征分别传送给两个任务,即分类任务和定位任务:①分类任务。softmax分类函数将全连接层所得特征向量映射为归一化概率值,用来表示每个概念在输入图像中出现的概率。在softmax分类函数的输出概率向量中,向量中的每一维代表输入图像中某个类别出现的概率。在训练中,可用交叉熵等损失函数来计算模型学习的误差。②目标定位。将全连接层输出向量转换为一个四维向量,四维向量分别代表一个包围盒的左上角横坐标和纵坐标,以及该矩形框宽与高的取值,并使用均方差损失函数计算模型的误差。最终,将两个任务所得误差相加,作为整个模型的误差,用于计算模型梯度,更新模型参数。这样,训练好的模型可以同时对图像分类及对图像中的视觉目标对象进行定位。</p>
+<h3 id="59">5.9 小结</h3>
+<p>合适的特征表达是识别与分类等任务的基础。在早期机器学习任务中,一般根据各种物理成像原理、编码有效性等因素,通过手工构造(handcrafted)相关特征,如直方图、纹理和形状描述子等,来提升一些识别任务的性能。</p>
+<p>与手工构造特征不同,深度学习通过"端到端"学习方式来形成原始数据的有效特征表达,其基本动机在于通过构建多层网络来学习隐含在数据内部的关系,从而使学习得到的特征具有更强的表达力和泛化能力。</p>
+<p>将深度学习应用于语义概念识别和理解时,一般思路是将深度学习得到的特征(如卷积神经网络中最后一个全连接层的输出,以及词向量模型中输入层与隐藏层的连接权重)输入给分类模型(如softmax函数),然后根据损失函数计算所得"误差"对模型进行优化。这一犹如"黑盒子"的学习机制使得深度学习结果缺乏解释性,从而难以可信(如易受到对抗样本攻击等)。如何将知识引入学习过程,得到可信安全、解释性更强、较少依赖标注大数据、自适应性更好的深度学习方法是目前的研究热点。</p>
+<h3 id="_1">延伸阅读:爬上树梢与攀登月球</h3>
+<p>1965年12月,先后在麻省理工学院和加州大学伯克利分校任教的休伯特·德雷福斯(Hubert L. Dreyfus)教授以兰德公司顾问的身份,发表了名为《炼金术与人工智能》(Alchemy and Artificial Intelligence)的研究报告,将当时的人工智能研究与历史上的炼金术相提并论,以说明当时进行的人工智能研究是没有基础的无用之功。德雷福斯对人工智能每一步努力是向终极目标逐步接近的说法进行了批驳,说第一个爬上树的人可以声称这是飞往月球的显著进步。在报告的最后,德雷福斯如此结尾:如果炼金术士不再关注曲颈瓶和五角器皿,而把时间花在寻找问题的深层结构,如果人从树上下来开始着手发明"火"与"车轮",事情就会向一个更令人鼓舞的方向发展。毕竟,三百年后我们确实从铅中提取了黄金并且也登上了月球,但这只有在我们放弃了炼金术低水平上的工作,达到化学水平甚至更深层次的原子水平后才会发生。这份研究报告引起了轩然大波。</p>
+<p>为了恢复人工智能的声誉,人工智能先驱、LOGO编程语言发明者西摩·佩珀特安排德雷福斯和一个国际象棋智能算法程序进行比赛,结果德雷福斯输了。美国计算机协会用"一个十岁的孩子可以打败机器——但机器可以打败德雷福斯(A Ten Year Old Can Beat the Machine - Dreyfus: But the Machine Can Beat Dreyfus)"对这一事件进行了报道。</p>
+<p>今天,深度学习的模型越来越大、越来越复杂,变成了大模型(big model)和基础模型(foundation model)。以OpenAI公司发布的自然语言预训练模型GPT-3为例,该复杂模型的参数数量高达1750亿。如果将这个模型的参数全部打印在A4纸上,一张一张叠加后,叠加高度将超过上海中心大厦(632m)。</p>
+<p>加州大学伯克利分校的助理教授于20世纪70年代针对交通预测模型将越来越复杂,撰写过《大模型的安魂曲》(Requiem for Large Scale Models)一文,列举了在城市交通预测领域所使用大模型的七宗罪(seven sins),认为由众多参数构成的大模型不仅不会进化,反而会崩溃(collapsed rather than evolved)。</p>
+<p>由众多参数构成的复杂深度模型虽然在许多任务中取得了惊人效果,但对模型"知其所以然"的理解却步履维艰,不得不又将复杂深度模型归为"无他,但手熟尔"。</p>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.tabs.link", "navigation.expand", "navigation.sections", "navigation.top", "navigation.path", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+<script src="../../js/mermaid.min.js"></script>
+<script src="../../js/init_mermaid.js"></script>
+<script src="../../js/mathjax.js"></script>
+<script src="../../js/tex-mml-chtml.js"></script>
+</body>
+</html>

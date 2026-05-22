@@ -1,0 +1,69 @@
+2025-10-10 14:05:33 - INFO - 配置文件 dump_config.json 不存在，已生成默认配置
+2025-10-10 14:05:33 - WARNING - 复制数据库开始: source.db -> target.db
+2025-10-10 14:05:33 - ERROR - 源数据库文件不存在: source.db
+2025-10-10 14:05:33 - ERROR - 复制过程中出错: 源数据库文件不存在: source.db
+2025-10-10 14:05:33 - WARNING - 复制数据库完成(2025-10-10 14:05:33）秒：source.db -> target.db
+2025-10-10 14:05:33 - ERROR - 操作失败: 源数据库文件不存在: source.db
+2025-10-10 14:07:09 - WARNING - 复制数据库开始: source.db -> target.db
+2025-10-10 14:07:09 - ERROR - 源数据库文件不存在: source.db
+2025-10-10 14:07:09 - ERROR - 复制过程中出错: 源数据库文件不存在: source.db
+2025-10-10 14:07:09 - WARNING - 复制数据库完成(2025-10-10 14:07:09）秒：source.db -> target.db
+2025-10-10 14:07:09 - ERROR - 操作失败: 源数据库文件不存在: source.db
+2025-10-10 14:11:38 - WARNING - 复制数据库开始: source.db -> target.db [2025-10-10 14:11:38]
+2025-10-10 14:11:38 - ERROR - 源数据库文件不存在: source.db
+2025-10-10 14:11:38 - ERROR - 复制过程中出错: 源数据库文件不存在: source.db
+2025-10-10 14:11:38 - WARNING - 复制数据库完成(0.00秒): source.db -> target.db
+2025-10-10 14:11:38 - ERROR - 操作失败: 源数据库文件不存在: source.db
+2025-10-10 14:13:13 - WARNING - 复制数据库开始: db_main.db -> db_main_dump.db [2025-10-10 14:13:13]
+2025-10-10 14:13:13 - INFO - 成功连接源数据库: db_main.db
+2025-10-10 14:13:13 - INFO - 成功连接/创建目标数据库: db_main_dump.db
+2025-10-10 14:13:13 - INFO - 已复制表 AUTH_USER 的 2 条记录
+2025-10-10 14:13:13 - INFO - 表 AUTH_DEPT 没有记录需要复制
+2025-10-10 14:13:13 - INFO - 已复制表 AUTH_ROLE 的 2 条记录
+2025-10-10 14:13:13 - INFO - 已复制表 AlphaResult 的 58 条记录
+2025-10-10 14:13:13 - INFO - 已复制表 DrumSource 的 12 条记录
+2025-10-10 14:13:13 - INFO - 已复制表 SysParameters 的 917 条记录
+2025-10-10 14:13:13 - INFO - 已复制表 DrumTest 的 556 条记录
+2025-10-10 14:13:13 - INFO - 已复制表 Isotopics_rec 的 6 条记录
+2025-10-10 14:13:13 - INFO - 已复制表 Matrix 的 12 条记录
+2025-10-10 14:13:13 - INFO - 表 CfType 没有记录需要复制
+2025-10-10 14:13:13 - INFO - 已复制表 BackgroundTest 的 322 条记录
+2025-10-10 14:13:13 - INFO - 已复制表 EfficiencyTest1_1 的 21 条记录
+2025-10-10 14:13:13 - INFO - 已复制表 CalibrationTest 的 21 条记录
+2025-10-10 14:13:13 - INFO - 表 CurveData 没有记录需要复制
+2025-10-10 14:13:13 - INFO - 已复制表 AlphaL2020Result 的 550 条记录
+2025-10-10 14:13:13 - INFO - 
+复制完成！共处理 15 个表，总计 2479 条记录
+2025-10-10 14:13:13 - INFO - 成功将数据从 db_main.db 复制到 db_main_dump.db
+2025-10-10 14:13:13 - INFO - 源数据库连接已关闭
+2025-10-10 14:13:13 - INFO - 目标数据库连接已关闭
+2025-10-10 14:13:13 - WARNING - 复制数据库完成(0.07秒): db_main.db -> db_main_dump.db
+2025-10-10 14:17:12 - WARNING - 复制数据库开始: db_main.db -> db_main_dump.db [2025-10-10 14:17:12]
+2025-10-10 14:17:12 - WARNING - 目标数据库文件 'db_main_dump.db' 已存在，取消复制操作。若要覆盖现有文件，请先手动删除。
+2025-10-10 14:17:12 - WARNING - 复制数据库完成(0.00秒): db_main.db -> db_main_dump.db
+2025-10-10 14:17:12 - INFO - 复制报告已保存到 dump.result.md
+2025-10-10 14:17:52 - WARNING - 复制数据库开始: db_main.db -> db_main_dump.db [2025-10-10 14:17:52]
+2025-10-10 14:17:52 - INFO - 成功连接源数据库: db_main.db
+2025-10-10 14:17:52 - INFO - 成功连接/创建目标数据库: db_main_dump.db
+2025-10-10 14:17:52 - INFO - 已复制表 AUTH_USER 的 2 条记录
+2025-10-10 14:17:52 - INFO - 表 AUTH_DEPT 没有记录需要复制
+2025-10-10 14:17:52 - INFO - 已复制表 AUTH_ROLE 的 2 条记录
+2025-10-10 14:17:52 - INFO - 已复制表 AlphaResult 的 58 条记录
+2025-10-10 14:17:52 - INFO - 已复制表 DrumSource 的 12 条记录
+2025-10-10 14:17:52 - INFO - 已复制表 SysParameters 的 917 条记录
+2025-10-10 14:17:52 - INFO - 已复制表 DrumTest 的 556 条记录
+2025-10-10 14:17:52 - INFO - 已复制表 Isotopics_rec 的 6 条记录
+2025-10-10 14:17:52 - INFO - 已复制表 Matrix 的 12 条记录
+2025-10-10 14:17:52 - INFO - 表 CfType 没有记录需要复制
+2025-10-10 14:17:52 - INFO - 已复制表 BackgroundTest 的 322 条记录
+2025-10-10 14:17:52 - INFO - 已复制表 EfficiencyTest1_1 的 21 条记录
+2025-10-10 14:17:52 - INFO - 已复制表 CalibrationTest 的 21 条记录
+2025-10-10 14:17:52 - INFO - 表 CurveData 没有记录需要复制
+2025-10-10 14:17:52 - INFO - 已复制表 AlphaL2020Result 的 550 条记录
+2025-10-10 14:17:52 - INFO - 
+复制完成！共处理 15 个表，总计 2479 条记录
+2025-10-10 14:17:52 - INFO - 成功将数据从 db_main.db 复制到 db_main_dump.db
+2025-10-10 14:17:52 - INFO - 源数据库连接已关闭
+2025-10-10 14:17:52 - INFO - 目标数据库连接已关闭
+2025-10-10 14:17:52 - WARNING - 复制数据库完成(0.07秒): db_main.db -> db_main_dump.db
+2025-10-10 14:17:52 - INFO - 复制报告已保存到 dump.result.md

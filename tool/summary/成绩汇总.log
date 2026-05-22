@@ -1,0 +1,1086 @@
+2026-01-07 11:11:07,868 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-07 11:11:07,869 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 3, 笔试成绩文件: 笔试成绩.xlsx, 输出文件: 学生作业成绩汇总.xlsx
+2026-01-07 11:11:07,870 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-07 11:11:08,251 - INFO - summary - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 125
+2026-01-07 11:11:08,252 - INFO - summary - 开始处理作业文件: 作业1.xlsx
+2026-01-07 11:11:08,293 - INFO - summary - 成功处理作业文件: 作业1.xlsx, 有效记录数: 128
+2026-01-07 11:11:08,294 - INFO - summary - 开始处理作业文件: 作业2.xlsx
+2026-01-07 11:11:08,335 - INFO - summary - 成功处理作业文件: 作业2.xlsx, 有效记录数: 128
+2026-01-07 11:11:08,336 - INFO - summary - 开始处理作业文件: 作业3.xlsx
+2026-01-07 11:11:08,378 - INFO - summary - 成功处理作业文件: 作业3.xlsx, 有效记录数: 128
+2026-01-07 11:11:08,379 - INFO - summary - 开始处理笔试成绩文件: 笔试成绩.xlsx
+2026-01-07 11:11:08,402 - INFO - summary - 成功处理笔试成绩文件: 笔试成绩.xlsx, 有效记录数: 124
+2026-01-07 11:11:08,402 - INFO - summary - 开始合并学生信息和作业成绩，共 4 项成绩数据
+2026-01-07 11:11:08,405 - INFO - summary - 合并 作业1 成绩，有成绩人数 81/125
+2026-01-07 11:11:08,409 - INFO - summary - 合并 作业2 成绩，有成绩人数 100/125
+2026-01-07 11:11:08,412 - INFO - summary - 合并 作业3 成绩，有成绩人数 95/125
+2026-01-07 11:11:08,415 - INFO - summary - 合并 笔试 成绩，有成绩人数 122/125
+2026-01-07 11:11:08,416 - INFO - summary - 合并完成，最终成绩表包含 125 名学生，4 项作业
+2026-01-07 11:11:08,416 - INFO - summary - 开始生成成绩统计信息
+2026-01-07 11:11:08,418 - INFO - summary - 作业1统计: 平均分=64.80, 最高分=100, 最低分=0, 未交人数=44, 及格人数=81, 优秀人数=81
+2026-01-07 11:11:08,420 - INFO - summary - 作业2统计: 平均分=80.00, 最高分=100, 最低分=0, 未交人数=25, 及格人数=100, 优秀人数=100
+2026-01-07 11:11:08,422 - INFO - summary - 作业3统计: 平均分=75.68, 最高分=100, 最低分=0, 未交人数=30, 及格人数=95, 优秀人数=94
+2026-01-07 11:11:08,424 - INFO - summary - 笔试统计: 平均分=74.88, 最高分=96, 最低分=0, 未交人数=3, 及格人数=114, 优秀人数=11
+2026-01-07 11:11:08,425 - INFO - summary - 成绩统计信息生成完成
+2026-01-07 11:11:08,425 - INFO - summary - 开始保存成绩表到: 学生作业成绩汇总.xlsx
+2026-01-07 11:11:08,463 - INFO - summary - 成功保存成绩表到: 学生作业成绩汇总.xlsx，文件大小: 9.6 KB
+2026-01-07 11:11:08,469 - INFO - summary - 程序执行完成，输出文件: d:\WS_Edu\project_management\Exam\25-Fall\交付\summary\学生作业成绩汇总.xlsx
+2026-01-08 08:46:29,314 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-08 08:46:29,315 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 3, 笔试成绩文件: 笔试成绩.xlsx, 输出文件: 学生作业成绩汇总.xlsx
+2026-01-08 08:46:29,315 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-08 08:46:29,316 - ERROR - summary - 加载学生名单文件 名单.xlsx 失败: [Errno 2] No such file or directory: '名单.xlsx'
+2026-01-08 08:46:29,317 - ERROR - summary - 程序执行出错: [Errno 2] No such file or directory: '名单.xlsx'
+2026-01-08 08:47:28,785 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-08 08:47:28,786 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 3, 笔试成绩文件: 笔试成绩.xlsx, 输出文件: 学生作业成绩汇总.xlsx
+2026-01-08 08:47:28,787 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-08 08:47:29,040 - INFO - summary - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 5
+2026-01-08 08:47:29,041 - INFO - summary - 开始处理作业文件: 作业1.xlsx
+2026-01-08 08:47:29,084 - INFO - summary - 成功处理作业文件: 作业1.xlsx, 有效记录数: 128
+2026-01-08 08:47:29,084 - INFO - summary - 开始处理作业文件: 作业2.xlsx
+2026-01-08 08:47:29,128 - INFO - summary - 成功处理作业文件: 作业2.xlsx, 有效记录数: 128
+2026-01-08 08:47:29,129 - INFO - summary - 开始处理作业文件: 作业3.xlsx
+2026-01-08 08:47:29,170 - INFO - summary - 成功处理作业文件: 作业3.xlsx, 有效记录数: 128
+2026-01-08 08:47:29,171 - INFO - summary - 开始处理笔试成绩文件: 笔试成绩.xlsx
+2026-01-08 08:47:29,191 - INFO - summary - 成功处理笔试成绩文件: 笔试成绩.xlsx, 有效记录数: 124
+2026-01-08 08:47:29,192 - INFO - summary - 开始合并学生信息和作业成绩，共 4 项成绩数据
+2026-01-08 08:47:29,195 - INFO - summary - 合并 作业1 成绩，有成绩人数 0/5
+2026-01-08 08:47:29,197 - INFO - summary - 合并 作业2 成绩，有成绩人数 0/5
+2026-01-08 08:47:29,201 - INFO - summary - 合并 作业3 成绩，有成绩人数 0/5
+2026-01-08 08:47:29,204 - INFO - summary - 合并 笔试 成绩，有成绩人数 2/5
+2026-01-08 08:47:29,205 - INFO - summary - 合并完成，最终成绩表包含 5 名学生，4 项作业
+2026-01-08 08:47:29,205 - INFO - summary - 开始生成成绩统计信息
+2026-01-08 08:47:29,207 - INFO - summary - 作业1统计: 平均分=0.00, 最高分=0, 最低分=0, 未交人数=5, 及格人数=0, 优秀人数=0
+2026-01-08 08:47:29,208 - INFO - summary - 作业2统计: 平均分=0.00, 最高分=0, 最低分=0, 未交人数=5, 及格人数=0, 优秀人数=0
+2026-01-08 08:47:29,210 - INFO - summary - 作业3统计: 平均分=0.00, 最高分=0, 最低分=0, 未交人数=5, 及格人数=0, 优秀人数=0
+2026-01-08 08:47:29,211 - INFO - summary - 笔试统计: 平均分=35.70, 最高分=90, 最低分=0, 未交人数=3, 及格人数=2, 优秀人数=0
+2026-01-08 08:47:29,211 - INFO - summary - 成绩统计信息生成完成
+2026-01-08 08:47:29,211 - INFO - summary - 开始保存成绩表到: 学生作业成绩汇总.xlsx
+2026-01-08 08:47:29,232 - INFO - summary - 成功保存成绩表到: 学生作业成绩汇总.xlsx，文件大小: 5.3 KB
+2026-01-08 08:47:29,237 - INFO - summary - 程序执行完成，输出文件: D:\WS_Edu\my-notes\mkdocs_notes\my-note\docs\tool\summary\学生作业成绩汇总.xlsx
+2026-01-08 15:57:20,719 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-08 15:57:20,721 - INFO - summary - 使用数据目录: spm-practice-25秋-软件22
+2026-01-08 15:57:20,722 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 3, 笔试成绩文件: 笔试成绩.xlsx, 输出文件: 成绩汇总.xlsx
+2026-01-08 15:57:20,722 - INFO - summary - 分组名单文件: 分组名单.xlsx
+2026-01-08 15:57:20,722 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-08 15:57:21,141 - INFO - summary - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 125
+2026-01-08 15:57:21,142 - INFO - summary - 开始处理作业文件: 作业1.xlsx
+2026-01-08 15:57:21,189 - INFO - summary - 成功处理作业文件: 作业1.xlsx, 有效记录数: 128
+2026-01-08 15:57:21,189 - INFO - summary - 开始处理作业文件: 作业2.xlsx
+2026-01-08 15:57:21,232 - INFO - summary - 成功处理作业文件: 作业2.xlsx, 有效记录数: 128
+2026-01-08 15:57:21,233 - INFO - summary - 开始处理作业文件: 作业3.xlsx
+2026-01-08 15:57:21,274 - INFO - summary - 成功处理作业文件: 作业3.xlsx, 有效记录数: 128
+2026-01-08 15:57:21,274 - INFO - summary - 开始处理笔试成绩文件: 笔试成绩.xlsx
+2026-01-08 15:57:21,295 - INFO - summary - 成功处理笔试成绩文件: 笔试成绩.xlsx, 有效记录数: 124
+2026-01-08 15:57:21,296 - INFO - summary - 开始合并学生信息和作业成绩，共 4 项成绩数据
+2026-01-08 15:57:21,300 - INFO - summary - 合并 作业1 成绩，有成绩人数 81/125
+2026-01-08 15:57:21,303 - INFO - summary - 合并 作业2 成绩，有成绩人数 100/125
+2026-01-08 15:57:21,306 - INFO - summary - 合并 作业3 成绩，有成绩人数 95/125
+2026-01-08 15:57:21,309 - INFO - summary - 合并 笔试 成绩，有成绩人数 122/125
+2026-01-08 15:57:21,310 - INFO - summary - 合并完成，最终成绩表包含 125 名学生，4 项作业
+2026-01-08 15:57:21,310 - INFO - summary - 开始加载分组名单文件: 分组名单.xlsx
+2026-01-08 15:57:21,338 - INFO - summary - 成功加载分组名单文件: 分组名单.xlsx, 总组数: 122
+2026-01-08 15:57:21,339 - INFO - summary - 开始根据分组名单调整成绩，总组数: 122
+2026-01-08 15:57:21,341 - WARNING - summary - 未找到成员 20411070207.0 的记录
+2026-01-08 15:57:21,341 - WARNING - summary - 未找到成员 22401010102.0 的记录
+2026-01-08 15:57:21,342 - WARNING - summary - 未找到成员 22408010102.0 的记录
+2026-01-08 15:57:21,342 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,343 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,344 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,345 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,345 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,346 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,346 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,347 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,347 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,348 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,349 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,349 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,350 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,352 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,352 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,353 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,353 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,355 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,355 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,355 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,356 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,357 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,358 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,358 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,358 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,359 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,360 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,360 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,361 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,362 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,363 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,363 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,364 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,365 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,365 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,366 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,366 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,368 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,368 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,368 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,369 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,370 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,371 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,371 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,371 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,373 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,373 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,373 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,374 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,375 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,375 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,375 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,376 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,377 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,378 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,378 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,378 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,380 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,380 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,381 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,381 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,382 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,383 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,383 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,383 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,384 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,385 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,385 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,385 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,387 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,387 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,388 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,388 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,389 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,390 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,390 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,391 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,392 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,392 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,392 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,393 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,394 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,395 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,395 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,396 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,397 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,398 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,398 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,398 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,400 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,400 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,401 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,401 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,402 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,403 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,403 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,404 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,405 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,405 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,406 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,406 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,408 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,408 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,408 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,409 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,410 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,410 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,411 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,411 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,413 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,413 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,413 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,414 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,415 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,415 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,416 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,416 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,418 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,418 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,418 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,419 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,420 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,421 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,421 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,421 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,423 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,423 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,423 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,424 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,425 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,425 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,426 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,426 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,427 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,428 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,428 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,429 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,430 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,431 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,431 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,431 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,433 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,433 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,433 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,434 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,435 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,436 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,436 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,436 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,438 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,438 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,438 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,439 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,440 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,440 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,441 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,441 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,442 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,443 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,443 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,443 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,445 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,445 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,446 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,446 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,448 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,448 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,448 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,449 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,450 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,450 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,451 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,451 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,452 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,453 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,453 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,454 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,455 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,455 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,456 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,456 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,458 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,458 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,458 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,459 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,460 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,460 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,461 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,461 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,463 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,463 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,463 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,464 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,465 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,466 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,466 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,466 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,468 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,468 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,468 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,469 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,470 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,471 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,471 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,472 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,473 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,473 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,474 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,474 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,475 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,476 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,476 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,476 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,478 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,478 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,479 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,479 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,481 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,481 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,481 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,482 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,483 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,484 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,484 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,484 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,486 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,486 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,487 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,487 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,488 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,489 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,489 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,490 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,491 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,491 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,492 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,492 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,493 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,494 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,494 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,495 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,496 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,496 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,497 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,497 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,498 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,499 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,499 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,500 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,501 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,501 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,502 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,502 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,503 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,504 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,504 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,505 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,506 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,506 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,507 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,507 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,508 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,509 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,509 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,509 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,511 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,511 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,512 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,512 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,514 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,514 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,514 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,515 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,516 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,516 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,517 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,517 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,518 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,519 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,519 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,520 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,521 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,521 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,522 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,522 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,524 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,524 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,524 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,525 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,526 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,526 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,527 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,527 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,529 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,529 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,529 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,530 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,531 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,532 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,532 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,532 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,534 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,534 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,534 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,535 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,536 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,537 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,537 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,537 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,539 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,539 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,540 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,540 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,541 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,542 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,542 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,542 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,544 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,544 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,545 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,545 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,546 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,547 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,547 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,548 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,549 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,549 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,550 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,550 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,551 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,552 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,552 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,553 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,554 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,554 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,555 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,555 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,556 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,557 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,557 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,558 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,559 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,559 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,560 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,560 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,561 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,562 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,562 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,563 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,564 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,564 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,565 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,565 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,566 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,567 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,567 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,568 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,569 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,570 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,570 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,570 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,572 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,572 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,573 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,573 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,574 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,575 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,575 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,576 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,577 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,577 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,578 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,578 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,579 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,580 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,580 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,581 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,582 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,582 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,583 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,583 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,584 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,585 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,585 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,586 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,587 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,587 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,588 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,588 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,590 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,590 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,590 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,591 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,592 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,592 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,593 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,593 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,595 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,595 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,595 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,596 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,597 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,597 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,598 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,598 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,599 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,600 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,600 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,601 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,602 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,602 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,603 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,603 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,605 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,605 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,605 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,606 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,607 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,608 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,608 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,608 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,610 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,610 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,610 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,611 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,612 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,613 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,613 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,613 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,615 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,615 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,616 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,616 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,617 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,618 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,618 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,618 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,620 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,620 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,621 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,621 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,622 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,623 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,623 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,623 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,625 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,625 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,626 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,626 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,627 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,628 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,628 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,629 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,630 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,630 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,631 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,631 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,632 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,633 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,633 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,634 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,635 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,635 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,636 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,636 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,637 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,638 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,638 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,639 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,640 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,640 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,641 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,641 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,642 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,643 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,643 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,643 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,645 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,645 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,646 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,646 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,647 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,648 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,648 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,648 - WARNING - summary - 未找到成员 nan 的记录
+2026-01-08 15:57:21,649 - INFO - summary - 成绩调整完成，共调整 0 条记录
+2026-01-08 15:57:21,649 - INFO - summary - 开始生成成绩统计信息
+2026-01-08 15:57:21,651 - INFO - summary - 作业1统计: 平均分=64.80, 最高分=100, 最低分=0, 未交人数=44, 及格人数=81, 优秀人数=81
+2026-01-08 15:57:21,652 - INFO - summary - 作业2统计: 平均分=80.00, 最高分=100, 最低分=0, 未交人数=25, 及格人数=100, 优秀人数=100
+2026-01-08 15:57:21,654 - INFO - summary - 作业3统计: 平均分=75.68, 最高分=100, 最低分=0, 未交人数=30, 及格人数=95, 优秀人数=94
+2026-01-08 15:57:21,655 - INFO - summary - 笔试统计: 平均分=74.88, 最高分=96, 最低分=0, 未交人数=3, 及格人数=114, 优秀人数=11
+2026-01-08 15:57:21,655 - INFO - summary - 成绩统计信息生成完成
+2026-01-08 15:57:21,656 - INFO - summary - 开始保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-08 15:57:21,695 - INFO - summary - 成功保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx，文件大小: 9.6 KB
+2026-01-08 15:57:21,701 - INFO - summary - 程序执行完成，输出文件: D:\WS_Edu\my-notes\mkdocs_notes\my-note\docs\tool\summary\spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-08 16:02:02,760 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-08 16:02:02,767 - INFO - summary - 使用数据目录: spm-practice-25秋-软件22
+2026-01-08 16:02:02,769 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 3, 笔试成绩文件: 笔试成绩.xlsx, 输出文件: 成绩汇总.xlsx
+2026-01-08 16:02:02,769 - INFO - summary - 分组名单文件: 分组名单.xlsx
+2026-01-08 16:02:02,770 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-08 16:02:03,263 - INFO - summary - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 125
+2026-01-08 16:02:03,265 - INFO - summary - 开始处理作业文件: 作业1.xlsx
+2026-01-08 16:02:03,312 - INFO - summary - 成功处理作业文件: 作业1.xlsx, 有效记录数: 128
+2026-01-08 16:02:03,313 - INFO - summary - 开始处理作业文件: 作业2.xlsx
+2026-01-08 16:02:03,356 - INFO - summary - 成功处理作业文件: 作业2.xlsx, 有效记录数: 128
+2026-01-08 16:02:03,356 - INFO - summary - 开始处理作业文件: 作业3.xlsx
+2026-01-08 16:02:03,399 - INFO - summary - 成功处理作业文件: 作业3.xlsx, 有效记录数: 128
+2026-01-08 16:02:03,399 - INFO - summary - 开始处理笔试成绩文件: 笔试成绩.xlsx
+2026-01-08 16:02:03,422 - INFO - summary - 成功处理笔试成绩文件: 笔试成绩.xlsx, 有效记录数: 124
+2026-01-08 16:02:03,423 - INFO - summary - 开始合并学生信息和作业成绩，共 4 项成绩数据
+2026-01-08 16:02:03,432 - INFO - summary - 合并 作业1 成绩，有成绩人数 81/125
+2026-01-08 16:02:03,435 - INFO - summary - 合并 作业2 成绩，有成绩人数 100/125
+2026-01-08 16:02:03,438 - INFO - summary - 合并 作业3 成绩，有成绩人数 95/125
+2026-01-08 16:02:03,442 - INFO - summary - 合并 笔试 成绩，有成绩人数 122/125
+2026-01-08 16:02:03,442 - INFO - summary - 合并完成，最终成绩表包含 125 名学生，4 项作业
+2026-01-08 16:02:11,119 - INFO - summary - 开始加载分组名单文件: 分组名单.xlsx
+2026-01-08 16:02:11,242 - INFO - summary - 成功加载分组名单文件: 分组名单.xlsx, 总组数: 122
+2026-01-08 16:03:16,335 - INFO - summary - 开始根据分组名单调整成绩，总组数: 122
+2026-01-08 16:04:40,088 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-08 16:04:40,093 - INFO - summary - 使用数据目录: spm-practice-25秋-软件22
+2026-01-08 16:04:40,096 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 3, 笔试成绩文件: 笔试成绩.xlsx, 输出文件: 成绩汇总.xlsx
+2026-01-08 16:04:40,097 - INFO - summary - 分组名单文件: 分组名单.xlsx
+2026-01-08 16:04:40,097 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-08 16:04:40,561 - INFO - summary - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 125
+2026-01-08 16:04:40,562 - INFO - summary - 开始处理作业文件: 作业1.xlsx
+2026-01-08 16:04:40,613 - INFO - summary - 成功处理作业文件: 作业1.xlsx, 有效记录数: 128
+2026-01-08 16:04:40,613 - INFO - summary - 开始处理作业文件: 作业2.xlsx
+2026-01-08 16:04:40,659 - INFO - summary - 成功处理作业文件: 作业2.xlsx, 有效记录数: 128
+2026-01-08 16:04:40,659 - INFO - summary - 开始处理作业文件: 作业3.xlsx
+2026-01-08 16:04:40,706 - INFO - summary - 成功处理作业文件: 作业3.xlsx, 有效记录数: 128
+2026-01-08 16:04:40,706 - INFO - summary - 开始处理笔试成绩文件: 笔试成绩.xlsx
+2026-01-08 16:04:40,731 - INFO - summary - 成功处理笔试成绩文件: 笔试成绩.xlsx, 有效记录数: 124
+2026-01-08 16:04:40,731 - INFO - summary - 开始合并学生信息和作业成绩，共 4 项成绩数据
+2026-01-08 16:04:40,742 - INFO - summary - 合并 作业1 成绩，有成绩人数 81/125
+2026-01-08 16:04:40,745 - INFO - summary - 合并 作业2 成绩，有成绩人数 100/125
+2026-01-08 16:04:40,748 - INFO - summary - 合并 作业3 成绩，有成绩人数 95/125
+2026-01-08 16:04:40,752 - INFO - summary - 合并 笔试 成绩，有成绩人数 122/125
+2026-01-08 16:04:40,753 - INFO - summary - 合并完成，最终成绩表包含 125 名学生，4 项作业
+2026-01-08 16:04:44,088 - INFO - summary - 开始加载分组名单文件: 分组名单.xlsx
+2026-01-08 16:10:09,538 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-08 16:10:09,546 - INFO - summary - 使用数据目录: spm-practice-25秋-软件22
+2026-01-08 16:10:09,549 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 3, 笔试成绩文件: 笔试成绩.xlsx, 输出文件: 成绩汇总.xlsx
+2026-01-08 16:10:09,549 - INFO - summary - 分组名单文件: 分组名单.xlsx
+2026-01-08 16:10:09,549 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-08 16:10:10,104 - INFO - summary - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 125
+2026-01-08 16:10:10,106 - INFO - summary - 开始处理作业文件: 作业1.xlsx
+2026-01-08 16:10:10,158 - INFO - summary - 成功处理作业文件: 作业1.xlsx, 有效记录数: 128
+2026-01-08 16:10:10,158 - INFO - summary - 开始处理作业文件: 作业2.xlsx
+2026-01-08 16:10:10,211 - INFO - summary - 成功处理作业文件: 作业2.xlsx, 有效记录数: 128
+2026-01-08 16:10:10,211 - INFO - summary - 开始处理作业文件: 作业3.xlsx
+2026-01-08 16:10:10,259 - INFO - summary - 成功处理作业文件: 作业3.xlsx, 有效记录数: 128
+2026-01-08 16:10:10,260 - INFO - summary - 开始处理笔试成绩文件: 笔试成绩.xlsx
+2026-01-08 16:10:10,287 - INFO - summary - 成功处理笔试成绩文件: 笔试成绩.xlsx, 有效记录数: 124
+2026-01-08 16:10:24,374 - INFO - summary - 开始合并学生信息和作业成绩，共 4 项成绩数据
+2026-01-08 16:10:24,388 - INFO - summary - 合并 作业1 成绩，有成绩人数 81/125
+2026-01-08 16:10:24,391 - INFO - summary - 合并 作业2 成绩，有成绩人数 100/125
+2026-01-08 16:10:24,394 - INFO - summary - 合并 作业3 成绩，有成绩人数 95/125
+2026-01-08 16:10:24,398 - INFO - summary - 合并 笔试 成绩，有成绩人数 122/125
+2026-01-08 16:10:24,399 - INFO - summary - 合并完成，最终成绩表包含 125 名学生，4 项作业
+2026-01-08 16:10:24,400 - INFO - summary - 开始加载分组名单文件: 分组名单.xlsx
+2026-01-08 16:10:35,960 - INFO - summary - 成功加载分组名单文件: 分组名单.xlsx, 总组数: 122
+2026-01-08 16:10:50,426 - INFO - summary - 开始根据分组名单调整成绩，总组数: 122
+2026-01-08 16:10:50,601 - INFO - summary - 成绩调整完成，共调整 3 条记录
+2026-01-08 16:10:50,602 - INFO - summary - 开始生成成绩统计信息
+2026-01-08 16:10:50,605 - INFO - summary - 作业1统计: 平均分=65.57, 最高分=100, 最低分=0, 未交人数=42, 及格人数=80, 优秀人数=80
+2026-01-08 16:10:50,608 - INFO - summary - 作业2统计: 平均分=81.15, 最高分=100, 最低分=0, 未交人数=23, 及格人数=99, 优秀人数=99
+2026-01-08 16:10:50,610 - INFO - summary - 作业3统计: 平均分=76.72, 最高分=100, 最低分=0, 未交人数=28, 及格人数=94, 优秀人数=93
+2026-01-08 16:10:50,612 - INFO - summary - 笔试统计: 平均分=75.07, 最高分=96, 最低分=0, 未交人数=3, 及格人数=112, 优秀人数=10
+2026-01-08 16:10:50,612 - INFO - summary - 成绩统计信息生成完成
+2026-01-08 16:10:50,612 - INFO - summary - 开始保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-08 16:10:50,672 - INFO - summary - 成功保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx，文件大小: 9.6 KB
+2026-01-08 16:10:50,681 - INFO - summary - 程序执行完成，输出文件: d:\WS_Edu\my-notes\mkdocs_notes\my-note\docs\tool\summary\spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-08 16:11:53,556 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-08 16:11:53,564 - INFO - summary - 使用数据目录: spm-practice-25秋-软件22
+2026-01-08 16:11:53,567 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 3, 笔试成绩文件: 笔试成绩.xlsx, 输出文件: 成绩汇总.xlsx
+2026-01-08 16:11:53,567 - INFO - summary - 分组名单文件: 分组名单.xlsx
+2026-01-08 16:11:53,567 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-08 16:11:54,094 - INFO - summary - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 125
+2026-01-08 16:11:54,095 - INFO - summary - 开始处理作业文件: 作业1.xlsx
+2026-01-08 16:11:54,144 - INFO - summary - 成功处理作业文件: 作业1.xlsx, 有效记录数: 128
+2026-01-08 16:11:54,145 - INFO - summary - 开始处理作业文件: 作业2.xlsx
+2026-01-08 16:11:54,192 - INFO - summary - 成功处理作业文件: 作业2.xlsx, 有效记录数: 128
+2026-01-08 16:11:54,192 - INFO - summary - 开始处理作业文件: 作业3.xlsx
+2026-01-08 16:11:54,237 - INFO - summary - 成功处理作业文件: 作业3.xlsx, 有效记录数: 128
+2026-01-08 16:11:54,238 - INFO - summary - 开始处理笔试成绩文件: 笔试成绩.xlsx
+2026-01-08 16:11:54,262 - INFO - summary - 成功处理笔试成绩文件: 笔试成绩.xlsx, 有效记录数: 124
+2026-01-08 16:11:54,263 - INFO - summary - 开始合并学生信息和作业成绩，共 4 项成绩数据
+2026-01-08 16:11:54,273 - INFO - summary - 合并 作业1 成绩，有成绩人数 81/125
+2026-01-08 16:11:54,276 - INFO - summary - 合并 作业2 成绩，有成绩人数 100/125
+2026-01-08 16:11:54,280 - INFO - summary - 合并 作业3 成绩，有成绩人数 95/125
+2026-01-08 16:11:54,283 - INFO - summary - 合并 笔试 成绩，有成绩人数 122/125
+2026-01-08 16:11:54,284 - INFO - summary - 合并完成，最终成绩表包含 125 名学生，4 项作业
+2026-01-08 16:11:54,285 - INFO - summary - 开始加载分组名单文件: 分组名单.xlsx
+2026-01-08 16:11:54,317 - INFO - summary - 成功加载分组名单文件: 分组名单.xlsx, 总组数: 122
+2026-01-08 16:11:54,317 - INFO - summary - 开始根据分组名单调整成绩，总组数: 122
+2026-01-08 16:14:43,834 - INFO - summary - 成绩调整完成，共调整 3 条记录
+2026-01-08 16:14:43,836 - INFO - summary - 开始生成成绩统计信息
+2026-01-08 16:14:43,841 - INFO - summary - 作业1统计: 平均分=65.57, 最高分=100, 最低分=0, 未交人数=42, 及格人数=80, 优秀人数=80
+2026-01-08 16:14:43,842 - INFO - summary - 作业2统计: 平均分=81.15, 最高分=100, 最低分=0, 未交人数=23, 及格人数=99, 优秀人数=99
+2026-01-08 16:14:43,844 - INFO - summary - 作业3统计: 平均分=76.72, 最高分=100, 最低分=0, 未交人数=28, 及格人数=94, 优秀人数=93
+2026-01-08 16:14:43,846 - INFO - summary - 笔试统计: 平均分=75.07, 最高分=96, 最低分=0, 未交人数=3, 及格人数=112, 优秀人数=10
+2026-01-08 16:14:43,847 - INFO - summary - 成绩统计信息生成完成
+2026-01-08 16:14:43,847 - INFO - summary - 开始保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-08 16:14:43,910 - INFO - summary - 成功保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx，文件大小: 9.6 KB
+2026-01-08 16:14:43,919 - INFO - summary - 程序执行完成，输出文件: d:\WS_Edu\my-notes\mkdocs_notes\my-note\docs\tool\summary\spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-08 16:18:41,152 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-08 16:18:41,161 - INFO - summary - 使用数据目录: spm-practice-25秋-软件22
+2026-01-08 16:18:41,163 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 3, 笔试成绩文件: 笔试成绩.xlsx, 输出文件: 成绩汇总.xlsx
+2026-01-08 16:18:41,163 - INFO - summary - 分组名单文件: 分组名单.xlsx
+2026-01-08 16:18:41,164 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-08 16:18:41,715 - INFO - summary - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 125
+2026-01-08 16:18:41,716 - INFO - summary - 开始处理作业文件: 作业1.xlsx
+2026-01-08 16:18:41,764 - INFO - summary - 成功处理作业文件: 作业1.xlsx, 有效记录数: 128
+2026-01-08 16:18:41,765 - INFO - summary - 开始处理作业文件: 作业2.xlsx
+2026-01-08 16:18:41,806 - INFO - summary - 成功处理作业文件: 作业2.xlsx, 有效记录数: 128
+2026-01-08 16:18:41,806 - INFO - summary - 开始处理作业文件: 作业3.xlsx
+2026-01-08 16:18:41,852 - INFO - summary - 成功处理作业文件: 作业3.xlsx, 有效记录数: 128
+2026-01-08 16:18:41,852 - INFO - summary - 开始处理笔试成绩文件: 笔试成绩.xlsx
+2026-01-08 16:18:41,876 - INFO - summary - 成功处理笔试成绩文件: 笔试成绩.xlsx, 有效记录数: 124
+2026-01-08 16:18:41,877 - INFO - summary - 开始合并学生信息和作业成绩，共 4 项成绩数据
+2026-01-08 16:18:41,887 - INFO - summary - 合并 作业1 成绩，有成绩人数 81/125
+2026-01-08 16:18:41,890 - INFO - summary - 合并 作业2 成绩，有成绩人数 100/125
+2026-01-08 16:18:41,893 - INFO - summary - 合并 作业3 成绩，有成绩人数 95/125
+2026-01-08 16:18:41,897 - INFO - summary - 合并 笔试 成绩，有成绩人数 122/125
+2026-01-08 16:18:41,898 - INFO - summary - 合并完成，最终成绩表包含 125 名学生，4 项作业
+2026-01-08 16:18:41,898 - INFO - summary - 开始加载分组名单文件: 分组名单.xlsx
+2026-01-08 16:18:41,929 - INFO - summary - 成功加载分组名单文件: 分组名单.xlsx, 总组数: 122
+2026-01-08 16:18:41,930 - INFO - summary - 开始根据分组名单调整成绩，总组数: 122
+2026-01-08 16:30:34,846 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-08 16:30:34,852 - INFO - summary - 使用数据目录: spm-practice-25秋-软件22
+2026-01-08 16:30:34,855 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 3, 笔试成绩文件: 笔试成绩.xlsx, 输出文件: 成绩汇总.xlsx
+2026-01-08 16:30:34,855 - INFO - summary - 分组名单文件: 分组名单.xlsx
+2026-01-08 16:30:34,855 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-08 16:30:35,308 - INFO - summary - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 125
+2026-01-08 16:30:35,310 - INFO - summary - 开始处理作业文件: 作业1.xlsx
+2026-01-08 16:30:35,357 - INFO - summary - 成功处理作业文件: 作业1.xlsx, 有效记录数: 128
+2026-01-08 16:30:35,357 - INFO - summary - 开始处理作业文件: 作业2.xlsx
+2026-01-08 16:30:35,399 - INFO - summary - 成功处理作业文件: 作业2.xlsx, 有效记录数: 128
+2026-01-08 16:30:35,399 - INFO - summary - 开始处理作业文件: 作业3.xlsx
+2026-01-08 16:30:35,444 - INFO - summary - 成功处理作业文件: 作业3.xlsx, 有效记录数: 128
+2026-01-08 16:30:35,444 - INFO - summary - 开始处理笔试成绩文件: 笔试成绩.xlsx
+2026-01-08 16:30:35,468 - INFO - summary - 成功处理笔试成绩文件: 笔试成绩.xlsx, 有效记录数: 124
+2026-01-08 16:30:35,468 - INFO - summary - 开始合并学生信息和作业成绩，共 4 项成绩数据
+2026-01-08 16:30:35,478 - INFO - summary - 合并 作业1 成绩，有成绩人数 81/125
+2026-01-08 16:30:35,481 - INFO - summary - 合并 作业2 成绩，有成绩人数 100/125
+2026-01-08 16:30:35,484 - INFO - summary - 合并 作业3 成绩，有成绩人数 95/125
+2026-01-08 16:30:35,487 - INFO - summary - 合并 笔试 成绩，有成绩人数 122/125
+2026-01-08 16:30:35,488 - INFO - summary - 合并完成，最终成绩表包含 125 名学生，4 项作业
+2026-01-08 16:30:35,489 - INFO - summary - 开始加载分组名单文件: 分组名单.xlsx
+2026-01-08 16:30:35,518 - INFO - summary - 成功加载分组名单文件: 分组名单.xlsx, 总组数: 122
+2026-01-08 16:30:35,518 - INFO - summary - 开始根据分组名单调整成绩，总组数: 122
+2026-01-08 16:31:11,888 - INFO - summary - 成绩调整完成，共调整 3 条记录
+2026-01-08 16:31:11,889 - INFO - summary - 开始生成成绩统计信息
+2026-01-08 16:31:11,892 - INFO - summary - 作业1统计: 平均分=64.00, 最高分=100, 最低分=0, 未交人数=45, 及格人数=80, 优秀人数=80
+2026-01-08 16:31:11,894 - INFO - summary - 作业2统计: 平均分=81.60, 最高分=100, 最低分=0, 未交人数=23, 及格人数=102, 优秀人数=102
+2026-01-08 16:31:11,897 - INFO - summary - 作业3统计: 平均分=74.88, 最高分=100, 最低分=0, 未交人数=31, 及格人数=94, 优秀人数=93
+2026-01-08 16:31:11,899 - INFO - summary - 笔试统计: 平均分=75.00, 最高分=96, 最低分=0, 未交人数=3, 及格人数=115, 优秀人数=10
+2026-01-08 16:31:11,900 - INFO - summary - 成绩统计信息生成完成
+2026-01-08 16:31:11,900 - INFO - summary - 开始保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-08 16:31:11,962 - INFO - summary - 成功保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx，文件大小: 9.6 KB
+2026-01-08 16:31:11,971 - INFO - summary - 程序执行完成，输出文件: d:\WS_Edu\my-notes\mkdocs_notes\my-note\docs\tool\summary\spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-08 16:31:51,494 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-08 16:31:51,496 - INFO - summary - 使用数据目录: spm-practice-25秋-软件22
+2026-01-08 16:31:51,496 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 3, 笔试成绩文件: 笔试成绩.xlsx, 输出文件: 成绩汇总.xlsx
+2026-01-08 16:31:51,496 - INFO - summary - 分组名单文件: 分组名单.xlsx
+2026-01-08 16:31:51,497 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-08 16:31:51,811 - INFO - summary - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 125
+2026-01-08 16:31:51,812 - INFO - summary - 开始处理作业文件: 作业1.xlsx
+2026-01-08 16:31:51,860 - INFO - summary - 成功处理作业文件: 作业1.xlsx, 有效记录数: 128
+2026-01-08 16:31:51,860 - INFO - summary - 开始处理作业文件: 作业2.xlsx
+2026-01-08 16:31:51,903 - INFO - summary - 成功处理作业文件: 作业2.xlsx, 有效记录数: 128
+2026-01-08 16:31:51,903 - INFO - summary - 开始处理作业文件: 作业3.xlsx
+2026-01-08 16:31:51,944 - INFO - summary - 成功处理作业文件: 作业3.xlsx, 有效记录数: 128
+2026-01-08 16:31:51,944 - INFO - summary - 开始处理笔试成绩文件: 笔试成绩.xlsx
+2026-01-08 16:31:51,964 - INFO - summary - 成功处理笔试成绩文件: 笔试成绩.xlsx, 有效记录数: 124
+2026-01-08 16:31:51,965 - INFO - summary - 开始合并学生信息和作业成绩，共 4 项成绩数据
+2026-01-08 16:31:51,968 - INFO - summary - 合并 作业1 成绩，有成绩人数 81/125
+2026-01-08 16:31:51,971 - INFO - summary - 合并 作业2 成绩，有成绩人数 100/125
+2026-01-08 16:31:51,973 - INFO - summary - 合并 作业3 成绩，有成绩人数 95/125
+2026-01-08 16:31:51,976 - INFO - summary - 合并 笔试 成绩，有成绩人数 122/125
+2026-01-08 16:31:51,977 - INFO - summary - 合并完成，最终成绩表包含 125 名学生，4 项作业
+2026-01-08 16:31:51,978 - WARNING - summary - 分组名单文件不存在: 分组名单.xlsx
+2026-01-08 16:31:51,978 - INFO - summary - 开始生成成绩统计信息
+2026-01-08 16:31:51,980 - INFO - summary - 作业1统计: 平均分=64.80, 最高分=100, 最低分=0, 未交人数=44, 及格人数=81, 优秀人数=81
+2026-01-08 16:31:51,981 - INFO - summary - 作业2统计: 平均分=80.00, 最高分=100, 最低分=0, 未交人数=25, 及格人数=100, 优秀人数=100
+2026-01-08 16:31:51,983 - INFO - summary - 作业3统计: 平均分=75.68, 最高分=100, 最低分=0, 未交人数=30, 及格人数=95, 优秀人数=94
+2026-01-08 16:31:51,985 - INFO - summary - 笔试统计: 平均分=74.88, 最高分=96, 最低分=0, 未交人数=3, 及格人数=114, 优秀人数=11
+2026-01-08 16:31:51,985 - INFO - summary - 成绩统计信息生成完成
+2026-01-08 16:31:51,985 - INFO - summary - 开始保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-08 16:31:52,022 - INFO - summary - 成功保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx，文件大小: 9.6 KB
+2026-01-08 16:31:52,026 - INFO - summary - 程序执行完成，输出文件: D:\WS_Edu\my-notes\mkdocs_notes\my-note\docs\tool\summary\spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-27 23:00:59,230 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-27 23:00:59,232 - INFO - summary - 使用数据目录: spm-practice-25秋-软件22
+2026-01-27 23:00:59,233 - ERROR - summary - 配置文件格式错误，缺少必要字段: 'EXAM_SCORE_PATH'
+2026-01-27 23:08:34,842 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-27 23:08:34,844 - INFO - summary - 使用数据目录: spm-practice-25秋-软件22
+2026-01-27 23:08:34,844 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 6, 输出文件: 成绩汇总.xlsx
+2026-01-27 23:08:34,844 - INFO - summary - 笔试成绩文件: 未配置
+2026-01-27 23:08:34,844 - INFO - summary - 分组名单文件: 分组名单.xlsx
+2026-01-27 23:08:34,845 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-27 23:08:35,215 - INFO - summary - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 128
+2026-01-27 23:08:35,216 - INFO - summary - 开始处理作业文件: 1.项目立项与启动.xlsx
+2026-01-27 23:08:35,245 - INFO - summary - 成功处理作业文件: 1.项目立项与启动.xlsx, 有效记录数: 37
+2026-01-27 23:08:35,245 - INFO - summary - 开始处理作业文件: 2.项目规划.xlsx
+2026-01-27 23:08:35,273 - INFO - summary - 成功处理作业文件: 2.项目规划.xlsx, 有效记录数: 37
+2026-01-27 23:08:35,273 - INFO - summary - 开始处理作业文件: 3.项目执行与资源管理.xlsx
+2026-01-27 23:08:35,301 - INFO - summary - 成功处理作业文件: 3.项目执行与资源管理.xlsx, 有效记录数: 37
+2026-01-27 23:08:35,301 - INFO - summary - 开始处理作业文件: 4.项目监控与控制.xlsx
+2026-01-27 23:08:35,328 - INFO - summary - 成功处理作业文件: 4.项目监控与控制.xlsx, 有效记录数: 37
+2026-01-27 23:08:35,328 - INFO - summary - 开始处理作业文件: 5.项目收尾.xlsx
+2026-01-27 23:08:35,355 - INFO - summary - 成功处理作业文件: 5.项目收尾.xlsx, 有效记录数: 36
+2026-01-27 23:08:35,356 - INFO - summary - 开始处理作业文件: 6.汇报.xlsx
+2026-01-27 23:08:35,380 - INFO - summary - 成功处理作业文件: 6.汇报.xlsx, 有效记录数: 37
+2026-01-27 23:08:35,381 - INFO - summary - 开始合并学生信息和作业成绩，共 6 项成绩数据
+2026-01-27 23:08:35,385 - INFO - summary - 合并 1.项目立项与启动 成绩，有成绩人数 37/128
+2026-01-27 23:08:35,388 - INFO - summary - 合并 2.项目规划 成绩，有成绩人数 37/128
+2026-01-27 23:08:35,391 - INFO - summary - 合并 3.项目执行与资源管理 成绩，有成绩人数 37/128
+2026-01-27 23:08:35,393 - INFO - summary - 合并 4.项目监控与控制 成绩，有成绩人数 37/128
+2026-01-27 23:08:35,396 - INFO - summary - 合并 5.项目收尾 成绩，有成绩人数 36/128
+2026-01-27 23:08:35,399 - INFO - summary - 合并 6.汇报 成绩，有成绩人数 37/128
+2026-01-27 23:08:35,400 - INFO - summary - 合并完成，最终成绩表包含 128 名学生，6 项作业
+2026-01-27 23:08:35,400 - INFO - summary - 开始加载分组名单文件: 分组名单.xlsx
+2026-01-27 23:08:35,429 - INFO - summary - 成功加载分组名单文件: 分组名单.xlsx, 总组数: 37
+2026-01-27 23:08:35,429 - INFO - summary - 开始根据分组名单调整成绩，总组数: 37
+2026-01-27 23:08:35,588 - WARNING - summary - 未找到项目经理 22508010114 的成绩
+2026-01-27 23:08:35,606 - WARNING - summary - 未找到成员 224080010408 的记录
+2026-01-27 23:08:35,620 - WARNING - summary - 未找到项目经理 2240808010317 的成绩
+2026-01-27 23:08:35,624 - INFO - summary - 成绩调整完成，共调整 87 条记录
+2026-01-27 23:08:35,624 - INFO - summary - 开始生成成绩统计信息
+2026-01-27 23:08:35,626 - INFO - summary - 1.项目立项与启动统计: 平均分=82.42, 最高分=100, 最低分=0, 未交人数=9, 及格人数=119, 优秀人数=68
+2026-01-27 23:08:35,628 - INFO - summary - 2.项目规划统计: 平均分=91.20, 最高分=100, 最低分=0, 未交人数=9, 及格人数=119, 优秀人数=113
+2026-01-27 23:08:35,630 - INFO - summary - 3.项目执行与资源管理统计: 平均分=88.08, 最高分=100, 最低分=0, 未交人数=9, 及格人数=119, 优秀人数=89
+2026-01-27 23:08:35,631 - INFO - summary - 4.项目监控与控制统计: 平均分=92.08, 最高分=100, 最低分=0, 未交人数=9, 及格人数=119, 优秀人数=112
+2026-01-27 23:08:35,633 - INFO - summary - 5.项目收尾统计: 平均分=85.45, 最高分=100, 最低分=0, 未交人数=10, 及格人数=118, 优秀人数=70
+2026-01-27 23:08:35,635 - INFO - summary - 6.汇报统计: 平均分=89.69, 最高分=100, 最低分=0, 未交人数=9, 及格人数=119, 优秀人数=98
+2026-01-27 23:08:35,635 - INFO - summary - 成绩统计信息生成完成
+2026-01-27 23:08:35,635 - INFO - summary - 开始保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-27 23:08:35,681 - INFO - summary - 成功保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx，文件大小: 10.3 KB
+2026-01-27 23:08:35,688 - INFO - summary - 程序执行完成，输出文件: D:\WS_Edu\my-notes\mkdocs_notes\my-note\docs\tool\summary\spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-27 23:14:48,345 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-27 23:14:48,347 - INFO - summary - 使用数据目录: spm-practice-25秋-软件22
+2026-01-27 23:14:48,348 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 6, 输出文件: 成绩汇总.xlsx
+2026-01-27 23:14:48,348 - INFO - summary - 笔试成绩文件: 未配置
+2026-01-27 23:14:48,348 - INFO - summary - 分组名单文件: 分组名单.xlsx
+2026-01-27 23:14:48,348 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-27 23:14:48,624 - INFO - summary - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 128
+2026-01-27 23:14:48,625 - INFO - summary - 开始处理作业文件: 1.项目立项与启动.xlsx
+2026-01-27 23:14:48,651 - INFO - summary - 成功处理作业文件: 1.项目立项与启动.xlsx, 有效记录数: 37
+2026-01-27 23:14:48,651 - INFO - summary - 开始处理作业文件: 2.项目规划.xlsx
+2026-01-27 23:14:48,677 - INFO - summary - 成功处理作业文件: 2.项目规划.xlsx, 有效记录数: 37
+2026-01-27 23:14:48,677 - INFO - summary - 开始处理作业文件: 3.项目执行与资源管理.xlsx
+2026-01-27 23:14:48,704 - INFO - summary - 成功处理作业文件: 3.项目执行与资源管理.xlsx, 有效记录数: 37
+2026-01-27 23:14:48,705 - INFO - summary - 开始处理作业文件: 4.项目监控与控制.xlsx
+2026-01-27 23:14:48,730 - INFO - summary - 成功处理作业文件: 4.项目监控与控制.xlsx, 有效记录数: 37
+2026-01-27 23:14:48,730 - INFO - summary - 开始处理作业文件: 5.项目收尾.xlsx
+2026-01-27 23:14:48,756 - INFO - summary - 成功处理作业文件: 5.项目收尾.xlsx, 有效记录数: 36
+2026-01-27 23:14:48,756 - INFO - summary - 开始处理作业文件: 6.汇报.xlsx
+2026-01-27 23:14:48,779 - INFO - summary - 成功处理作业文件: 6.汇报.xlsx, 有效记录数: 37
+2026-01-27 23:14:48,780 - INFO - summary - 开始合并学生信息和作业成绩，共 6 项成绩数据
+2026-01-27 23:14:48,783 - INFO - summary - 合并 1.项目立项与启动 成绩，有成绩人数 37/128
+2026-01-27 23:14:48,786 - INFO - summary - 合并 2.项目规划 成绩，有成绩人数 37/128
+2026-01-27 23:14:48,789 - INFO - summary - 合并 3.项目执行与资源管理 成绩，有成绩人数 37/128
+2026-01-27 23:14:48,792 - INFO - summary - 合并 4.项目监控与控制 成绩，有成绩人数 37/128
+2026-01-27 23:14:48,794 - INFO - summary - 合并 5.项目收尾 成绩，有成绩人数 36/128
+2026-01-27 23:14:48,797 - INFO - summary - 合并 6.汇报 成绩，有成绩人数 37/128
+2026-01-27 23:14:48,798 - INFO - summary - 合并完成，最终成绩表包含 128 名学生，6 项作业
+2026-01-27 23:14:48,799 - INFO - summary - 开始加载分组名单文件: 分组名单.xlsx
+2026-01-27 23:14:48,830 - INFO - summary - 成功加载分组名单文件: 分组名单.xlsx, 总组数: 37
+2026-01-27 23:14:48,830 - INFO - summary - 开始根据分组名单调整成绩，总组数: 37
+2026-01-27 23:14:48,987 - WARNING - summary - 未找到项目经理 22508010114 的成绩
+2026-01-27 23:14:49,005 - WARNING - summary - 未找到成员 224080010408 的记录
+2026-01-27 23:14:49,019 - WARNING - summary - 未找到项目经理 2240808010317 的成绩
+2026-01-27 23:14:49,022 - INFO - summary - 成绩调整完成，共调整 87 条记录
+2026-01-27 23:14:49,022 - INFO - summary - 开始生成成绩统计信息
+2026-01-27 23:14:49,024 - INFO - summary - 1.项目立项与启动统计: 平均分=82.42, 最高分=100, 最低分=0, 未交人数=9, 及格人数=119, 优秀人数=68
+2026-01-27 23:14:49,026 - INFO - summary - 2.项目规划统计: 平均分=91.20, 最高分=100, 最低分=0, 未交人数=9, 及格人数=119, 优秀人数=113
+2026-01-27 23:14:49,028 - INFO - summary - 3.项目执行与资源管理统计: 平均分=88.08, 最高分=100, 最低分=0, 未交人数=9, 及格人数=119, 优秀人数=89
+2026-01-27 23:14:49,029 - INFO - summary - 4.项目监控与控制统计: 平均分=92.08, 最高分=100, 最低分=0, 未交人数=9, 及格人数=119, 优秀人数=112
+2026-01-27 23:14:49,031 - INFO - summary - 5.项目收尾统计: 平均分=85.45, 最高分=100, 最低分=0, 未交人数=10, 及格人数=118, 优秀人数=70
+2026-01-27 23:14:49,033 - INFO - summary - 6.汇报统计: 平均分=89.69, 最高分=100, 最低分=0, 未交人数=9, 及格人数=119, 优秀人数=98
+2026-01-27 23:14:49,033 - INFO - summary - 成绩统计信息生成完成
+2026-01-27 23:14:49,033 - INFO - summary - 开始保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-27 23:14:49,081 - INFO - summary - 成功保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx，文件大小: 10.3 KB
+2026-01-27 23:14:49,089 - INFO - summary - 程序执行完成，输出文件: D:\WS_Edu\my-notes\mkdocs_notes\my-note\docs\tool\summary\spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-27 23:16:12,616 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-27 23:16:12,618 - INFO - summary - 使用数据目录: spm-practice-25秋-软件22
+2026-01-27 23:16:12,619 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 6, 输出文件: 成绩汇总.xlsx
+2026-01-27 23:16:12,619 - INFO - summary - 笔试成绩文件: 未配置
+2026-01-27 23:16:12,619 - INFO - summary - 分组名单文件: 分组名单.xlsx
+2026-01-27 23:16:12,619 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-27 23:16:12,882 - INFO - summary - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 128
+2026-01-27 23:16:12,883 - INFO - summary - 开始处理作业文件: 1.项目立项与启动.xlsx
+2026-01-27 23:16:12,911 - INFO - summary - 成功处理作业文件: 1.项目立项与启动.xlsx, 有效记录数: 37
+2026-01-27 23:16:12,911 - INFO - summary - 开始处理作业文件: 2.项目规划.xlsx
+2026-01-27 23:16:12,938 - INFO - summary - 成功处理作业文件: 2.项目规划.xlsx, 有效记录数: 37
+2026-01-27 23:16:12,938 - INFO - summary - 开始处理作业文件: 3.项目执行与资源管理.xlsx
+2026-01-27 23:16:12,964 - INFO - summary - 成功处理作业文件: 3.项目执行与资源管理.xlsx, 有效记录数: 37
+2026-01-27 23:16:12,964 - INFO - summary - 开始处理作业文件: 4.项目监控与控制.xlsx
+2026-01-27 23:16:12,990 - INFO - summary - 成功处理作业文件: 4.项目监控与控制.xlsx, 有效记录数: 37
+2026-01-27 23:16:12,990 - INFO - summary - 开始处理作业文件: 5.项目收尾.xlsx
+2026-01-27 23:16:13,025 - INFO - summary - 成功处理作业文件: 5.项目收尾.xlsx, 有效记录数: 37
+2026-01-27 23:16:13,026 - INFO - summary - 开始处理作业文件: 6.汇报.xlsx
+2026-01-27 23:16:13,048 - INFO - summary - 成功处理作业文件: 6.汇报.xlsx, 有效记录数: 37
+2026-01-27 23:16:13,049 - INFO - summary - 开始合并学生信息和作业成绩，共 6 项成绩数据
+2026-01-27 23:16:13,053 - INFO - summary - 合并 1.项目立项与启动 成绩，有成绩人数 37/128
+2026-01-27 23:16:13,055 - INFO - summary - 合并 2.项目规划 成绩，有成绩人数 37/128
+2026-01-27 23:16:13,058 - INFO - summary - 合并 3.项目执行与资源管理 成绩，有成绩人数 37/128
+2026-01-27 23:16:13,061 - INFO - summary - 合并 4.项目监控与控制 成绩，有成绩人数 37/128
+2026-01-27 23:16:13,064 - INFO - summary - 合并 5.项目收尾 成绩，有成绩人数 37/128
+2026-01-27 23:16:13,066 - INFO - summary - 合并 6.汇报 成绩，有成绩人数 37/128
+2026-01-27 23:16:13,067 - INFO - summary - 合并完成，最终成绩表包含 128 名学生，6 项作业
+2026-01-27 23:16:13,068 - INFO - summary - 开始加载分组名单文件: 分组名单.xlsx
+2026-01-27 23:16:13,093 - INFO - summary - 成功加载分组名单文件: 分组名单.xlsx, 总组数: 37
+2026-01-27 23:16:13,094 - INFO - summary - 开始根据分组名单调整成绩，总组数: 37
+2026-01-27 23:16:13,238 - WARNING - summary - 未找到项目经理 22508010114 的成绩
+2026-01-27 23:16:13,257 - WARNING - summary - 未找到成员 224080010408 的记录
+2026-01-27 23:16:13,270 - WARNING - summary - 未找到项目经理 2240808010317 的成绩
+2026-01-27 23:16:13,273 - INFO - summary - 成绩调整完成，共调整 87 条记录
+2026-01-27 23:16:13,273 - INFO - summary - 开始生成成绩统计信息
+2026-01-27 23:16:13,275 - INFO - summary - 1.项目立项与启动统计: 平均分=82.42, 最高分=100, 最低分=0, 未交人数=9, 及格人数=119, 优秀人数=68
+2026-01-27 23:16:13,277 - INFO - summary - 2.项目规划统计: 平均分=91.20, 最高分=100, 最低分=0, 未交人数=9, 及格人数=119, 优秀人数=113
+2026-01-27 23:16:13,278 - INFO - summary - 3.项目执行与资源管理统计: 平均分=88.08, 最高分=100, 最低分=0, 未交人数=9, 及格人数=119, 优秀人数=89
+2026-01-27 23:16:13,280 - INFO - summary - 4.项目监控与控制统计: 平均分=92.08, 最高分=100, 最低分=0, 未交人数=9, 及格人数=119, 优秀人数=112
+2026-01-27 23:16:13,282 - INFO - summary - 5.项目收尾统计: 平均分=86.08, 最高分=100, 最低分=0, 未交人数=9, 及格人数=119, 优秀人数=70
+2026-01-27 23:16:13,283 - INFO - summary - 6.汇报统计: 平均分=89.69, 最高分=100, 最低分=0, 未交人数=9, 及格人数=119, 优秀人数=98
+2026-01-27 23:16:13,283 - INFO - summary - 成绩统计信息生成完成
+2026-01-27 23:16:13,283 - INFO - summary - 开始保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-27 23:16:13,320 - INFO - summary - 成功保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx，文件大小: 10.3 KB
+2026-01-27 23:16:13,325 - INFO - summary - 程序执行完成，输出文件: D:\WS_Edu\my-notes\mkdocs_notes\my-note\docs\tool\summary\spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-27 23:21:53,779 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-27 23:21:53,782 - INFO - summary - 使用数据目录: spm-practice-25秋-软件22
+2026-01-27 23:21:53,783 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 6, 输出文件: 成绩汇总.xlsx
+2026-01-27 23:21:53,783 - INFO - summary - 笔试成绩文件: 未配置
+2026-01-27 23:21:53,784 - INFO - summary - 分组名单文件: 分组名单.xlsx
+2026-01-27 23:21:53,784 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-27 23:21:54,076 - INFO - summary - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 128
+2026-01-27 23:21:54,077 - INFO - summary - 开始处理作业文件: 1.项目立项与启动.xlsx
+2026-01-27 23:21:54,116 - INFO - summary - 成功处理作业文件: 1.项目立项与启动.xlsx, 有效记录数: 37
+2026-01-27 23:21:54,116 - INFO - summary - 开始处理作业文件: 2.项目规划.xlsx
+2026-01-27 23:21:54,141 - INFO - summary - 成功处理作业文件: 2.项目规划.xlsx, 有效记录数: 37
+2026-01-27 23:21:54,141 - INFO - summary - 开始处理作业文件: 3.项目执行与资源管理.xlsx
+2026-01-27 23:21:54,168 - INFO - summary - 成功处理作业文件: 3.项目执行与资源管理.xlsx, 有效记录数: 37
+2026-01-27 23:21:54,168 - INFO - summary - 开始处理作业文件: 4.项目监控与控制.xlsx
+2026-01-27 23:21:54,193 - INFO - summary - 成功处理作业文件: 4.项目监控与控制.xlsx, 有效记录数: 37
+2026-01-27 23:21:54,194 - INFO - summary - 开始处理作业文件: 5.项目收尾.xlsx
+2026-01-27 23:21:54,230 - INFO - summary - 成功处理作业文件: 5.项目收尾.xlsx, 有效记录数: 37
+2026-01-27 23:21:54,231 - INFO - summary - 开始处理作业文件: 6.汇报.xlsx
+2026-01-27 23:21:54,253 - INFO - summary - 成功处理作业文件: 6.汇报.xlsx, 有效记录数: 37
+2026-01-27 23:21:54,254 - INFO - summary - 开始合并学生信息和作业成绩，共 6 项成绩数据
+2026-01-27 23:21:54,257 - INFO - summary - 合并 1.项目立项与启动 成绩，有成绩人数 37/128
+2026-01-27 23:21:54,260 - INFO - summary - 合并 2.项目规划 成绩，有成绩人数 37/128
+2026-01-27 23:21:54,262 - INFO - summary - 合并 3.项目执行与资源管理 成绩，有成绩人数 37/128
+2026-01-27 23:21:54,265 - INFO - summary - 合并 4.项目监控与控制 成绩，有成绩人数 37/128
+2026-01-27 23:21:54,268 - INFO - summary - 合并 5.项目收尾 成绩，有成绩人数 37/128
+2026-01-27 23:21:54,270 - INFO - summary - 合并 6.汇报 成绩，有成绩人数 37/128
+2026-01-27 23:21:54,271 - INFO - summary - 合并完成，最终成绩表包含 128 名学生，6 项作业
+2026-01-27 23:21:54,271 - INFO - summary - 开始加载分组名单文件: 分组名单.xlsx
+2026-01-27 23:21:54,299 - INFO - summary - 成功加载分组名单文件: 分组名单.xlsx, 总组数: 37
+2026-01-27 23:21:54,299 - INFO - summary - 开始根据分组名单调整成绩，总组数: 37
+2026-01-27 23:21:54,457 - WARNING - summary - 未找到项目经理 22508010114 的成绩
+2026-01-27 23:21:54,475 - WARNING - summary - 未找到成员 224080010408 的记录
+2026-01-27 23:21:54,488 - WARNING - summary - 未找到项目经理 2240808010317 的成绩
+2026-01-27 23:21:54,491 - INFO - summary - 成绩调整完成，共调整 87 条记录
+2026-01-27 23:21:54,492 - INFO - summary - 开始生成成绩统计信息
+2026-01-27 23:21:54,493 - INFO - summary - 1.项目立项与启动统计: 平均分=84.48, 最高分=100, 最低分=0, 未交人数=6, 及格人数=122, 优秀人数=68
+2026-01-27 23:21:54,495 - INFO - summary - 2.项目规划统计: 平均分=93.55, 最高分=100, 最低分=0, 未交人数=6, 及格人数=122, 优秀人数=116
+2026-01-27 23:21:54,496 - INFO - summary - 3.项目执行与资源管理统计: 平均分=90.42, 最高分=100, 最低分=0, 未交人数=6, 及格人数=122, 优秀人数=92
+2026-01-27 23:21:54,498 - INFO - summary - 4.项目监控与控制统计: 平均分=94.42, 最高分=100, 最低分=0, 未交人数=6, 及格人数=122, 优秀人数=115
+2026-01-27 23:21:54,499 - INFO - summary - 5.项目收尾统计: 平均分=88.00, 最高分=100, 最低分=0, 未交人数=6, 及格人数=122, 优秀人数=70
+2026-01-27 23:21:54,501 - INFO - summary - 6.汇报统计: 平均分=92.03, 最高分=100, 最低分=0, 未交人数=6, 及格人数=122, 优秀人数=101
+2026-01-27 23:21:54,501 - INFO - summary - 成绩统计信息生成完成
+2026-01-27 23:21:54,501 - INFO - summary - 开始保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-27 23:21:54,544 - INFO - summary - 成功保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx，文件大小: 10.3 KB
+2026-01-27 23:21:54,550 - INFO - summary - 程序执行完成，输出文件: D:\WS_Edu\my-notes\mkdocs_notes\my-note\docs\tool\summary\spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-27 23:24:27,669 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-27 23:24:27,671 - INFO - summary - 使用数据目录: spm-practice-25秋-软件22
+2026-01-27 23:24:27,672 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 6, 输出文件: 成绩汇总.xlsx
+2026-01-27 23:24:27,672 - INFO - summary - 笔试成绩文件: 未配置
+2026-01-27 23:24:27,673 - INFO - summary - 分组名单文件: 分组名单.xlsx
+2026-01-27 23:24:27,673 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-27 23:24:27,943 - INFO - summary - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 128
+2026-01-27 23:24:27,944 - INFO - summary - 开始处理作业文件: 1.项目立项与启动.xlsx
+2026-01-27 23:24:27,980 - INFO - summary - 成功处理作业文件: 1.项目立项与启动.xlsx, 有效记录数: 37
+2026-01-27 23:24:27,981 - INFO - summary - 开始处理作业文件: 2.项目规划.xlsx
+2026-01-27 23:24:28,006 - INFO - summary - 成功处理作业文件: 2.项目规划.xlsx, 有效记录数: 37
+2026-01-27 23:24:28,006 - INFO - summary - 开始处理作业文件: 3.项目执行与资源管理.xlsx
+2026-01-27 23:24:28,031 - INFO - summary - 成功处理作业文件: 3.项目执行与资源管理.xlsx, 有效记录数: 37
+2026-01-27 23:24:28,032 - INFO - summary - 开始处理作业文件: 4.项目监控与控制.xlsx
+2026-01-27 23:24:28,058 - INFO - summary - 成功处理作业文件: 4.项目监控与控制.xlsx, 有效记录数: 37
+2026-01-27 23:24:28,059 - INFO - summary - 开始处理作业文件: 5.项目收尾.xlsx
+2026-01-27 23:24:28,096 - INFO - summary - 成功处理作业文件: 5.项目收尾.xlsx, 有效记录数: 37
+2026-01-27 23:24:28,097 - INFO - summary - 开始处理作业文件: 6.汇报.xlsx
+2026-01-27 23:24:28,120 - INFO - summary - 成功处理作业文件: 6.汇报.xlsx, 有效记录数: 37
+2026-01-27 23:24:28,121 - INFO - summary - 开始合并学生信息和作业成绩，共 6 项成绩数据
+2026-01-27 23:24:28,124 - INFO - summary - 合并 1.项目立项与启动 成绩，有成绩人数 37/128
+2026-01-27 23:24:28,127 - INFO - summary - 合并 2.项目规划 成绩，有成绩人数 37/128
+2026-01-27 23:24:28,130 - INFO - summary - 合并 3.项目执行与资源管理 成绩，有成绩人数 37/128
+2026-01-27 23:24:28,133 - INFO - summary - 合并 4.项目监控与控制 成绩，有成绩人数 37/128
+2026-01-27 23:24:28,136 - INFO - summary - 合并 5.项目收尾 成绩，有成绩人数 37/128
+2026-01-27 23:24:28,138 - INFO - summary - 合并 6.汇报 成绩，有成绩人数 37/128
+2026-01-27 23:24:28,139 - INFO - summary - 合并完成，最终成绩表包含 128 名学生，6 项作业
+2026-01-27 23:24:28,140 - WARNING - summary - 分组名单文件不存在: 分组名单.xlsx
+2026-01-27 23:24:28,140 - INFO - summary - 开始生成成绩统计信息
+2026-01-27 23:24:28,142 - INFO - summary - 1.项目立项与启动统计: 平均分=25.30, 最高分=100, 最低分=0, 未交人数=91, 及格人数=37, 优秀人数=17
+2026-01-27 23:24:28,143 - INFO - summary - 2.项目规划统计: 平均分=28.17, 最高分=100, 最低分=0, 未交人数=91, 及格人数=37, 优秀人数=34
+2026-01-27 23:24:28,145 - INFO - summary - 3.项目执行与资源管理统计: 平均分=27.20, 最高分=100, 最低分=0, 未交人数=91, 及格人数=37, 优秀人数=26
+2026-01-27 23:24:28,146 - INFO - summary - 4.项目监控与控制统计: 平均分=28.52, 最高分=100, 最低分=0, 未交人数=91, 及格人数=37, 优秀人数=34
+2026-01-27 23:24:28,148 - INFO - summary - 5.项目收尾统计: 平均分=26.04, 最高分=100, 最低分=0, 未交人数=91, 及格人数=37, 优秀人数=17
+2026-01-27 23:24:28,150 - INFO - summary - 6.汇报统计: 平均分=27.81, 最高分=100, 最低分=0, 未交人数=91, 及格人数=37, 优秀人数=30
+2026-01-27 23:24:28,150 - INFO - summary - 成绩统计信息生成完成
+2026-01-27 23:24:28,150 - INFO - summary - 开始保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-27 23:24:28,191 - INFO - summary - 成功保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx，文件大小: 10.1 KB
+2026-01-27 23:24:28,197 - INFO - summary - 程序执行完成，输出文件: D:\WS_Edu\my-notes\mkdocs_notes\my-note\docs\tool\summary\spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-27 23:25:43,677 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-27 23:25:43,680 - INFO - summary - 使用数据目录: spm-practice-25秋-软件22
+2026-01-27 23:25:43,681 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 6, 输出文件: 成绩汇总.xlsx
+2026-01-27 23:25:43,681 - INFO - summary - 笔试成绩文件: 未配置
+2026-01-27 23:25:43,681 - INFO - summary - 分组名单文件: 分组名单.xlsx
+2026-01-27 23:25:43,681 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-27 23:25:43,943 - INFO - summary - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 128
+2026-01-27 23:25:43,944 - INFO - summary - 开始处理作业文件: 1.项目立项与启动.xlsx
+2026-01-27 23:25:43,976 - INFO - summary - 成功处理作业文件: 1.项目立项与启动.xlsx, 有效记录数: 37
+2026-01-27 23:25:43,976 - INFO - summary - 开始处理作业文件: 2.项目规划.xlsx
+2026-01-27 23:25:44,000 - INFO - summary - 成功处理作业文件: 2.项目规划.xlsx, 有效记录数: 37
+2026-01-27 23:25:44,000 - INFO - summary - 开始处理作业文件: 3.项目执行与资源管理.xlsx
+2026-01-27 23:25:44,025 - INFO - summary - 成功处理作业文件: 3.项目执行与资源管理.xlsx, 有效记录数: 37
+2026-01-27 23:25:44,025 - INFO - summary - 开始处理作业文件: 4.项目监控与控制.xlsx
+2026-01-27 23:25:44,052 - INFO - summary - 成功处理作业文件: 4.项目监控与控制.xlsx, 有效记录数: 37
+2026-01-27 23:25:44,053 - INFO - summary - 开始处理作业文件: 5.项目收尾.xlsx
+2026-01-27 23:25:44,092 - INFO - summary - 成功处理作业文件: 5.项目收尾.xlsx, 有效记录数: 37
+2026-01-27 23:25:44,092 - INFO - summary - 开始处理作业文件: 6.汇报.xlsx
+2026-01-27 23:25:44,116 - INFO - summary - 成功处理作业文件: 6.汇报.xlsx, 有效记录数: 37
+2026-01-27 23:25:44,117 - INFO - summary - 开始合并学生信息和作业成绩，共 6 项成绩数据
+2026-01-27 23:25:44,120 - INFO - summary - 合并 1.项目立项与启动 成绩，有成绩人数 37/128
+2026-01-27 23:25:44,123 - INFO - summary - 合并 2.项目规划 成绩，有成绩人数 37/128
+2026-01-27 23:25:44,126 - INFO - summary - 合并 3.项目执行与资源管理 成绩，有成绩人数 37/128
+2026-01-27 23:25:44,129 - INFO - summary - 合并 4.项目监控与控制 成绩，有成绩人数 37/128
+2026-01-27 23:25:44,132 - INFO - summary - 合并 5.项目收尾 成绩，有成绩人数 37/128
+2026-01-27 23:25:44,134 - INFO - summary - 合并 6.汇报 成绩，有成绩人数 37/128
+2026-01-27 23:25:44,135 - INFO - summary - 合并完成，最终成绩表包含 128 名学生，6 项作业
+2026-01-27 23:25:44,136 - INFO - summary - 开始加载分组名单文件: 分组名单.xlsx
+2026-01-27 23:25:44,166 - INFO - summary - 成功加载分组名单文件: 分组名单.xlsx, 总组数: 37
+2026-01-27 23:25:44,166 - INFO - summary - 开始根据分组名单调整成绩，总组数: 37
+2026-01-27 23:25:44,367 - WARNING - summary - 未找到成员 224080010408 的记录
+2026-01-27 23:25:44,379 - WARNING - summary - 未找到项目经理 2240808010317 的成绩
+2026-01-27 23:25:44,382 - INFO - summary - 成绩调整完成，共调整 90 条记录
+2026-01-27 23:25:44,382 - INFO - summary - 开始生成成绩统计信息
+2026-01-27 23:25:44,384 - INFO - summary - 1.项目立项与启动统计: 平均分=83.83, 最高分=100, 最低分=0, 未交人数=7, 及格人数=121, 优秀人数=68
+2026-01-27 23:25:44,386 - INFO - summary - 2.项目规划统计: 平均分=92.83, 最高分=100, 最低分=0, 未交人数=7, 及格人数=121, 优秀人数=115
+2026-01-27 23:25:44,388 - INFO - summary - 3.项目执行与资源管理统计: 平均分=89.77, 最高分=100, 最低分=0, 未交人数=7, 及格人数=121, 优秀人数=92
+2026-01-27 23:25:44,390 - INFO - summary - 4.项目监控与控制统计: 平均分=93.64, 最高分=100, 最低分=0, 未交人数=7, 及格人数=121, 优秀人数=114
+2026-01-27 23:25:44,391 - INFO - summary - 5.项目收尾统计: 平均分=87.36, 最高分=100, 最低分=0, 未交人数=7, 及格人数=121, 优秀人数=70
+2026-01-27 23:25:44,393 - INFO - summary - 6.汇报统计: 平均分=91.41, 最高分=100, 最低分=0, 未交人数=7, 及格人数=121, 优秀人数=101
+2026-01-27 23:25:44,393 - INFO - summary - 成绩统计信息生成完成
+2026-01-27 23:25:44,393 - INFO - summary - 开始保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-27 23:25:44,435 - INFO - summary - 成功保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx，文件大小: 10.3 KB
+2026-01-27 23:25:44,441 - INFO - summary - 程序执行完成，输出文件: D:\WS_Edu\my-notes\mkdocs_notes\my-note\docs\tool\summary\spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-27 23:27:51,754 - INFO - summary - 学生作业成绩汇总系统开始运行
+2026-01-27 23:27:51,757 - INFO - summary - 使用数据目录: spm-practice-25秋-软件22
+2026-01-27 23:27:51,758 - INFO - summary - 配置文件加载成功，学生名单文件: 名单.xlsx, 作业文件数量: 6, 输出文件: 成绩汇总.xlsx
+2026-01-27 23:27:51,758 - INFO - summary - 笔试成绩文件: 未配置
+2026-01-27 23:27:51,758 - INFO - summary - 分组名单文件: 分组名单.xlsx
+2026-01-27 23:27:51,759 - INFO - summary - 开始加载学生名单文件: 名单.xlsx
+2026-01-27 23:27:52,042 - INFO - summary - 成功加载学生名单文件: 名单.xlsx, 总学生人数: 128
+2026-01-27 23:27:52,043 - INFO - summary - 开始处理作业文件: 1.项目立项与启动.xlsx
+2026-01-27 23:27:52,080 - INFO - summary - 成功处理作业文件: 1.项目立项与启动.xlsx, 有效记录数: 37
+2026-01-27 23:27:52,081 - INFO - summary - 开始处理作业文件: 2.项目规划.xlsx
+2026-01-27 23:27:52,108 - INFO - summary - 成功处理作业文件: 2.项目规划.xlsx, 有效记录数: 37
+2026-01-27 23:27:52,108 - INFO - summary - 开始处理作业文件: 3.项目执行与资源管理.xlsx
+2026-01-27 23:27:52,134 - INFO - summary - 成功处理作业文件: 3.项目执行与资源管理.xlsx, 有效记录数: 37
+2026-01-27 23:27:52,134 - INFO - summary - 开始处理作业文件: 4.项目监控与控制.xlsx
+2026-01-27 23:27:52,160 - INFO - summary - 成功处理作业文件: 4.项目监控与控制.xlsx, 有效记录数: 37
+2026-01-27 23:27:52,160 - INFO - summary - 开始处理作业文件: 5.项目收尾.xlsx
+2026-01-27 23:27:52,196 - INFO - summary - 成功处理作业文件: 5.项目收尾.xlsx, 有效记录数: 37
+2026-01-27 23:27:52,197 - INFO - summary - 开始处理作业文件: 6.汇报.xlsx
+2026-01-27 23:27:52,219 - INFO - summary - 成功处理作业文件: 6.汇报.xlsx, 有效记录数: 37
+2026-01-27 23:27:52,219 - INFO - summary - 开始合并学生信息和作业成绩，共 6 项成绩数据
+2026-01-27 23:27:52,223 - INFO - summary - 合并 1.项目立项与启动 成绩，有成绩人数 37/128
+2026-01-27 23:27:52,226 - INFO - summary - 合并 2.项目规划 成绩，有成绩人数 37/128
+2026-01-27 23:27:52,228 - INFO - summary - 合并 3.项目执行与资源管理 成绩，有成绩人数 37/128
+2026-01-27 23:27:52,231 - INFO - summary - 合并 4.项目监控与控制 成绩，有成绩人数 37/128
+2026-01-27 23:27:52,234 - INFO - summary - 合并 5.项目收尾 成绩，有成绩人数 37/128
+2026-01-27 23:27:52,237 - INFO - summary - 合并 6.汇报 成绩，有成绩人数 37/128
+2026-01-27 23:27:52,237 - INFO - summary - 合并完成，最终成绩表包含 128 名学生，6 项作业
+2026-01-27 23:27:52,238 - INFO - summary - 开始加载分组名单文件: 分组名单.xlsx
+2026-01-27 23:27:52,264 - INFO - summary - 成功加载分组名单文件: 分组名单.xlsx, 总组数: 37
+2026-01-27 23:27:52,265 - INFO - summary - 开始根据分组名单调整成绩，总组数: 37
+2026-01-27 23:27:52,455 - WARNING - summary - 未找到成员 224080010408 的记录
+2026-01-27 23:27:52,466 - WARNING - summary - 未找到项目经理 2240808010317 的成绩
+2026-01-27 23:27:52,468 - INFO - summary - 成绩调整完成，共调整 90 条记录
+2026-01-27 23:27:52,469 - INFO - summary - 开始生成成绩统计信息
+2026-01-27 23:27:52,471 - INFO - summary - 1.项目立项与启动统计: 平均分=86.45, 最高分=100, 最低分=0, 未交人数=3, 及格人数=125, 优秀人数=68
+2026-01-27 23:27:52,473 - INFO - summary - 2.项目规划统计: 平均分=95.70, 最高分=100, 最低分=0, 未交人数=3, 及格人数=125, 优秀人数=119
+2026-01-27 23:27:52,475 - INFO - summary - 3.项目执行与资源管理统计: 平均分=92.39, 最高分=100, 最低分=0, 未交人数=3, 及格人数=125, 优秀人数=92
+2026-01-27 23:27:52,476 - INFO - summary - 4.项目监控与控制统计: 平均分=96.77, 最高分=100, 最低分=0, 未交人数=3, 及格人数=125, 优秀人数=118
+2026-01-27 23:27:52,477 - INFO - summary - 5.项目收尾统计: 平均分=89.92, 最高分=100, 最低分=0, 未交人数=3, 及格人数=125, 优秀人数=70
+2026-01-27 23:27:52,479 - INFO - summary - 6.汇报统计: 平均分=93.91, 最高分=100, 最低分=0, 未交人数=3, 及格人数=125, 优秀人数=101
+2026-01-27 23:27:52,480 - INFO - summary - 成绩统计信息生成完成
+2026-01-27 23:27:52,480 - INFO - summary - 开始保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx
+2026-01-27 23:27:52,524 - INFO - summary - 成功保存成绩表到: spm-practice-25秋-软件22\成绩汇总.xlsx，文件大小: 10.3 KB
+2026-01-27 23:27:52,531 - INFO - summary - 程序执行完成，输出文件: D:\WS_Edu\my-notes\mkdocs_notes\my-note\docs\tool\summary\spm-practice-25秋-软件22\成绩汇总.xlsx
